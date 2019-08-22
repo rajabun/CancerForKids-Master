@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc1 = storyboard.instantiateInitialViewController()
         
-        if(UserDefaults.standard.bool(forKey: "pernahbuka") == true)
+        if(UserDefaults.standard.bool(forKey: "FinishOnboarding") == true)
         {
             window?.rootViewController = vc1!
         }

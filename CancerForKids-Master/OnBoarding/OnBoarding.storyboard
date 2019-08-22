@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding Screen-->
+        <scene sceneID="7Qf-yv-Gyq">
+            <objects>
+                <viewController storyboardIdentifier="OnBoarding" id="FED-3l-bLk" userLabel="Onboarding Screen" customClass="OnboardingController" customModule="CancerForKids_Master" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lPh-Tr-cjt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="mRt-LC-soT">
+                                <rect key="frame" x="179.5" y="743" width="55" height="37"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pageControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="saq-5y-ABB">
+                                <rect key="frame" x="0.0" y="-10" width="414" height="926"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mav-xG-94X">
+                                <rect key="frame" x="340" y="64" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="SwT-eE-qtA"/>
+                                    <constraint firstAttribute="width" constant="44" id="oXc-61-NSj"/>
+                                </constraints>
+                                <state key="normal" title="Skip"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wul-Wp-rkR" customClass="GetStarted" customModule="CancerForKids_Master" customModuleProvider="target">
+                                <rect key="frame" x="32" y="800" width="350" height="60"/>
+                                <color key="backgroundColor" red="0.1384509206" green="0.340767771" blue="0.78827553989999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="FNX-FB-9xe"/>
+                                    <constraint firstAttribute="width" constant="350" id="qJI-fH-qtq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Get Started"/>
+                                <connections>
+                                    <action selector="nextButtonDidTapped:" destination="FED-3l-bLk" eventType="touchUpInside" id="11l-Wz-67f"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="t5M-ck-Wto" firstAttribute="bottom" secondItem="Wul-Wp-rkR" secondAttribute="bottom" constant="2" id="4XL-F8-g8q"/>
+                            <constraint firstAttribute="bottom" secondItem="saq-5y-ABB" secondAttribute="bottom" constant="-20" id="8hg-Tq-BPD"/>
+                            <constraint firstItem="mRt-LC-soT" firstAttribute="leading" secondItem="t5M-ck-Wto" secondAttribute="leading" constant="179.5" id="9Fr-83-lif"/>
+                            <constraint firstItem="t5M-ck-Wto" firstAttribute="trailing" secondItem="mav-xG-94X" secondAttribute="trailing" constant="30" id="Kpa-Zu-GAg"/>
+                            <constraint firstItem="Wul-Wp-rkR" firstAttribute="leading" secondItem="t5M-ck-Wto" secondAttribute="leading" constant="32" id="N9K-L3-cXj"/>
+                            <constraint firstItem="saq-5y-ABB" firstAttribute="width" secondItem="lPh-Tr-cjt" secondAttribute="width" id="Rh8-3K-87r"/>
+                            <constraint firstItem="Wul-Wp-rkR" firstAttribute="top" secondItem="mRt-LC-soT" secondAttribute="bottom" constant="20" id="bDu-Uw-FHj"/>
+                            <constraint firstItem="mav-xG-94X" firstAttribute="top" secondItem="t5M-ck-Wto" secondAttribute="top" constant="20" id="cec-Sj-Coz"/>
+                            <constraint firstItem="saq-5y-ABB" firstAttribute="centerY" secondItem="t5M-ck-Wto" secondAttribute="centerY" id="fcq-CO-iLT"/>
+                            <constraint firstItem="t5M-ck-Wto" firstAttribute="trailing" secondItem="mRt-LC-soT" secondAttribute="trailing" constant="179.5" id="kdc-3h-YIn"/>
+                            <constraint firstItem="t5M-ck-Wto" firstAttribute="trailing" secondItem="Wul-Wp-rkR" secondAttribute="trailing" constant="32" id="p1D-PL-UaI"/>
+                            <constraint firstItem="mRt-LC-soT" firstAttribute="centerX" secondItem="t5M-ck-Wto" secondAttribute="centerX" id="rDh-Hs-1Ix"/>
+                            <constraint firstItem="saq-5y-ABB" firstAttribute="centerX" secondItem="t5M-ck-Wto" secondAttribute="centerX" id="u98-Ej-BFe"/>
+                            <constraint firstItem="Wul-Wp-rkR" firstAttribute="centerX" secondItem="t5M-ck-Wto" secondAttribute="centerX" id="zeq-lB-Fi8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="t5M-ck-Wto"/>
+                    </view>
+                    <connections>
+                        <outlet property="nextButton" destination="Wul-Wp-rkR" id="j3Q-ZS-2RL"/>
+                        <outlet property="pageControl" destination="mRt-LC-soT" id="dgc-Xa-xGb"/>
+                        <outlet property="scrollView" destination="saq-5y-ABB" id="Ool-KL-TH1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hO8-H0-Ugf" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="323" y="-8"/>
+        </scene>
+    </scenes>
+</document>

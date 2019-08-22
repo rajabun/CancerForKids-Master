@@ -18,6 +18,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool
     {
         // Override point for customization after application launch.
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc1 = storyboard.instantiateInitialViewController()
+        
+        if(UserDefaults.standard.bool(forKey: "pernahbuka") == true)
+        {
+            window?.rootViewController = vc1!
+        }
+        
+        UIApplication.shared.setMinimumBackgroundFetchInterval(5)
+        
         return true
     }
 

@@ -3,7 +3,7 @@
 //  CancerForKids-Master
 //
 //  Created by Cindy Chandra on 21/08/19.
-//  Copyright © 2019 Muhammad Rajab Priharsanto. All rights reserved.
+//  Copyright © 2019 Cindy Chandra. All rights reserved.
 //
 
 import UIKit
@@ -20,7 +20,6 @@ class CharacterViewController: UIViewController {
         roundTF.layer.masksToBounds = true
         roundTF.layer.borderColor = UIColor.black.cgColor
         roundTF.layer.borderWidth = 3
-        
         roundTF.delegate = self
         
     }

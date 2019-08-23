@@ -12,7 +12,6 @@ class DatePickerViewController: UIViewController {
     
     
     @IBOutlet weak var datePicker: UIDatePicker!
-    @IBOutlet weak var dateLabel: UILabel!
     
     var tglLahir: Date!
     let formatter = DateFormatter()
@@ -21,13 +20,13 @@ class DatePickerViewController: UIViewController {
         super.viewDidLoad()
         
         formatter.dateFormat = "dd-MM-yyyy"
-        dateLabel.text = formatter.string(from: datePicker.date)
+        
 
     }
     
     @IBAction func btnSimpanTanggalLahir(_ sender: Any) {
         tglLahir = datePicker.date
-        dateLabel.text = formatter.string(from: datePicker.date)
+        //user default tanggal lahir
     }
     @IBAction func dateSelectedFromPicker(_ :  AnyObject){
         formatter.dateFormat = "dd-MM-yyyy"

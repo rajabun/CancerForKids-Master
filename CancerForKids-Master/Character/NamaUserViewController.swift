@@ -13,7 +13,6 @@ class NamaUserViewController: UIViewController {
     
     
     @IBOutlet weak var textFieldUser: UITextField!
-    @IBOutlet weak var labelNameUser: UILabel!
     
         
         override func viewDidLoad() {
@@ -30,7 +29,8 @@ class NamaUserViewController: UIViewController {
         // Do any additional setup after loading the view.
         
     @IBAction func enterButton(_ sender: Any) {
-            labelNameUser.text = "\(textFieldUser.text!)"
+        let name = "\(textFieldUser.text!)"
+        //user default name
         }
     }
     

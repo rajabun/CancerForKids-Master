@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool
     {
         // Override point for customization after application launch.
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let storyboard = UIStoryboard(name: "Character", bundle: nil)
         let vc1 = storyboard.instantiateInitialViewController()
         
         if(UserDefaults.standard.bool(forKey: "FinishOnboarding") == true)

@@ -38,7 +38,7 @@ class OnboardingController: UIViewController, UIScrollViewDelegate {
 
     @IBAction func nextButtonDidTapped(_ sender: Any) {
         UserDefaults.standard.set(true, forKey: "FinishOnboarding")
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let storyboard = UIStoryboard(name: "Character", bundle: nil)
         guard let vc = storyboard.instantiateInitialViewController() else {return}
         present(vc, animated: true, completion: nil)
     }

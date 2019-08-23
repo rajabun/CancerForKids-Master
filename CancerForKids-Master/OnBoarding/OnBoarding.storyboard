@@ -24,21 +24,10 @@
                                 <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </pageControl>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="saq-5y-ABB">
-                                <rect key="frame" x="0.0" y="0.0" width="1112" height="854"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mav-xG-94X">
-                                <rect key="frame" x="1038" y="40" width="44" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="SwT-eE-qtA"/>
-                                    <constraint firstAttribute="width" constant="44" id="oXc-61-NSj"/>
-                                </constraints>
-                                <state key="normal" title="Skip"/>
-                                <connections>
-                                    <action selector="nextButtonDidTapped:" destination="FED-3l-bLk" eventType="touchUpInside" id="9fj-T4-XJN"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wul-Wp-rkR" customClass="GetStarted" customModule="CancerForKids_Master" customModuleProvider="target">
-                                <rect key="frame" x="361.5" y="772" width="389" height="60"/>
+                                <rect key="frame" x="361.5" y="767" width="389" height="60"/>
                                 <color key="backgroundColor" red="0.1384509206" green="0.340767771" blue="0.78827553989999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="FNX-FB-9xe"/>
@@ -51,21 +40,39 @@
                                     <action selector="nextButtonDidTapped:" destination="FED-3l-bLk" eventType="touchUpInside" id="11l-Wz-67f"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mav-xG-94X">
+                                <rect key="frame" x="1052" y="40" width="30" height="31"/>
+                                <state key="normal" title="Skip"/>
+                                <connections>
+                                    <action selector="nextButtonDidTapped:" destination="FED-3l-bLk" eventType="touchUpInside" id="9fj-T4-XJN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="t5M-ck-Wto" firstAttribute="bottom" secondItem="Wul-Wp-rkR" secondAttribute="bottom" constant="2" id="4XL-F8-g8q"/>
-                            <constraint firstAttribute="bottom" secondItem="saq-5y-ABB" secondAttribute="bottom" constant="-20" id="8hg-Tq-BPD"/>
-                            <constraint firstItem="mRt-LC-soT" firstAttribute="leading" secondItem="t5M-ck-Wto" secondAttribute="leading" constant="179.5" id="9Fr-83-lif"/>
-                            <constraint firstItem="t5M-ck-Wto" firstAttribute="trailing" secondItem="mav-xG-94X" secondAttribute="trailing" constant="30" id="Kpa-Zu-GAg"/>
-                            <constraint firstItem="saq-5y-ABB" firstAttribute="width" secondItem="lPh-Tr-cjt" secondAttribute="width" id="Rh8-3K-87r"/>
-                            <constraint firstItem="Wul-Wp-rkR" firstAttribute="top" secondItem="mRt-LC-soT" secondAttribute="bottom" constant="20" id="bDu-Uw-FHj"/>
-                            <constraint firstItem="mav-xG-94X" firstAttribute="top" secondItem="t5M-ck-Wto" secondAttribute="top" constant="20" id="cec-Sj-Coz"/>
-                            <constraint firstItem="saq-5y-ABB" firstAttribute="centerY" secondItem="t5M-ck-Wto" secondAttribute="centerY" id="fcq-CO-iLT"/>
-                            <constraint firstItem="t5M-ck-Wto" firstAttribute="trailing" secondItem="mRt-LC-soT" secondAttribute="trailing" constant="179.5" id="kdc-3h-YIn"/>
-                            <constraint firstItem="mRt-LC-soT" firstAttribute="centerX" secondItem="t5M-ck-Wto" secondAttribute="centerX" id="rDh-Hs-1Ix"/>
-                            <constraint firstItem="saq-5y-ABB" firstAttribute="centerX" secondItem="t5M-ck-Wto" secondAttribute="centerX" id="u98-Ej-BFe"/>
-                            <constraint firstItem="Wul-Wp-rkR" firstAttribute="centerX" secondItem="t5M-ck-Wto" secondAttribute="centerX" id="zeq-lB-Fi8"/>
+                            <constraint firstItem="mRt-LC-soT" firstAttribute="leading" secondItem="t5M-ck-Wto" secondAttribute="leading" constant="179.5" id="CPG-UH-fbP"/>
+                            <constraint firstItem="mRt-LC-soT" firstAttribute="centerX" secondItem="Wul-Wp-rkR" secondAttribute="centerX" id="Ckd-HN-bnI"/>
+                            <constraint firstItem="saq-5y-ABB" firstAttribute="bottom" secondItem="t5M-ck-Wto" secondAttribute="bottom" id="Foq-3I-4Xm"/>
+                            <constraint firstItem="saq-5y-ABB" firstAttribute="bottom" secondItem="t5M-ck-Wto" secondAttribute="bottom" id="OGn-9w-9QS"/>
+                            <constraint firstItem="saq-5y-ABB" firstAttribute="top" secondItem="lPh-Tr-cjt" secondAttribute="top" id="TYG-da-yh4"/>
+                            <constraint firstItem="saq-5y-ABB" firstAttribute="leading" secondItem="t5M-ck-Wto" secondAttribute="leading" id="TlD-vf-1fu"/>
+                            <constraint firstItem="saq-5y-ABB" firstAttribute="trailing" secondItem="t5M-ck-Wto" secondAttribute="trailing" id="UDk-Va-ZYh"/>
+                            <constraint firstItem="saq-5y-ABB" firstAttribute="centerX" secondItem="lPh-Tr-cjt" secondAttribute="centerX" id="Vp1-PD-l6s"/>
+                            <constraint firstItem="t5M-ck-Wto" firstAttribute="trailing" secondItem="Wul-Wp-rkR" secondAttribute="trailing" constant="361.5" id="a8j-y9-fcQ"/>
+                            <constraint firstItem="Wul-Wp-rkR" firstAttribute="leading" secondItem="t5M-ck-Wto" secondAttribute="leading" constant="361.5" id="aPp-0P-9n8"/>
+                            <constraint firstItem="t5M-ck-Wto" firstAttribute="bottom" secondItem="mav-xG-94X" secondAttribute="bottom" constant="763" id="bb5-Zq-RyR"/>
+                            <constraint firstItem="t5M-ck-Wto" firstAttribute="bottom" secondItem="Wul-Wp-rkR" secondAttribute="bottom" constant="7" id="e1M-v8-GpS"/>
+                            <constraint firstItem="Wul-Wp-rkR" firstAttribute="top" secondItem="mRt-LC-soT" secondAttribute="bottom" constant="15" id="fKo-5e-0Ny"/>
+                            <constraint firstItem="saq-5y-ABB" firstAttribute="top" secondItem="lPh-Tr-cjt" secondAttribute="top" id="fUs-XA-YlW"/>
+                            <constraint firstItem="saq-5y-ABB" firstAttribute="leading" secondItem="t5M-ck-Wto" secondAttribute="leading" id="frT-kV-KZO"/>
+                            <constraint firstItem="Wul-Wp-rkR" firstAttribute="top" secondItem="mRt-LC-soT" secondAttribute="bottom" constant="15" id="gqJ-vd-MUO"/>
+                            <constraint firstItem="t5M-ck-Wto" firstAttribute="trailing" secondItem="mav-xG-94X" secondAttribute="trailing" constant="30" id="hPP-9j-WJM"/>
+                            <constraint firstItem="mRt-LC-soT" firstAttribute="top" secondItem="t5M-ck-Wto" secondAttribute="top" constant="695" id="l02-uQ-spW"/>
+                            <constraint firstItem="mav-xG-94X" firstAttribute="leading" secondItem="t5M-ck-Wto" secondAttribute="leading" constant="1052" id="rVB-gj-zdB"/>
+                            <constraint firstItem="saq-5y-ABB" firstAttribute="trailing" secondItem="t5M-ck-Wto" secondAttribute="trailing" id="s2t-eC-pwq"/>
+                            <constraint firstItem="t5M-ck-Wto" firstAttribute="trailing" secondItem="mRt-LC-soT" secondAttribute="trailing" constant="179.5" id="vCG-IP-MDc"/>
+                            <constraint firstItem="mav-xG-94X" firstAttribute="top" secondItem="t5M-ck-Wto" secondAttribute="top" constant="20" id="wPA-mB-JOj"/>
+                            <constraint firstItem="t5M-ck-Wto" firstAttribute="trailing" secondItem="mav-xG-94X" secondAttribute="trailing" constant="30" id="zMi-AJ-hBX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="t5M-ck-Wto"/>
                     </view>

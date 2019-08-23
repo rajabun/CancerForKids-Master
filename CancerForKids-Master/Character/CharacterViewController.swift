@@ -11,7 +11,6 @@ import UIKit
 class CharacterViewController: UIViewController {
     
     @IBOutlet weak var roundTF: UITextField!
-    @IBOutlet weak var textViewName: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,11 +21,13 @@ class CharacterViewController: UIViewController {
         roundTF.layer.borderWidth = 3
         roundTF.delegate = self
         
+        
     }
         // Do any additional setup after loading the view.
 
     @IBAction func enterNameButton(_ sender: Any) {
-        textViewName.text = "\(roundTF.text!)"
+        let charName = "\(roundTF.text!)"
+        //user default charname
     }
 }
 

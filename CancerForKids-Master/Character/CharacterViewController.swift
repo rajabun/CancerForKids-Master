@@ -10,9 +10,15 @@ import UIKit
 
 class CharacterViewController: UIViewController {
     
+    @IBOutlet weak var roundTF: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
+        roundTF.layer.cornerRadius = 20.0
+        roundTF.layer.masksToBounds = true
+        roundTF.layer.borderColor = UIColor.black.cgColor
+        roundTF.layer.borderWidth = 3
 
         // Do any additional setup after loading the view.
     }

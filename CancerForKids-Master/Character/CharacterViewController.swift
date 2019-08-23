@@ -11,8 +11,7 @@ import UIKit
 class CharacterViewController: UIViewController {
     
     @IBOutlet weak var roundTF: UITextField!
-    @IBOutlet weak var textViewName: UITextView!
-    
+    @IBOutlet weak var textViewName: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()

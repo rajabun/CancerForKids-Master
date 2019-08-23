@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HIg-OI-3e9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="okT-AQ-PXw">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -36,25 +36,38 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="simpan nama"/>
                                 <connections>
-                                    <segue destination="ubG-kQ-vjR" kind="show" id="kOX-SL-pyn"/>
+                                    <action selector="enterNameButton:" destination="HIg-OI-3e9" eventType="touchUpInside" id="CfS-0U-8jX"/>
+                                    <segue destination="ubG-kQ-vjR" kind="show" id="M52-as-s8A"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="miS-ix-0xI">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Ketik nama untuk Aku ya" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="miS-ix-0xI">
                                 <rect key="frame" x="320" y="383" width="480" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="38"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krV-rG-MAP">
+                                <rect key="frame" x="429" y="303" width="288" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="4Qm-O5-gvS"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Q5j-en-H9r"/>
+                    <connections>
+                        <outlet property="roundTF" destination="miS-ix-0xI" id="C8k-k4-hKV"/>
+                        <outlet property="textViewName" destination="krV-rG-MAP" id="UpP-0q-7dr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ioe-l4-ddt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="289.453125" y="-238.28125"/>
+            <point key="canvasLocation" x="2462.109375" y="-238.28125"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="w6t-oE-Txm">
@@ -88,15 +101,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="7kH-5d-NVJ"/>
                     </view>
+                    <navigationItem key="navigationItem" id="MLf-ss-tZj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IJg-cb-plZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="935" y="-238"/>
+            <point key="canvasLocation" x="3107.2265625" y="-238.28125"/>
         </scene>
-        <!--View Controller-->
+        <!--Nama User View Controller-->
         <scene sceneID="o3m-j7-p5h">
             <objects>
-                <viewController id="VUL-YT-TuF" sceneMemberID="viewController">
+                <viewController id="VUL-YT-TuF" customClass="NamaUserViewController" customModule="CancerForKids_Master" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="acC-aW-G1o">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -105,12 +119,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="769"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aW4-rN-xkf">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Ketik nama Kamu ya" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aW4-rN-xkf">
                                 <rect key="frame" x="346" y="344" width="480" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="38"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="police" translatesAutoresizingMaskIntoConstraints="NO" id="Xf2-fU-oGl">
@@ -126,17 +140,29 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="simpan nama"/>
                                 <connections>
-                                    <segue destination="O4c-90-FhK" kind="show" id="uKU-fQ-DBd"/>
+                                    <action selector="enterButton:" destination="VUL-YT-TuF" eventType="touchUpInside" id="PPV-0z-qS9"/>
+                                    <segue destination="O4c-90-FhK" kind="show" id="PZ1-qa-mDH"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKw-pZ-mId">
+                                <rect key="frame" x="510" y="279" width="234" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="1Fy-4y-O1G"/>
                     </view>
+                    <connections>
+                        <outlet property="labelNameUser" destination="eKw-pZ-mId" id="jxY-XV-aNY"/>
+                        <outlet property="textFieldUser" destination="aW4-rN-xkf" id="3Rb-97-T94"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h3B-Oq-7CK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1580" y="-238"/>
+            <point key="canvasLocation" x="3752.3437499999995" y="-238.28125"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="sNG-GK-QZk">
@@ -174,10 +200,10 @@ Aku melindungi seluruh rakyat tanpa rasa takut. Kamu harus menjadi kuat dan tida
             </objects>
             <point key="canvasLocation" x="1573.828125" y="465.625"/>
         </scene>
-        <!--View Controller-->
+        <!--Date Picker View Controller-->
         <scene sceneID="YoA-JC-n9y">
             <objects>
-                <viewController id="O4c-90-FhK" sceneMemberID="viewController">
+                <viewController id="O4c-90-FhK" customClass="DatePickerViewController" customModule="CancerForKids_Master" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wyr-P0-qyi">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -194,29 +220,44 @@ Aku melindungi seluruh rakyat tanpa rasa takut. Kamu harus menjadi kuat dan tida
                                 <rect key="frame" x="281" y="98" width="446" height="201"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="wsj-iB-TnA">
-                                <rect key="frame" x="69" y="307" width="1024" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <date key="date" timeIntervalSinceReferenceDate="588160239.22267199">
-                                    <!--2019-08-22 9:50:39 AM +0000-->
-                                </date>
-                            </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O9K-5g-IXA">
                                 <rect key="frame" x="341" y="538" width="480" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="simpan nama"/>
                                 <connections>
+                                    <action selector="btnSimpanTanggalLahir:" destination="O4c-90-FhK" eventType="touchUpInside" id="LUb-aZ-fDM"/>
                                     <segue destination="HHj-io-Kce" kind="show" id="2Kp-KV-AxY"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r4f-JT-xgi">
+                                <rect key="frame" x="450" y="280" width="250" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="wsj-iB-TnA">
+                                <rect key="frame" x="0.0" y="314" width="1024" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <date key="date" timeIntervalSinceReferenceDate="588160239.22267199">
+                                    <!--2019-08-22 09:50:39 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="dateSelectedFromPicker:" destination="O4c-90-FhK" eventType="valueChanged" id="GCn-Io-Ged"/>
+                                </connections>
+                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="T5j-Zd-LIL"/>
                     </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="r4f-JT-xgi" id="DFE-AS-fC4"/>
+                        <outlet property="datePicker" destination="wsj-iB-TnA" id="o4I-YQ-Dqx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TP8-L1-aY6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2227" y="-241"/>
+            <point key="canvasLocation" x="4399.21875" y="-241.40625"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="3nG-ow-Wmt">
@@ -255,8 +296,75 @@ Aku melindungi seluruh rakyat tanpa rasa takut. Kamu harus menjadi kuat dan tida
             </objects>
             <point key="canvasLocation" x="2227" y="468"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="K3f-ZS-Qei">
+            <objects>
+                <viewController id="QxY-de-lkJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jrr-rJ-HsW">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundbubble" translatesAutoresizingMaskIntoConstraints="NO" id="ZVW-Xm-kdQ">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="769"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pilot" translatesAutoresizingMaskIntoConstraints="NO" id="QpV-f0-3SS">
+                                <rect key="frame" x="-21" y="431" width="289" height="304"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tentara" translatesAutoresizingMaskIntoConstraints="NO" id="8lJ-Xy-Kdg">
+                                <rect key="frame" x="368" y="421" width="289" height="317"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Firefighter" translatesAutoresizingMaskIntoConstraints="NO" id="HEy-7P-2GX">
+                                <rect key="frame" x="750" y="410" width="299" height="325"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Polisi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaJ-C8-Adx">
+                                <rect key="frame" x="473" y="55" width="89" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUE-Me-uzB">
+                                <rect key="frame" x="452" y="127" width="131" height="289"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="police"/>
+                                <connections>
+                                    <segue destination="HIg-OI-3e9" kind="show" id="Fro-Kn-0J7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="GSH-zi-NLu"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SgE-bE-NVd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="esK-VI-TCV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1821.0937499999998" y="-241.40625"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FGP-A7-y13">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="okT-AQ-PXw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YxL-VH-Ea8">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QxY-de-lkJ" kind="relationship" relationship="rootViewController" id="bRc-gQ-jxX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bRF-YJ-8al" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1096.875" y="-241.40625"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Firefighter" width="216" height="332"/>
         <image name="akusuka" width="518" height="210"/>
         <image name="backgroundbubble" width="1024" height="768"/>
         <image name="berinama" width="462" height="183"/>
@@ -264,8 +372,10 @@ Aku melindungi seluruh rakyat tanpa rasa takut. Kamu harus menjadi kuat dan tida
         <image name="nicetoknowu" width="593" height="222"/>
         <image name="okebutton" width="500" height="110"/>
         <image name="okee" width="500" height="110"/>
+        <image name="pilot" width="214" height="312"/>
         <image name="police" width="210" height="484"/>
         <image name="simpan nama" width="500" height="110"/>
         <image name="tanggallahir" width="447" height="201"/>
+        <image name="tentara" width="214" height="325"/>
     </resources>
 </document>

@@ -22,6 +22,8 @@
 		4E8A99F7230D4A6400A90EC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E8A99F5230D4A6400A90EC1 /* Main.storyboard */; };
 		4E8A99F9230D4A6400A90EC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E8A99F8230D4A6400A90EC1 /* Assets.xcassets */; };
 		4E8A99FC230D4A6400A90EC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E8A99FA230D4A6400A90EC1 /* LaunchScreen.storyboard */; };
+		DB369A6A230FC9FE0055CC0A /* NamaUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB369A69230FC9FE0055CC0A /* NamaUserViewController.swift */; };
+		DB369A6C230FCA100055CC0A /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB369A6B230FCA100055CC0A /* DatePickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		4E8A99F8230D4A6400A90EC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E8A99FB230D4A6400A90EC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E8A99FD230D4A6400A90EC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB369A69230FC9FE0055CC0A /* NamaUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamaUserViewController.swift; sourceTree = "<group>"; };
+		DB369A6B230FCA100055CC0A /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 			children = (
 				4B07D547230EA52400151CB3 /* Character.storyboard */,
 				4B07D546230EA52400151CB3 /* CharacterViewController.swift */,
+				DB369A69230FC9FE0055CC0A /* NamaUserViewController.swift */,
+				DB369A6B230FCA100055CC0A /* DatePickerViewController.swift */,
 			);
 			path = Character;
 			sourceTree = "<group>";
@@ -188,6 +194,8 @@
 			files = (
 				4B07D53F230E87CC00151CB3 /* GetStarted.swift in Sources */,
 				4E8A99F2230D4A6400A90EC1 /* GameScene.swift in Sources */,
+				DB369A6C230FCA100055CC0A /* DatePickerViewController.swift in Sources */,
+				DB369A6A230FC9FE0055CC0A /* NamaUserViewController.swift in Sources */,
 				4B07D548230EA52400151CB3 /* CharacterViewController.swift in Sources */,
 				4B07D542230E894300151CB3 /* OnboardingController.swift in Sources */,
 				4E8A99F4230D4A6400A90EC1 /* GameViewController.swift in Sources */,
@@ -339,7 +347,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BW4269VNF7;
+				DEVELOPMENT_TEAM = Q5T3Q68SMU;
 				INFOPLIST_FILE = "CancerForKids-Master/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -357,7 +365,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BW4269VNF7;
+				DEVELOPMENT_TEAM = Q5T3Q68SMU;
 				INFOPLIST_FILE = "CancerForKids-Master/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

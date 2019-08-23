@@ -11,6 +11,8 @@ import UIKit
 class CharacterViewController: UIViewController {
     
     @IBOutlet weak var roundTF: UITextField!
+    @IBOutlet weak var textViewName: UITextView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,19 +21,20 @@ class CharacterViewController: UIViewController {
         roundTF.layer.masksToBounds = true
         roundTF.layer.borderColor = UIColor.black.cgColor
         roundTF.layer.borderWidth = 3
-
+        
+        roundTF.delegate = self
+        
+    }
         // Do any additional setup after loading the view.
+
+    @IBAction func enterNameButton(_ sender: Any) {
+        textViewName.text = "\(roundTF.text!)"
     }
-    
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension CharacterViewController : UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
-    */
-
 }

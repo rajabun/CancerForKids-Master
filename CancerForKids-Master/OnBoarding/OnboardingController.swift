@@ -68,13 +68,8 @@ class OnboardingController: UIViewController, UIScrollViewDelegate {
         slide3.labelTitle.text = "Progress tracking"
         slide3.labelDesc.text = "Your physical preparation progress will be tracked, you will know whether you are ready to hike or not"
         
-        let slide4:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-        slide4.imageView.image = UIImage(named: "ic_onboarding_4")
-        slide4.labelTitle.text = "Apple watch required"
-        slide4.labelDesc.text = "This app works simultaneously with Apple Watch. Please install HikeSchool in your Apple Watch before start"
         
-        
-        return [slide1, slide2, slide3, slide4]
+        return [slide1, slide2, slide3]
     }
     
     
@@ -93,7 +88,7 @@ class OnboardingController: UIViewController, UIScrollViewDelegate {
         let pageIndex = round(scrollView.contentOffset.x/view.frame.width)
         pageControl.currentPage = Int(pageIndex)
         
-        if pageControl.currentPage <= 2 {
+        if pageControl.currentPage <= 1 {
             nextButton.isHidden = true
         } else {
             showButton(button: nextButton, hidden: false)
@@ -122,20 +117,21 @@ class OnboardingController: UIViewController, UIScrollViewDelegate {
          */
         let percentOffset: CGPoint = CGPoint(x: percentageHorizontalOffset, y: percentageVerticalOffset)
         
-        if(percentOffset.x > 0 && percentOffset.x <= 0.33) {
+        if(percentOffset.x > 0 && percentOffset.x <= 0.5) {
             
-            slides[0].imageView.transform = CGAffineTransform(scaleX: (0.33-percentOffset.x)/0.33, y: (0.33-percentOffset.x)/0.33)
-            slides[1].imageView.transform = CGAffineTransform(scaleX: percentOffset.x/0.33, y: percentOffset.x/0.33)
+            slides[0].imageView.transform = CGAffineTransform(scaleX: (0.5-percentOffset.x)/0.5, y: (0.5-percentOffset.x)/0.5)
+            slides[1].imageView.transform = CGAffineTransform(scaleX: percentOffset.x/0.5, y: percentOffset.x/0.5)
             
-        } else if(percentOffset.x > 0.33 && percentOffset.x <= 0.66) {
-            slides[1].imageView.transform = CGAffineTransform(scaleX: (0.66-percentOffset.x)/0.33, y: (0.66-percentOffset.x)/0.33)
-            slides[2].imageView.transform = CGAffineTransform(scaleX: percentOffset.x/0.66, y: percentOffset.x/0.66)
-            
-        } else if(percentOffset.x > 0.66 && percentOffset.x <= 1) {
-            slides[2].imageView.transform = CGAffineTransform(scaleX: (1-percentOffset.x)/0.33, y: (1-percentOffset.x)/0.33)
-            slides[3].imageView.transform = CGAffineTransform(scaleX: percentOffset.x/1, y: percentOffset.x/1)
+        } else if(percentOffset.x > 0.5 && percentOffset.x <= 1.0) {
+            slides[1].imageView.transform = CGAffineTransform(scaleX: (1.0-percentOffset.x)/0.5, y: (1.0-percentOffset.x)/0.5)
+            slides[2].imageView.transform = CGAffineTransform(scaleX: percentOffset.x/1.0, y: percentOffset.x/1.0)
             
         }
+//        } else if(percentOffset.x > 0.66 && percentOffset.x <= 1) {
+//            slides[2].imageView.transform = CGAffineTransform(scaleX: (1-percentOffset.x)/0.33, y: (1-percentOffset.x)/0.33)
+//            slides[3].imageView.transform = CGAffineTransform(scaleX: percentOffset.x/1, y: percentOffset.x/1)
+//
+//        }
     }
     
     

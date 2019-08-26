@@ -230,7 +230,7 @@
                                 <state key="normal" title="Button" image="backbutton"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beY-pv-iaa">
-                                <rect key="frame" x="429" y="164" width="34" height="30"/>
+                                <rect key="frame" x="371" y="164" width="92" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GoodUnicorn-Regular" family="Good Unicorn" pointSize="17"/>
                                 <state key="normal" title="Button"/>
@@ -254,7 +254,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cni-bG-fXg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="989" y="228"/>
+            <point key="canvasLocation" x="988.47656249999989" y="227.34375"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="dqb-M6-6jI">

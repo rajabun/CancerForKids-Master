@@ -302,7 +302,7 @@ Aku melindungi seluruh rakyat tanpa rasa takut. Kamu harus menjadi kuat dan tida
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="wsj-iB-TnA">
                                 <rect key="frame" x="0.0" y="294" width="1024" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="588160239.22267199">
-                                    <!--2019-08-22 9:50:39 AM +0000-->
+                                    <!--2019-08-22 09:50:39 +0000-->
                                 </date>
                                 <connections>
                                     <action selector="dateSelectedFromPicker:" destination="O4c-90-FhK" eventType="valueChanged" id="GCn-Io-Ged"/>

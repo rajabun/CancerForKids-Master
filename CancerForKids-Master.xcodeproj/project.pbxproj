@@ -31,6 +31,7 @@
 		DB369A73230FFD3D0055CC0A /* sakit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB369A72230FFD3D0055CC0A /* sakit.storyboard */; };
 		DBBE21B82313F3D600C2E649 /* DaftarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBE21B72313F3D600C2E649 /* DaftarViewController.swift */; };
 		DBBE21BA2313F3FC00C2E649 /* DaftarKegiatanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBE21B92313F3FC00C2E649 /* DaftarKegiatanViewController.swift */; };
+		DBBE21BC2314354E00C2E649 /* PertanyaanRahasiaDuaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBE21BB2314354E00C2E649 /* PertanyaanRahasiaDuaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		DB369A72230FFD3D0055CC0A /* sakit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = sakit.storyboard; sourceTree = "<group>"; };
 		DBBE21B72313F3D600C2E649 /* DaftarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaftarViewController.swift; sourceTree = "<group>"; };
 		DBBE21B92313F3FC00C2E649 /* DaftarKegiatanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaftarKegiatanViewController.swift; sourceTree = "<group>"; };
+		DBBE21BB2314354E00C2E649 /* PertanyaanRahasiaDuaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PertanyaanRahasiaDuaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				4BCB60572313E7FC00C5005E /* PertanyaanRahasiaViewController.swift */,
 				DBBE21B72313F3D600C2E649 /* DaftarViewController.swift */,
 				DBBE21B92313F3FC00C2E649 /* DaftarKegiatanViewController.swift */,
+				DBBE21BB2314354E00C2E649 /* PertanyaanRahasiaDuaViewController.swift */,
 			);
 			path = Parent;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				DBBE21B82313F3D600C2E649 /* DaftarViewController.swift in Sources */,
 				DBBE21BA2313F3FC00C2E649 /* DaftarKegiatanViewController.swift in Sources */,
 				4B07D548230EA52400151CB3 /* CharacterViewController.swift in Sources */,
+				DBBE21BC2314354E00C2E649 /* PertanyaanRahasiaDuaViewController.swift in Sources */,
 				4B07D542230E894300151CB3 /* OnboardingController.swift in Sources */,
 				4E8A99F4230D4A6400A90EC1 /* GameViewController.swift in Sources */,
 				4E8A99EC230D4A6400A90EC1 /* AppDelegate.swift in Sources */,

@@ -22,14 +22,17 @@ class ParentsViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func enterSandiButton(sender: AnyObject) {
+        let charName = "\(masukanSandiTF.text!)"
+        print(charName)
+        //user default charname
     }
-    */
+}
+
+extension ParentsViewController : UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 
 }

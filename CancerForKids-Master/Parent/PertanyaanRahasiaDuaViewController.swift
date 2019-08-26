@@ -1,5 +1,5 @@
 //
-//  DaftarViewController.swift
+//  PertanyaanRahasiaDuaViewController.swift
 //  CancerForKids-Master
 //
 //  Created by Cindy Chandra on 26/08/19.
@@ -8,23 +8,17 @@
 
 import UIKit
 
-class DaftarViewController: UIViewController {
+class PertanyaanRahasiaDuaViewController: UIViewController {
 
-    @IBOutlet var masukanSandiTF: UITextField!
-    @IBOutlet var sandiUlangTF: UITextField!
+    @IBOutlet var lahirDimanaDua: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        masukanSandiTF.layer.cornerRadius = 20.0
-        masukanSandiTF.layer.masksToBounds = true
-        masukanSandiTF.layer.borderColor = UIColor.black.cgColor
-        masukanSandiTF.layer.borderWidth = 3
-        
-        sandiUlangTF.layer.cornerRadius = 20.0
-        sandiUlangTF.layer.masksToBounds = true
-        sandiUlangTF.layer.borderColor = UIColor.black.cgColor
-        sandiUlangTF.layer.borderWidth = 3
+        lahirDimanaDua.layer.cornerRadius = 20.0
+        lahirDimanaDua.layer.masksToBounds = true
+        lahirDimanaDua.layer.borderColor = UIColor.black.cgColor
+        lahirDimanaDua.layer.borderWidth = 3
     }
     
 

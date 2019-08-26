@@ -22,14 +22,19 @@ class PertanyaanRahasiaDuaViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func pertanyaanRahasiaDuaButton(sender: AnyObject) {
+        let charName = "\(lahirDimanaDua.text!)"
+        print(charName)
+        //user default charname
     }
-    */
+}
+
+extension PertanyaanRahasiaDuaViewController : UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+}
 
 }

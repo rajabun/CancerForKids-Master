@@ -238,6 +238,7 @@
                                 <rect key="frame" x="417" y="497" width="192" height="51"/>
                                 <state key="normal" title="Button" image="simpan nama"/>
                                 <connections>
+                                    <action selector="daftarButton:" destination="F5w-fT-Gxt" eventType="touchUpInside" id="wKz-AU-LGp"/>
                                     <segue destination="aZY-mx-VLz" kind="show" id="KpH-Ck-B6b"/>
                                 </connections>
                             </button>
@@ -412,6 +413,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qKo-UI-swj"/>
                     </view>
+                    <connections>
+                        <outlet property="kegiatanHarianDua" destination="lr6-5h-1vP" id="S05-vc-kyu"/>
+                        <outlet property="kegiatanHarianSatu" destination="nid-u1-sgW" id="aZj-dN-wQn"/>
+                        <outlet property="kegiatanMendatangDua" destination="Wij-2c-3VI" id="rl4-QY-D7x"/>
+                        <outlet property="kegiatanMendatangSatu" destination="Phk-AE-GgJ" id="CKd-jt-cdN"/>
+                        <outlet property="kegiatanMendatangTiga" destination="43H-gG-9mK" id="f61-j6-DRw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cni-bG-fXg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -467,6 +475,9 @@
                                 <rect key="frame" x="416" y="516" width="192" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="okee"/>
+                                <connections>
+                                    <action selector="pertanyaanRahasiaDuaButton:" destination="aZY-mx-VLz" eventType="touchUpInside" id="83g-jd-fXw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -494,6 +505,6 @@
         <image name="simpan nama" width="500" height="110"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="alV-Wq-dQK"/>
+        <segue reference="yUd-gj-5ZC"/>
     </inferredMetricsTieBreakers>
 </document>

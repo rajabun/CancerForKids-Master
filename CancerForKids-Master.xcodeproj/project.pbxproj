@@ -16,6 +16,7 @@
 		4B07D549230EA52400151CB3 /* Character.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B07D547230EA52400151CB3 /* Character.storyboard */; };
 		4BCB60592313E7FC00C5005E /* ParentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCB60562313E7FC00C5005E /* ParentsViewController.swift */; };
 		4BCB605A2313E7FC00C5005E /* PertanyaanRahasiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCB60572313E7FC00C5005E /* PertanyaanRahasiaViewController.swift */; };
+		4BCB60602313EB7600C5005E /* Good Unicorn - TTF.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BCB605E2313EB4C00C5005E /* Good Unicorn - TTF.ttf */; };
 		4E8A99EC230D4A6400A90EC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8A99EB230D4A6400A90EC1 /* AppDelegate.swift */; };
 		4E8A99EE230D4A6400A90EC1 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4E8A99ED230D4A6400A90EC1 /* GameScene.sks */; };
 		4E8A99F0230D4A6400A90EC1 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4E8A99EF230D4A6400A90EC1 /* Actions.sks */; };
@@ -41,6 +42,7 @@
 		4BCB60562313E7FC00C5005E /* ParentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentsViewController.swift; sourceTree = "<group>"; };
 		4BCB60572313E7FC00C5005E /* PertanyaanRahasiaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PertanyaanRahasiaViewController.swift; sourceTree = "<group>"; };
 		4BCB605D2313E81300C5005E /* Parents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Parents.storyboard; sourceTree = "<group>"; };
+		4BCB605E2313EB4C00C5005E /* Good Unicorn - TTF.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Good Unicorn - TTF.ttf"; sourceTree = "<group>"; };
 		4E8A99E8230D4A6400A90EC1 /* CancerForKids-Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CancerForKids-Master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E8A99EB230D4A6400A90EC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E8A99ED230D4A6400A90EC1 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -101,6 +103,14 @@
 			path = Parent;
 			sourceTree = "<group>";
 		};
+		4BCB605F2313EB5700C5005E /* font */ = {
+			isa = PBXGroup;
+			children = (
+				4BCB605E2313EB4C00C5005E /* Good Unicorn - TTF.ttf */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
 		4E8A99DF230D4A6400A90EC1 = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +140,7 @@
 				4E8A99F1230D4A6400A90EC1 /* GameScene.swift */,
 				4E8A99F3230D4A6400A90EC1 /* GameViewController.swift */,
 				4E8A99F5230D4A6400A90EC1 /* Main.storyboard */,
+				4BCB605F2313EB5700C5005E /* font */,
 				4E8A99F8230D4A6400A90EC1 /* Assets.xcassets */,
 				4E8A99FA230D4A6400A90EC1 /* LaunchScreen.storyboard */,
 				4E8A99FD230D4A6400A90EC1 /* Info.plist */,
@@ -208,6 +219,7 @@
 				4E8A99F7230D4A6400A90EC1 /* Main.storyboard in Resources */,
 				4E8A99EE230D4A6400A90EC1 /* GameScene.sks in Resources */,
 				4E8A99F9230D4A6400A90EC1 /* Assets.xcassets in Resources */,
+				4BCB60602313EB7600C5005E /* Good Unicorn - TTF.ttf in Resources */,
 				DB369A73230FFD3D0055CC0A /* sakit.storyboard in Resources */,
 				4B07D53D230E874B00151CB3 /* Slide.xib in Resources */,
 				4E8A99FC230D4A6400A90EC1 /* LaunchScreen.storyboard in Resources */,

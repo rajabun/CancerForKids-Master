@@ -29,6 +29,8 @@
 		DB369A6C230FCA100055CC0A /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB369A6B230FCA100055CC0A /* DatePickerViewController.swift */; };
 		DB369A6F230FFD100055CC0A /* sakitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB369A6E230FFD100055CC0A /* sakitViewController.swift */; };
 		DB369A73230FFD3D0055CC0A /* sakit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB369A72230FFD3D0055CC0A /* sakit.storyboard */; };
+		DBBE21B82313F3D600C2E649 /* DaftarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBE21B72313F3D600C2E649 /* DaftarViewController.swift */; };
+		DBBE21BA2313F3FC00C2E649 /* DaftarKegiatanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBE21B92313F3FC00C2E649 /* DaftarKegiatanViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +59,8 @@
 		DB369A6B230FCA100055CC0A /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		DB369A6E230FFD100055CC0A /* sakitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sakitViewController.swift; sourceTree = "<group>"; };
 		DB369A72230FFD3D0055CC0A /* sakit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = sakit.storyboard; sourceTree = "<group>"; };
+		DBBE21B72313F3D600C2E649 /* DaftarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaftarViewController.swift; sourceTree = "<group>"; };
+		DBBE21B92313F3FC00C2E649 /* DaftarKegiatanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaftarKegiatanViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 				4BCB605D2313E81300C5005E /* Parents.storyboard */,
 				4BCB60562313E7FC00C5005E /* ParentsViewController.swift */,
 				4BCB60572313E7FC00C5005E /* PertanyaanRahasiaViewController.swift */,
+				DBBE21B72313F3D600C2E649 /* DaftarViewController.swift */,
+				DBBE21B92313F3FC00C2E649 /* DaftarKegiatanViewController.swift */,
 			);
 			path = Parent;
 			sourceTree = "<group>";
@@ -242,6 +248,8 @@
 				DB369A6F230FFD100055CC0A /* sakitViewController.swift in Sources */,
 				DB369A6A230FC9FE0055CC0A /* NamaUserViewController.swift in Sources */,
 				4BCB60592313E7FC00C5005E /* ParentsViewController.swift in Sources */,
+				DBBE21B82313F3D600C2E649 /* DaftarViewController.swift in Sources */,
+				DBBE21BA2313F3FC00C2E649 /* DaftarKegiatanViewController.swift in Sources */,
 				4B07D548230EA52400151CB3 /* CharacterViewController.swift in Sources */,
 				4B07D542230E894300151CB3 /* OnboardingController.swift in Sources */,
 				4E8A99F4230D4A6400A90EC1 /* GameViewController.swift in Sources */,

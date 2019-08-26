@@ -148,10 +148,10 @@
             </objects>
             <point key="canvasLocation" x="-302.34375" y="912.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Daftar View Controller-->
         <scene sceneID="XOn-D2-s5E">
             <objects>
-                <viewController id="F5w-fT-Gxt" sceneMemberID="viewController">
+                <viewController id="F5w-fT-Gxt" customClass="DaftarViewController" customModule="CancerForKids_Master" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xmB-9F-jIa">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -166,23 +166,15 @@
                                 <state key="normal" title="Button" image="backbutton"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r2H-kd-rzN">
-                                <rect key="frame" x="318" y="197" width="194" height="61"/>
+                                <rect key="frame" x="512" y="197" width="194" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GoodUnicorn-Regular" family="Good Unicorn" pointSize="50"/>
-                                <state key="normal" title="Masuk" backgroundImage="daftaroren">
+                                <state key="normal" title="Daftar" backgroundImage="daftaroren">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="Uzy-Ed-GDV" kind="show" id="kad-YG-cci"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LcV-Bk-Km2">
-                                <rect key="frame" x="512" y="197" width="194" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GoodUnicorn-Regular" family="Good Unicorn" pointSize="50"/>
-                                <state key="normal" title="Daftar" backgroundImage="masukputih">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="belakang sandi" translatesAutoresizingMaskIntoConstraints="NO" id="UD3-xq-5PV">
                                 <rect key="frame" x="318" y="278" width="388" height="293"/>
@@ -210,6 +202,14 @@
                                     <segue destination="aZY-mx-VLz" kind="show" id="KpH-Ck-B6b"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LcV-Bk-Km2">
+                                <rect key="frame" x="318" y="197" width="194" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GoodUnicorn-Regular" family="Good Unicorn" pointSize="50"/>
+                                <state key="normal" title="Masuk" backgroundImage="masukputih">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="pvM-5U-Ibn"/>
@@ -219,10 +219,10 @@
             </objects>
             <point key="canvasLocation" x="344" y="228"/>
         </scene>
-        <!--View Controller-->
+        <!--Daftar Kegiatan View Controller-->
         <scene sceneID="viM-vc-gXD">
             <objects>
-                <viewController id="jEJ-Hb-bbk" sceneMemberID="viewController">
+                <viewController id="jEJ-Hb-bbk" customClass="DaftarKegiatanViewController" customModule="CancerForKids_Master" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZQY-Zq-dZQ">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

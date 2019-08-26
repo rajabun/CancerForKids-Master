@@ -14,6 +14,8 @@
 		4B07D542230E894300151CB3 /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B07D540230E894300151CB3 /* OnboardingController.swift */; };
 		4B07D548230EA52400151CB3 /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B07D546230EA52400151CB3 /* CharacterViewController.swift */; };
 		4B07D549230EA52400151CB3 /* Character.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B07D547230EA52400151CB3 /* Character.storyboard */; };
+		4BCB60592313E7FC00C5005E /* ParentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCB60562313E7FC00C5005E /* ParentsViewController.swift */; };
+		4BCB605A2313E7FC00C5005E /* PertanyaanRahasiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCB60572313E7FC00C5005E /* PertanyaanRahasiaViewController.swift */; };
 		4E8A99EC230D4A6400A90EC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8A99EB230D4A6400A90EC1 /* AppDelegate.swift */; };
 		4E8A99EE230D4A6400A90EC1 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4E8A99ED230D4A6400A90EC1 /* GameScene.sks */; };
 		4E8A99F0230D4A6400A90EC1 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4E8A99EF230D4A6400A90EC1 /* Actions.sks */; };
@@ -36,6 +38,9 @@
 		4B07D540230E894300151CB3 /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
 		4B07D546230EA52400151CB3 /* CharacterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
 		4B07D547230EA52400151CB3 /* Character.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Character.storyboard; sourceTree = "<group>"; };
+		4BCB60562313E7FC00C5005E /* ParentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentsViewController.swift; sourceTree = "<group>"; };
+		4BCB60572313E7FC00C5005E /* PertanyaanRahasiaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PertanyaanRahasiaViewController.swift; sourceTree = "<group>"; };
+		4BCB605D2313E81300C5005E /* Parents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Parents.storyboard; sourceTree = "<group>"; };
 		4E8A99E8230D4A6400A90EC1 /* CancerForKids-Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CancerForKids-Master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E8A99EB230D4A6400A90EC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E8A99ED230D4A6400A90EC1 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -86,6 +91,16 @@
 			path = Character;
 			sourceTree = "<group>";
 		};
+		4BCB605C2313E80100C5005E /* Parent */ = {
+			isa = PBXGroup;
+			children = (
+				4BCB605D2313E81300C5005E /* Parents.storyboard */,
+				4BCB60562313E7FC00C5005E /* ParentsViewController.swift */,
+				4BCB60572313E7FC00C5005E /* PertanyaanRahasiaViewController.swift */,
+			);
+			path = Parent;
+			sourceTree = "<group>";
+		};
 		4E8A99DF230D4A6400A90EC1 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +120,7 @@
 		4E8A99EA230D4A6400A90EC1 /* CancerForKids-Master */ = {
 			isa = PBXGroup;
 			children = (
+				4BCB605C2313E80100C5005E /* Parent */,
 				DB369A6D230FFCF30055CC0A /* Sakit */,
 				4B07D533230E840000151CB3 /* OnBoarding */,
 				4B07D54A230EA60900151CB3 /* Character */,
@@ -210,8 +226,10 @@
 				4B07D53F230E87CC00151CB3 /* GetStarted.swift in Sources */,
 				4E8A99F2230D4A6400A90EC1 /* GameScene.swift in Sources */,
 				DB369A6C230FCA100055CC0A /* DatePickerViewController.swift in Sources */,
+				4BCB605A2313E7FC00C5005E /* PertanyaanRahasiaViewController.swift in Sources */,
 				DB369A6F230FFD100055CC0A /* sakitViewController.swift in Sources */,
 				DB369A6A230FC9FE0055CC0A /* NamaUserViewController.swift in Sources */,
+				4BCB60592313E7FC00C5005E /* ParentsViewController.swift in Sources */,
 				4B07D548230EA52400151CB3 /* CharacterViewController.swift in Sources */,
 				4B07D542230E894300151CB3 /* OnboardingController.swift in Sources */,
 				4E8A99F4230D4A6400A90EC1 /* GameViewController.swift in Sources */,

@@ -16,6 +16,9 @@ class DaftarKegiatanViewController: UIViewController {
     @IBOutlet var kegiatanMendatangDua: UITextField!
     @IBOutlet var kegiatanMendatangTiga: UITextField!
     
+    @IBOutlet var timePicker: UIDatePicker!
+    @IBOutlet var dateTimePicker: UIDatePicker!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -383,6 +383,11 @@
                                     <segue destination="F5w-fT-Gxt" kind="show" id="yUd-gj-5ZC"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oh2-Yw-sgl">
+                                <rect key="frame" x="361" y="621" width="302" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="simpan nama"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -414,11 +419,13 @@
                         <viewLayoutGuide key="safeArea" id="qKo-UI-swj"/>
                     </view>
                     <connections>
+                        <outlet property="dateTimePicker" destination="Ahf-0J-E4X" id="OSa-PV-jfG"/>
                         <outlet property="kegiatanHarianDua" destination="lr6-5h-1vP" id="S05-vc-kyu"/>
                         <outlet property="kegiatanHarianSatu" destination="nid-u1-sgW" id="aZj-dN-wQn"/>
                         <outlet property="kegiatanMendatangDua" destination="Wij-2c-3VI" id="rl4-QY-D7x"/>
                         <outlet property="kegiatanMendatangSatu" destination="Phk-AE-GgJ" id="CKd-jt-cdN"/>
                         <outlet property="kegiatanMendatangTiga" destination="43H-gG-9mK" id="f61-j6-DRw"/>
+                        <outlet property="timePicker" destination="w85-dH-dWK" id="a6C-mN-cig"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cni-bG-fXg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -505,6 +512,6 @@
         <image name="simpan nama" width="500" height="110"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yUd-gj-5ZC"/>
+        <segue reference="r96-ap-5do"/>
     </inferredMetricsTieBreakers>
 </document>

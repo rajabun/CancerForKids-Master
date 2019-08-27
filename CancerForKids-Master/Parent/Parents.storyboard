@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Uzy-Ed-GDV">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Good Unicorn - TTF.ttf">
+            <string>GoodUnicorn-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Parents View Controller-->
+        <scene sceneID="ygV-wk-cn3">
+            <objects>
+                <viewController id="Uzy-Ed-GDV" customClass="ParentsViewController" customModule="CancerForKids_Master" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uWh-gg-9LD">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundbubble" translatesAutoresizingMaskIntoConstraints="NO" id="qgv-R0-sKc">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sdD-hc-BCC">
+                                <rect key="frame" x="15" y="24" width="136" height="123"/>
+                                <state key="normal" title="Button" image="backbutton"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5c-AE-Fhg">
+                                <rect key="frame" x="512" y="197" width="194" height="61"/>
+                                <fontDescription key="fontDescription" name="GoodUnicorn-Regular" family="Good Unicorn" pointSize="50"/>
+                                <state key="normal" title="Daftar" backgroundImage="masukputih">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="F5w-fT-Gxt" kind="show" id="r96-ap-5do"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="belakang sandi" translatesAutoresizingMaskIntoConstraints="NO" id="77h-sc-9j6">
+                                <rect key="frame" x="318" y="312" width="388" height="255"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Masukkan sandi" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BSv-mg-O6I">
+                                <rect key="frame" x="360" y="359" width="302" height="52"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ki-mE-O5K">
+                                <rect key="frame" x="439" y="420" width="147" height="52"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="25"/>
+                                <state key="normal" title="Lupa kata sandi">
+                                    <color key="titleColor" red="0.0" green="0.070588235294117646" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="chY-B5-oTe" kind="show" id="FQO-6y-gL9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zax-KG-pHT">
+                                <rect key="frame" x="417" y="499" width="192" height="51"/>
+                                <state key="normal" title="Button" image="okee"/>
+                                <connections>
+                                    <action selector="enterSandiButton:" destination="Uzy-Ed-GDV" eventType="touchUpInside" id="kMi-m2-hzt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JKs-S6-ssL">
+                                <rect key="frame" x="318" y="197" width="194" height="61"/>
+                                <fontDescription key="fontDescription" name="GoodUnicorn-Regular" family="Good Unicorn" pointSize="50"/>
+                                <state key="normal" title="Masuk" backgroundImage="daftaroren">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="77h-sc-9j6" firstAttribute="leading" secondItem="HGX-1P-iHy" secondAttribute="leading" constant="318" id="3pS-4f-HMG"/>
+                            <constraint firstItem="JKs-S6-ssL" firstAttribute="top" secondItem="HGX-1P-iHy" secondAttribute="top" constant="177" id="4Re-GJ-fwy"/>
+                            <constraint firstItem="Zax-KG-pHT" firstAttribute="top" secondItem="7Ki-mE-O5K" secondAttribute="bottom" constant="27" id="65a-K4-HnZ"/>
+                            <constraint firstItem="sdD-hc-BCC" firstAttribute="leading" secondItem="HGX-1P-iHy" secondAttribute="leading" constant="15" id="8DF-aU-FaT"/>
+                            <constraint firstItem="BSv-mg-O6I" firstAttribute="top" secondItem="Z5c-AE-Fhg" secondAttribute="bottom" constant="101" id="BY3-kg-JzU"/>
+                            <constraint firstItem="HGX-1P-iHy" firstAttribute="trailing" secondItem="Zax-KG-pHT" secondAttribute="trailing" constant="415" id="Bni-mi-jEH"/>
+                            <constraint firstItem="sdD-hc-BCC" firstAttribute="leading" secondItem="HGX-1P-iHy" secondAttribute="leading" constant="15" id="D0m-i9-0gl"/>
+                            <constraint firstItem="77h-sc-9j6" firstAttribute="top" secondItem="JKs-S6-ssL" secondAttribute="bottom" constant="54" id="DJV-hv-8Vm"/>
+                            <constraint firstItem="7Ki-mE-O5K" firstAttribute="top" secondItem="BSv-mg-O6I" secondAttribute="bottom" constant="9" id="De4-Mq-cmV"/>
+                            <constraint firstItem="qgv-R0-sKc" firstAttribute="trailing" secondItem="HGX-1P-iHy" secondAttribute="trailing" id="EAq-6Z-sjJ"/>
+                            <constraint firstItem="qgv-R0-sKc" firstAttribute="leading" secondItem="HGX-1P-iHy" secondAttribute="leading" id="Fyx-EZ-Rn8"/>
+                            <constraint firstItem="77h-sc-9j6" firstAttribute="top" secondItem="Z5c-AE-Fhg" secondAttribute="bottom" constant="54" id="Hcr-Sw-UE7"/>
+                            <constraint firstItem="77h-sc-9j6" firstAttribute="top" secondItem="Z5c-AE-Fhg" secondAttribute="bottom" constant="54" id="IEm-Qp-hvY"/>
+                            <constraint firstItem="7Ki-mE-O5K" firstAttribute="leading" secondItem="HGX-1P-iHy" secondAttribute="leading" constant="439" id="JV3-Ax-3gU"/>
+                            <constraint firstItem="HGX-1P-iHy" firstAttribute="trailing" secondItem="sdD-hc-BCC" secondAttribute="trailing" constant="873" id="Nv8-QQ-d0o"/>
+                            <constraint firstItem="Zax-KG-pHT" firstAttribute="leading" secondItem="HGX-1P-iHy" secondAttribute="leading" constant="417" id="O8s-VK-8Fb"/>
+                            <constraint firstItem="BSv-mg-O6I" firstAttribute="leading" secondItem="HGX-1P-iHy" secondAttribute="leading" constant="360" id="OH2-1T-lQf"/>
+                            <constraint firstItem="HGX-1P-iHy" firstAttribute="trailing" secondItem="Z5c-AE-Fhg" secondAttribute="trailing" constant="318" id="Pgy-nl-6Ee"/>
+                            <constraint firstItem="Z5c-AE-Fhg" firstAttribute="top" secondItem="HGX-1P-iHy" secondAttribute="top" constant="177" id="ToM-6r-WqW"/>
+                            <constraint firstItem="HGX-1P-iHy" firstAttribute="trailing" secondItem="7Ki-mE-O5K" secondAttribute="trailing" constant="438" id="U53-2s-RLi"/>
+                            <constraint firstItem="sdD-hc-BCC" firstAttribute="top" secondItem="HGX-1P-iHy" secondAttribute="top" constant="4" id="VVE-6N-Efc"/>
+                            <constraint firstItem="qgv-R0-sKc" firstAttribute="trailing" secondItem="HGX-1P-iHy" secondAttribute="trailing" id="Vam-eI-nxC"/>
+                            <constraint firstItem="qgv-R0-sKc" firstAttribute="top" secondItem="uWh-gg-9LD" secondAttribute="top" id="WsG-SL-6if"/>
+                            <constraint firstItem="Zax-KG-pHT" firstAttribute="top" secondItem="7Ki-mE-O5K" secondAttribute="bottom" constant="27" id="XLm-0q-VoM"/>
+                            <constraint firstItem="HGX-1P-iHy" firstAttribute="bottom" secondItem="sdD-hc-BCC" secondAttribute="bottom" constant="621" id="YOz-cI-IHd"/>
+                            <constraint firstItem="HGX-1P-iHy" firstAttribute="trailing" secondItem="sdD-hc-BCC" secondAttribute="trailing" constant="873" id="a68-UH-t7w"/>
+                            <constraint firstItem="qgv-R0-sKc" firstAttribute="bottom" secondItem="HGX-1P-iHy" secondAttribute="bottom" id="ap3-h6-4AI"/>
+                            <constraint firstItem="Zax-KG-pHT" firstAttribute="leading" secondItem="HGX-1P-iHy" secondAttribute="leading" constant="417" id="c92-2v-J8k"/>
+                            <constraint firstItem="Z5c-AE-Fhg" firstAttribute="top" secondItem="HGX-1P-iHy" secondAttribute="top" constant="177" id="coO-8B-lYd"/>
+                            <constraint firstItem="sdD-hc-BCC" firstAttribute="top" secondItem="HGX-1P-iHy" secondAttribute="top" constant="4" id="eBB-eI-zgO"/>
+                            <constraint firstItem="Z5c-AE-Fhg" firstAttribute="leading" secondItem="JKs-S6-ssL" secondAttribute="trailing" id="f18-ZX-bRG"/>
+                            <constraint firstItem="HGX-1P-iHy" firstAttribute="trailing" secondItem="Z5c-AE-Fhg" secondAttribute="trailing" constant="318" id="flw-lR-aSs"/>
+                            <constraint firstItem="HGX-1P-iHy" firstAttribute="bottom" secondItem="Zax-KG-pHT" secondAttribute="bottom" constant="218" id="gt0-Pq-LC0"/>
+                            <constraint firstItem="HGX-1P-iHy" firstAttribute="bottom" secondItem="Zax-KG-pHT" secondAttribute="bottom" constant="159" id="iKF-6M-eRo"/>
+                            <constraint firstItem="qgv-R0-sKc" firstAttribute="top" secondItem="uWh-gg-9LD" secondAttribute="top" id="iMA-pn-M4P"/>
+                            <constraint firstItem="Z5c-AE-Fhg" firstAttribute="leading" secondItem="JKs-S6-ssL" secondAttribute="trailing" id="ijX-I5-XFJ"/>
+                            <constraint firstItem="HGX-1P-iHy" firstAttribute="trailing" secondItem="77h-sc-9j6" secondAttribute="trailing" constant="318" id="jMk-dc-Fcs"/>
+                            <constraint firstItem="HGX-1P-iHy" firstAttribute="trailing" secondItem="Zax-KG-pHT" secondAttribute="trailing" constant="415" id="jTg-FJ-ppG"/>
+                            <constraint firstItem="77h-sc-9j6" firstAttribute="top" secondItem="Z5c-AE-Fhg" secondAttribute="bottom" constant="54" id="lbL-el-EYm"/>
+                            <constraint firstItem="7Ki-mE-O5K" firstAttribute="top" secondItem="BSv-mg-O6I" secondAttribute="bottom" constant="9" id="mOH-GR-Rta"/>
+                            <constraint firstItem="HGX-1P-iHy" firstAttribute="trailing" secondItem="BSv-mg-O6I" secondAttribute="trailing" constant="362" id="pXy-Bq-rBj"/>
+                            <constraint firstItem="qgv-R0-sKc" firstAttribute="leading" secondItem="HGX-1P-iHy" secondAttribute="leading" id="ptX-tj-qZx"/>
+                            <constraint firstItem="JKs-S6-ssL" firstAttribute="leading" secondItem="HGX-1P-iHy" secondAttribute="leading" constant="318" id="te1-it-nOA"/>
+                            <constraint firstItem="Z5c-AE-Fhg" firstAttribute="leading" secondItem="JKs-S6-ssL" secondAttribute="trailing" id="v7E-Lq-8vQ"/>
+                            <constraint firstItem="HGX-1P-iHy" firstAttribute="bottom" secondItem="sdD-hc-BCC" secondAttribute="bottom" constant="621" id="vT3-xN-Gpu"/>
+                            <constraint firstItem="qgv-R0-sKc" firstAttribute="bottom" secondItem="HGX-1P-iHy" secondAttribute="bottom" id="vqq-iT-Ry4"/>
+                            <constraint firstItem="Zax-KG-pHT" firstAttribute="top" secondItem="7Ki-mE-O5K" secondAttribute="bottom" constant="27" id="xS5-gf-3LG"/>
+                            <constraint firstItem="HGX-1P-iHy" firstAttribute="bottom" secondItem="77h-sc-9j6" secondAttribute="bottom" constant="201" id="zC7-qf-J5S"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HGX-1P-iHy"/>
+                    </view>
+                    <connections>
+                        <outlet property="masukanSandiTF" destination="BSv-mg-O6I" id="Mqf-1A-nOX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eu3-7k-mTm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-303" y="231"/>
+        </scene>
+        <!--Pertanyaan Rahasia View Controller-->
+        <scene sceneID="Q9y-rZ-zdx">
+            <objects>
+                <viewController id="chY-B5-oTe" customClass="PertanyaanRahasiaViewController" customModule="CancerForKids_Master" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OC6-SN-fng">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundbubble" translatesAutoresizingMaskIntoConstraints="NO" id="nJh-8a-Yqj">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iYO-De-DLQ">
+                                <rect key="frame" x="15" y="24" width="136" height="123"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="backbutton"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dimanalahir" translatesAutoresizingMaskIntoConstraints="NO" id="QlP-Zb-KMP">
+                                <rect key="frame" x="318" y="312" width="388" height="286"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Masukkan jawabanmu" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vp0-vd-8gR">
+                                <rect key="frame" x="361" y="405" width="302" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cbv-gY-Lpu">
+                                <rect key="frame" x="415" y="516" width="192" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="okee"/>
+                                <connections>
+                                    <action selector="pertanyaanRahasiaButton:" destination="chY-B5-oTe" eventType="touchUpInside" id="Qsg-Ue-xxq"/>
+                                    <segue destination="F5w-fT-Gxt" kind="show" id="alV-Wq-dQK"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pertanyaanrahasia-1" translatesAutoresizingMaskIntoConstraints="NO" id="ll8-ZS-a3c">
+                                <rect key="frame" x="318" y="231" width="388" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pertanyaan Rahasia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Hf-lN-qEH">
+                                <rect key="frame" x="291" y="236" width="443" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GoodUnicorn-Regular" family="Good Unicorn" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="L1q-my-on2"/>
+                    </view>
+                    <connections>
+                        <outlet property="pertanyaanRahasiaTF" destination="Vp0-vd-8gR" id="j7y-Bh-v3E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iVO-uM-kK4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-302.34375" y="912.5"/>
+        </scene>
+        <!--Daftar View Controller-->
+        <scene sceneID="XOn-D2-s5E">
+            <objects>
+                <viewController id="F5w-fT-Gxt" customClass="DaftarViewController" customModule="CancerForKids_Master" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xmB-9F-jIa">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundbubble" translatesAutoresizingMaskIntoConstraints="NO" id="Vpa-F6-J7i">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMj-2s-Vjl">
+                                <rect key="frame" x="15" y="24" width="136" height="123"/>
+                                <state key="normal" title="Button" image="backbutton"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r2H-kd-rzN">
+                                <rect key="frame" x="512" y="197" width="194" height="61"/>
+                                <fontDescription key="fontDescription" name="GoodUnicorn-Regular" family="Good Unicorn" pointSize="50"/>
+                                <state key="normal" title="Daftar" backgroundImage="daftaroren">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Uzy-Ed-GDV" kind="show" id="kad-YG-cci"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="belakang sandi" translatesAutoresizingMaskIntoConstraints="NO" id="UD3-xq-5PV">
+                                <rect key="frame" x="318" y="316" width="388" height="255"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Masukkan sandi" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O5V-x3-D3q">
+                                <rect key="frame" x="360" y="363" width="302" height="52"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Masukkan sandi ulang" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7p6-iV-M2A">
+                                <rect key="frame" x="360" y="419" width="302" height="52"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jz8-KA-V0I">
+                                <rect key="frame" x="417" y="497" width="192" height="51"/>
+                                <state key="normal" title="Button" image="simpan nama"/>
+                                <connections>
+                                    <action selector="daftarButton:" destination="F5w-fT-Gxt" eventType="touchUpInside" id="wKz-AU-LGp"/>
+                                    <segue destination="aZY-mx-VLz" kind="show" id="KpH-Ck-B6b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LcV-Bk-Km2">
+                                <rect key="frame" x="318" y="197" width="194" height="61"/>
+                                <fontDescription key="fontDescription" name="GoodUnicorn-Regular" family="Good Unicorn" pointSize="50"/>
+                                <state key="normal" title="Masuk" backgroundImage="masukputih">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="O5V-x3-D3q" firstAttribute="top" secondItem="r2H-kd-rzN" secondAttribute="bottom" constant="67" id="2V2-E2-BVQ"/>
+                            <constraint firstItem="pvM-5U-Ibn" firstAttribute="trailing" secondItem="7p6-iV-M2A" secondAttribute="trailing" constant="362" id="6M6-N5-Jlw"/>
+                            <constraint firstItem="pvM-5U-Ibn" firstAttribute="bottom" secondItem="UD3-xq-5PV" secondAttribute="bottom" constant="235" id="6rj-GR-2Gk"/>
+                            <constraint firstItem="Jz8-KA-V0I" firstAttribute="top" secondItem="7p6-iV-M2A" secondAttribute="bottom" constant="58" id="7OL-Le-DGi"/>
+                            <constraint firstItem="pvM-5U-Ibn" firstAttribute="trailing" secondItem="UD3-xq-5PV" secondAttribute="trailing" constant="318" id="8mV-nC-kyC"/>
+                            <constraint firstItem="UD3-xq-5PV" firstAttribute="top" secondItem="LcV-Bk-Km2" secondAttribute="bottom" constant="20" id="Etn-1t-BCM"/>
+                            <constraint firstItem="LcV-Bk-Km2" firstAttribute="top" secondItem="pvM-5U-Ibn" secondAttribute="top" constant="177" id="Ev9-oo-FCq"/>
+                            <constraint firstItem="pvM-5U-Ibn" firstAttribute="bottom" secondItem="QMj-2s-Vjl" secondAttribute="bottom" constant="621" id="IRu-gc-vIs"/>
+                            <constraint firstItem="QMj-2s-Vjl" firstAttribute="leading" secondItem="pvM-5U-Ibn" secondAttribute="leading" constant="15" id="Lix-Wm-PYu"/>
+                            <constraint firstItem="pvM-5U-Ibn" firstAttribute="bottom" secondItem="UD3-xq-5PV" secondAttribute="bottom" constant="197" id="NAy-E8-bPv"/>
+                            <constraint firstItem="LcV-Bk-Km2" firstAttribute="leading" secondItem="pvM-5U-Ibn" secondAttribute="leading" constant="318" id="Nhq-Er-S8c"/>
+                            <constraint firstItem="7p6-iV-M2A" firstAttribute="leading" secondItem="pvM-5U-Ibn" secondAttribute="leading" constant="360" id="OqK-ov-WJD"/>
+                            <constraint firstItem="Vpa-F6-J7i" firstAttribute="bottom" secondItem="pvM-5U-Ibn" secondAttribute="bottom" id="PP7-F3-Eu3"/>
+                            <constraint firstItem="QMj-2s-Vjl" firstAttribute="top" secondItem="pvM-5U-Ibn" secondAttribute="top" constant="4" id="Pbi-Eu-BnD"/>
+                            <constraint firstItem="r2H-kd-rzN" firstAttribute="leading" secondItem="LcV-Bk-Km2" secondAttribute="trailing" id="Pgm-ZV-kUO"/>
+                            <constraint firstItem="Vpa-F6-J7i" firstAttribute="top" secondItem="xmB-9F-jIa" secondAttribute="top" id="QCI-e9-VwY"/>
+                            <constraint firstItem="UD3-xq-5PV" firstAttribute="top" secondItem="r2H-kd-rzN" secondAttribute="bottom" constant="20" id="QVQ-LF-1D0"/>
+                            <constraint firstItem="QMj-2s-Vjl" firstAttribute="leading" secondItem="pvM-5U-Ibn" secondAttribute="leading" constant="15" id="RLF-c0-qgE"/>
+                            <constraint firstItem="pvM-5U-Ibn" firstAttribute="trailing" secondItem="O5V-x3-D3q" secondAttribute="trailing" constant="362" id="SR4-Kn-fNO"/>
+                            <constraint firstItem="pvM-5U-Ibn" firstAttribute="bottom" secondItem="QMj-2s-Vjl" secondAttribute="bottom" constant="621" id="Ugd-vq-lab"/>
+                            <constraint firstItem="r2H-kd-rzN" firstAttribute="top" secondItem="pvM-5U-Ibn" secondAttribute="top" constant="177" id="Vt2-2X-Zth"/>
+                            <constraint firstItem="UD3-xq-5PV" firstAttribute="top" secondItem="r2H-kd-rzN" secondAttribute="bottom" constant="20" id="Wwd-FA-gsK"/>
+                            <constraint firstItem="O5V-x3-D3q" firstAttribute="leading" secondItem="pvM-5U-Ibn" secondAttribute="leading" constant="360" id="Xm8-x8-Xfr"/>
+                            <constraint firstItem="pvM-5U-Ibn" firstAttribute="trailing" secondItem="QMj-2s-Vjl" secondAttribute="trailing" constant="873" id="axW-qD-8Cz"/>
+                            <constraint firstItem="7p6-iV-M2A" firstAttribute="top" secondItem="O5V-x3-D3q" secondAttribute="bottom" constant="4" id="eYP-MP-QhO"/>
+                            <constraint firstItem="UD3-xq-5PV" firstAttribute="leading" secondItem="pvM-5U-Ibn" secondAttribute="leading" constant="318" id="j7J-7x-zmf"/>
+                            <constraint firstItem="Vpa-F6-J7i" firstAttribute="trailing" secondItem="pvM-5U-Ibn" secondAttribute="trailing" id="lb4-Sg-Jfb"/>
+                            <constraint firstItem="pvM-5U-Ibn" firstAttribute="trailing" secondItem="r2H-kd-rzN" secondAttribute="trailing" constant="318" id="s9O-72-mg0"/>
+                            <constraint firstItem="r2H-kd-rzN" firstAttribute="leading" secondItem="LcV-Bk-Km2" secondAttribute="trailing" id="uD0-9R-Uc3"/>
+                            <constraint firstItem="Vpa-F6-J7i" firstAttribute="leading" secondItem="pvM-5U-Ibn" secondAttribute="leading" id="wOP-Kv-nJY"/>
+                            <constraint firstItem="UD3-xq-5PV" firstAttribute="top" secondItem="r2H-kd-rzN" secondAttribute="bottom" constant="20" id="web-4C-dQB"/>
+                            <constraint firstItem="7p6-iV-M2A" firstAttribute="top" secondItem="O5V-x3-D3q" secondAttribute="bottom" constant="4" id="yKe-lJ-NnW"/>
+                            <constraint firstItem="QMj-2s-Vjl" firstAttribute="top" secondItem="pvM-5U-Ibn" secondAttribute="top" constant="4" id="yaC-Qr-VmY"/>
+                            <constraint firstItem="pvM-5U-Ibn" firstAttribute="trailing" secondItem="QMj-2s-Vjl" secondAttribute="trailing" constant="873" id="zxp-9S-2ou"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pvM-5U-Ibn"/>
+                    </view>
+                    <connections>
+                        <outlet property="masukanSandiTF" destination="O5V-x3-D3q" id="ZgO-bO-CO4"/>
+                        <outlet property="sandiUlangTF" destination="7p6-iV-M2A" id="bXm-1e-Id3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OC5-ab-kem" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="344" y="228"/>
+        </scene>
+        <!--Daftar Kegiatan View Controller-->
+        <scene sceneID="viM-vc-gXD">
+            <objects>
+                <viewController id="jEJ-Hb-bbk" customClass="DaftarKegiatanViewController" customModule="CancerForKids_Master" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZQY-Zq-dZQ">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundbubble" translatesAutoresizingMaskIntoConstraints="NO" id="FYS-y4-JP8">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wij-2c-3VI">
+                                <rect key="frame" x="72" y="477" width="446" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="28"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="43H-gG-9mK">
+                                <rect key="frame" x="72" y="551" width="446" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="28"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Phk-AE-GgJ">
+                                <rect key="frame" x="72" y="403" width="446" height="66"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="28"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kegiatan Mendatang" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gh-gr-oUz">
+                                <rect key="frame" x="72" y="341" width="454" height="58"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lr6-5h-1vP">
+                                <rect key="frame" x="76" y="271" width="446" height="49"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="28"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="DAFTAR KEGIATAN" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZ2-ek-lAE">
+                                <rect key="frame" x="478" y="21" width="245" height="125"/>
+                                <fontDescription key="fontDescription" name="GoodUnicorn-Regular" family="Good Unicorn" pointSize="55"/>
+                                <color key="textColor" red="0.14117647058823529" green="0.72549019607843135" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="daftar kegiatan" translatesAutoresizingMaskIntoConstraints="NO" id="z7k-Ra-WeT">
+                                <rect key="frame" x="318.5" y="54" width="163.5" height="60"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kegiatan Harian" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfW-hj-lcU">
+                                <rect key="frame" x="76" y="148" width="253" height="58"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Ketik kegiatan..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nid-u1-sgW">
+                                <rect key="frame" x="76" y="212" width="446" height="49"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="28"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="w85-dH-dWK">
+                                <rect key="frame" x="526" y="122.5" width="320" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="588509406.22091305">
+                                    <!--2019-08-26 10:50:06 +0000-->
+                                </date>
+                            </datePicker>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ahf-0J-E4X">
+                                <rect key="frame" x="530" y="426" width="401" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <date key="date" timeIntervalSinceReferenceDate="588509563.589746">
+                                    <!--2019-08-26 10:52:43 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zR0-PZ-Hyq">
+                                <rect key="frame" x="14" y="24" width="136" height="123"/>
+                                <state key="normal" title="Button" image="backbutton"/>
+                                <connections>
+                                    <segue destination="F5w-fT-Gxt" kind="show" id="yUd-gj-5ZC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="z7k-Ra-WeT" firstAttribute="leading" secondItem="zR0-PZ-Hyq" secondAttribute="trailing" constant="249" id="0XR-iI-qet"/>
+                            <constraint firstItem="z7k-Ra-WeT" firstAttribute="top" secondItem="qKo-UI-swj" secondAttribute="top" constant="34" id="1LN-vJ-fac"/>
+                            <constraint firstItem="lr6-5h-1vP" firstAttribute="top" secondItem="nid-u1-sgW" secondAttribute="bottom" constant="10" id="AQM-8q-H5l"/>
+                            <constraint firstItem="nid-u1-sgW" firstAttribute="top" secondItem="yfW-hj-lcU" secondAttribute="bottom" constant="6" id="COt-Iu-C5G"/>
+                            <constraint firstItem="1gh-gr-oUz" firstAttribute="top" secondItem="lr6-5h-1vP" secondAttribute="bottom" constant="21" id="I9y-jT-d9v"/>
+                            <constraint firstItem="nid-u1-sgW" firstAttribute="leading" secondItem="qKo-UI-swj" secondAttribute="leading" constant="76" id="IhG-BQ-SWM"/>
+                            <constraint firstItem="IZ2-ek-lAE" firstAttribute="top" secondItem="qKo-UI-swj" secondAttribute="top" constant="1" id="Jxq-dv-QoX"/>
+                            <constraint firstItem="nid-u1-sgW" firstAttribute="top" secondItem="z7k-Ra-WeT" secondAttribute="bottom" constant="98" id="PJt-9d-0CS"/>
+                            <constraint firstItem="w85-dH-dWK" firstAttribute="top" secondItem="IZ2-ek-lAE" secondAttribute="bottom" constant="46" id="Qt0-LD-oJP"/>
+                            <constraint firstItem="Phk-AE-GgJ" firstAttribute="top" secondItem="1gh-gr-oUz" secondAttribute="bottom" constant="4" id="U2F-Kx-0jT"/>
+                            <constraint firstItem="qKo-UI-swj" firstAttribute="trailing" secondItem="z7k-Ra-WeT" secondAttribute="trailing" constant="542" id="Wb4-xz-aZn"/>
+                            <constraint firstItem="yfW-hj-lcU" firstAttribute="top" secondItem="zR0-PZ-Hyq" secondAttribute="bottom" constant="1" id="X6n-Lj-dxx"/>
+                            <constraint firstItem="lr6-5h-1vP" firstAttribute="top" secondItem="nid-u1-sgW" secondAttribute="bottom" constant="10" id="XgJ-iL-XCq"/>
+                            <constraint firstItem="w85-dH-dWK" firstAttribute="leading" secondItem="yfW-hj-lcU" secondAttribute="trailing" constant="197" id="YwZ-P6-krB"/>
+                            <constraint firstItem="qKo-UI-swj" firstAttribute="trailing" secondItem="IZ2-ek-lAE" secondAttribute="trailing" constant="301" id="diX-dh-BAI"/>
+                            <constraint firstItem="lr6-5h-1vP" firstAttribute="leading" secondItem="qKo-UI-swj" secondAttribute="leading" constant="76" id="fZ7-U9-81j"/>
+                            <constraint firstItem="w85-dH-dWK" firstAttribute="leading" secondItem="nid-u1-sgW" secondAttribute="trailing" constant="8" id="gAP-hV-pPA"/>
+                            <constraint firstItem="w85-dH-dWK" firstAttribute="leading" secondItem="lr6-5h-1vP" secondAttribute="trailing" constant="4" id="gxz-Op-avP"/>
+                            <constraint firstItem="yfW-hj-lcU" firstAttribute="leading" secondItem="qKo-UI-swj" secondAttribute="leading" constant="76" id="iC8-BE-x8o"/>
+                            <constraint firstItem="nid-u1-sgW" firstAttribute="top" secondItem="yfW-hj-lcU" secondAttribute="bottom" constant="6" id="nCu-XI-KKf"/>
+                            <constraint firstItem="IZ2-ek-lAE" firstAttribute="leading" secondItem="zR0-PZ-Hyq" secondAttribute="trailing" constant="327" id="sDt-az-jqY"/>
+                            <constraint firstItem="1gh-gr-oUz" firstAttribute="top" secondItem="lr6-5h-1vP" secondAttribute="bottom" constant="21" id="t7e-4Y-bxK"/>
+                            <constraint firstItem="1gh-gr-oUz" firstAttribute="leading" secondItem="qKo-UI-swj" secondAttribute="leading" constant="72" id="w0r-oG-wY0"/>
+                            <constraint firstItem="qKo-UI-swj" firstAttribute="trailing" secondItem="1gh-gr-oUz" secondAttribute="trailing" constant="498" id="wsD-hl-FVs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qKo-UI-swj"/>
+                    </view>
+                    <connections>
+                        <outlet property="kegiatanHarianDua" destination="lr6-5h-1vP" id="S05-vc-kyu"/>
+                        <outlet property="kegiatanHarianSatu" destination="nid-u1-sgW" id="aZj-dN-wQn"/>
+                        <outlet property="kegiatanMendatangDua" destination="Wij-2c-3VI" id="rl4-QY-D7x"/>
+                        <outlet property="kegiatanMendatangSatu" destination="Phk-AE-GgJ" id="CKd-jt-cdN"/>
+                        <outlet property="kegiatanMendatangTiga" destination="43H-gG-9mK" id="f61-j6-DRw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cni-bG-fXg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="988.47656249999989" y="227.34375"/>
+        </scene>
+        <!--Pertanyaan Rahasia Dua View Controller-->
+        <scene sceneID="dqb-M6-6jI">
+            <objects>
+                <viewController id="aZY-mx-VLz" customClass="PertanyaanRahasiaDuaViewController" customModule="CancerForKids_Master" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ye3-9b-vCd">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundbubble" translatesAutoresizingMaskIntoConstraints="NO" id="3Q0-PJ-QbP">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="belakang sandi" translatesAutoresizingMaskIntoConstraints="NO" id="7LH-Kh-YCV">
+                                <rect key="frame" x="318" y="312" width="388" height="286"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pertanyaanrahasia-1" translatesAutoresizingMaskIntoConstraints="NO" id="5ml-LM-pNj">
+                                <rect key="frame" x="318" y="231" width="388" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pertanyaan Rahasia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m07-zF-h3z">
+                                <rect key="frame" x="291" y="236" width="443" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GoodUnicorn-Regular" family="Good Unicorn" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7Q-QL-fHr">
+                                <rect key="frame" x="15" y="24" width="136" height="123"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="backbutton"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dimana anda lahir?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qeu-lE-DeH">
+                                <rect key="frame" x="356" y="333" width="315" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Masukkan jawabanmu" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="En4-kG-H0p">
+                                <rect key="frame" x="361" y="405" width="302" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYv-Fg-TdX">
+                                <rect key="frame" x="416" y="516" width="192" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="okee"/>
+                                <connections>
+                                    <action selector="pertanyaanRahasiaDuaButton:" destination="aZY-mx-VLz" eventType="touchUpInside" id="83g-jd-fXw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Br4-Og-TuM"/>
+                    </view>
+                    <connections>
+                        <outlet property="lahirDimanaDua" destination="En4-kG-H0p" id="TAe-Vm-FCZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sZD-kR-OrH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="344" y="913"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backbutton" width="170" height="163"/>
+        <image name="backgroundbubble" width="1024" height="768"/>
+        <image name="belakang sandi" width="388" height="255"/>
+        <image name="daftar kegiatan" width="82" height="60"/>
+        <image name="daftaroren" width="194" height="61"/>
+        <image name="dimanalahir" width="388" height="286"/>
+        <image name="masukputih" width="194" height="61"/>
+        <image name="okee" width="500" height="110"/>
+        <image name="pertanyaanrahasia-1" width="388" height="61"/>
+        <image name="simpan nama" width="500" height="110"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="yUd-gj-5ZC"/>
+    </inferredMetricsTieBreakers>
+</document>

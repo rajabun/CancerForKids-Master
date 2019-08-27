@@ -14,6 +14,9 @@
 		4B07D542230E894300151CB3 /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B07D540230E894300151CB3 /* OnboardingController.swift */; };
 		4B07D548230EA52400151CB3 /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B07D546230EA52400151CB3 /* CharacterViewController.swift */; };
 		4B07D549230EA52400151CB3 /* Character.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B07D547230EA52400151CB3 /* Character.storyboard */; };
+		4BCB60592313E7FC00C5005E /* ParentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCB60562313E7FC00C5005E /* ParentsViewController.swift */; };
+		4BCB605A2313E7FC00C5005E /* PertanyaanRahasiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCB60572313E7FC00C5005E /* PertanyaanRahasiaViewController.swift */; };
+		4BCB60602313EB7600C5005E /* Good Unicorn - TTF.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BCB605E2313EB4C00C5005E /* Good Unicorn - TTF.ttf */; };
 		4E8A99EC230D4A6400A90EC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8A99EB230D4A6400A90EC1 /* AppDelegate.swift */; };
 		4E8A99EE230D4A6400A90EC1 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4E8A99ED230D4A6400A90EC1 /* GameScene.sks */; };
 		4E8A99F0230D4A6400A90EC1 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4E8A99EF230D4A6400A90EC1 /* Actions.sks */; };
@@ -22,6 +25,13 @@
 		4E8A99F7230D4A6400A90EC1 /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E8A99F5230D4A6400A90EC1 /* Game.storyboard */; };
 		4E8A99F9230D4A6400A90EC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E8A99F8230D4A6400A90EC1 /* Assets.xcassets */; };
 		4E8A99FC230D4A6400A90EC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E8A99FA230D4A6400A90EC1 /* LaunchScreen.storyboard */; };
+		DB369A6A230FC9FE0055CC0A /* NamaUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB369A69230FC9FE0055CC0A /* NamaUserViewController.swift */; };
+		DB369A6C230FCA100055CC0A /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB369A6B230FCA100055CC0A /* DatePickerViewController.swift */; };
+		DB369A6F230FFD100055CC0A /* sakitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB369A6E230FFD100055CC0A /* sakitViewController.swift */; };
+		DB369A73230FFD3D0055CC0A /* sakit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB369A72230FFD3D0055CC0A /* sakit.storyboard */; };
+		DBBE21B82313F3D600C2E649 /* DaftarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBE21B72313F3D600C2E649 /* DaftarViewController.swift */; };
+		DBBE21BA2313F3FC00C2E649 /* DaftarKegiatanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBE21B92313F3FC00C2E649 /* DaftarKegiatanViewController.swift */; };
+		DBBE21BC2314354E00C2E649 /* PertanyaanRahasiaDuaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBE21BB2314354E00C2E649 /* PertanyaanRahasiaDuaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +42,10 @@
 		4B07D540230E894300151CB3 /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
 		4B07D546230EA52400151CB3 /* CharacterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
 		4B07D547230EA52400151CB3 /* Character.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Character.storyboard; sourceTree = "<group>"; };
+		4BCB60562313E7FC00C5005E /* ParentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentsViewController.swift; sourceTree = "<group>"; };
+		4BCB60572313E7FC00C5005E /* PertanyaanRahasiaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PertanyaanRahasiaViewController.swift; sourceTree = "<group>"; };
+		4BCB605D2313E81300C5005E /* Parents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Parents.storyboard; sourceTree = "<group>"; };
+		4BCB605E2313EB4C00C5005E /* Good Unicorn - TTF.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Good Unicorn - TTF.ttf"; sourceTree = "<group>"; };
 		4E8A99E8230D4A6400A90EC1 /* CancerForKids-Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CancerForKids-Master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E8A99EB230D4A6400A90EC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E8A99ED230D4A6400A90EC1 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -42,6 +56,13 @@
 		4E8A99F8230D4A6400A90EC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E8A99FB230D4A6400A90EC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E8A99FD230D4A6400A90EC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB369A69230FC9FE0055CC0A /* NamaUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamaUserViewController.swift; sourceTree = "<group>"; };
+		DB369A6B230FCA100055CC0A /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		DB369A6E230FFD100055CC0A /* sakitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sakitViewController.swift; sourceTree = "<group>"; };
+		DB369A72230FFD3D0055CC0A /* sakit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = sakit.storyboard; sourceTree = "<group>"; };
+		DBBE21B72313F3D600C2E649 /* DaftarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaftarViewController.swift; sourceTree = "<group>"; };
+		DBBE21B92313F3FC00C2E649 /* DaftarKegiatanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaftarKegiatanViewController.swift; sourceTree = "<group>"; };
+		DBBE21BB2314354E00C2E649 /* PertanyaanRahasiaDuaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PertanyaanRahasiaDuaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,20 +93,31 @@
 			children = (
 				4B07D547230EA52400151CB3 /* Character.storyboard */,
 				4B07D546230EA52400151CB3 /* CharacterViewController.swift */,
+				DB369A69230FC9FE0055CC0A /* NamaUserViewController.swift */,
+				DB369A6B230FCA100055CC0A /* DatePickerViewController.swift */,
 			);
 			path = Character;
 			sourceTree = "<group>";
 		};
-		4E526D522314E54300ACA520 /* PlayMenu */ = {
+		4BCB605C2313E80100C5005E /* Parent */ = {
 			isa = PBXGroup;
 			children = (
-				4E8A99ED230D4A6400A90EC1 /* GameScene.sks */,
-				4E8A99EF230D4A6400A90EC1 /* Actions.sks */,
-				4E8A99F1230D4A6400A90EC1 /* GameScene.swift */,
-				4E8A99F3230D4A6400A90EC1 /* GameViewController.swift */,
-				4E8A99F5230D4A6400A90EC1 /* Game.storyboard */,
+				4BCB605D2313E81300C5005E /* Parents.storyboard */,
+				4BCB60562313E7FC00C5005E /* ParentsViewController.swift */,
+				4BCB60572313E7FC00C5005E /* PertanyaanRahasiaViewController.swift */,
+				DBBE21B72313F3D600C2E649 /* DaftarViewController.swift */,
+				DBBE21B92313F3FC00C2E649 /* DaftarKegiatanViewController.swift */,
+				DBBE21BB2314354E00C2E649 /* PertanyaanRahasiaDuaViewController.swift */,
 			);
-			path = PlayMenu;
+			path = Parent;
+			sourceTree = "<group>";
+		};
+		4BCB605F2313EB5700C5005E /* font */ = {
+			isa = PBXGroup;
+			children = (
+				4BCB605E2313EB4C00C5005E /* Good Unicorn - TTF.ttf */,
+			);
+			path = font;
 			sourceTree = "<group>";
 		};
 		4E8A99DF230D4A6400A90EC1 = {
@@ -107,15 +139,31 @@
 		4E8A99EA230D4A6400A90EC1 /* CancerForKids-Master */ = {
 			isa = PBXGroup;
 			children = (
+				4BCB605C2313E80100C5005E /* Parent */,
+				DB369A6D230FFCF30055CC0A /* Sakit */,
 				4B07D533230E840000151CB3 /* OnBoarding */,
 				4B07D54A230EA60900151CB3 /* Character */,
 				4E8A99EB230D4A6400A90EC1 /* AppDelegate.swift */,
-				4E526D522314E54300ACA520 /* PlayMenu */,
+				4E8A99ED230D4A6400A90EC1 /* GameScene.sks */,
+				4E8A99EF230D4A6400A90EC1 /* Actions.sks */,
+				4E8A99F1230D4A6400A90EC1 /* GameScene.swift */,
+				4E8A99F3230D4A6400A90EC1 /* GameViewController.swift */,
+				4E8A99F5230D4A6400A90EC1 /* Main.storyboard */,
+				4BCB605F2313EB5700C5005E /* font */,
 				4E8A99F8230D4A6400A90EC1 /* Assets.xcassets */,
 				4E8A99FA230D4A6400A90EC1 /* LaunchScreen.storyboard */,
 				4E8A99FD230D4A6400A90EC1 /* Info.plist */,
 			);
 			path = "CancerForKids-Master";
+			sourceTree = "<group>";
+		};
+		DB369A6D230FFCF30055CC0A /* Sakit */ = {
+			isa = PBXGroup;
+			children = (
+				DB369A6E230FFD100055CC0A /* sakitViewController.swift */,
+				DB369A72230FFD3D0055CC0A /* sakit.storyboard */,
+			);
+			path = Sakit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +228,8 @@
 				4E8A99F7230D4A6400A90EC1 /* Game.storyboard in Resources */,
 				4E8A99EE230D4A6400A90EC1 /* GameScene.sks in Resources */,
 				4E8A99F9230D4A6400A90EC1 /* Assets.xcassets in Resources */,
+				4BCB60602313EB7600C5005E /* Good Unicorn - TTF.ttf in Resources */,
+				DB369A73230FFD3D0055CC0A /* sakit.storyboard in Resources */,
 				4B07D53D230E874B00151CB3 /* Slide.xib in Resources */,
 				4E8A99FC230D4A6400A90EC1 /* LaunchScreen.storyboard in Resources */,
 				4E8A99F0230D4A6400A90EC1 /* Actions.sks in Resources */,
@@ -196,7 +246,15 @@
 			files = (
 				4B07D53F230E87CC00151CB3 /* GetStarted.swift in Sources */,
 				4E8A99F2230D4A6400A90EC1 /* GameScene.swift in Sources */,
+				DB369A6C230FCA100055CC0A /* DatePickerViewController.swift in Sources */,
+				4BCB605A2313E7FC00C5005E /* PertanyaanRahasiaViewController.swift in Sources */,
+				DB369A6F230FFD100055CC0A /* sakitViewController.swift in Sources */,
+				DB369A6A230FC9FE0055CC0A /* NamaUserViewController.swift in Sources */,
+				4BCB60592313E7FC00C5005E /* ParentsViewController.swift in Sources */,
+				DBBE21B82313F3D600C2E649 /* DaftarViewController.swift in Sources */,
+				DBBE21BA2313F3FC00C2E649 /* DaftarKegiatanViewController.swift in Sources */,
 				4B07D548230EA52400151CB3 /* CharacterViewController.swift in Sources */,
+				DBBE21BC2314354E00C2E649 /* PertanyaanRahasiaDuaViewController.swift in Sources */,
 				4B07D542230E894300151CB3 /* OnboardingController.swift in Sources */,
 				4E8A99F4230D4A6400A90EC1 /* GameViewController.swift in Sources */,
 				4E8A99EC230D4A6400A90EC1 /* AppDelegate.swift in Sources */,
@@ -347,7 +405,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 85YSJX97S8;
+				DEVELOPMENT_TEAM = Q5T3Q68SMU;
 				INFOPLIST_FILE = "CancerForKids-Master/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -365,7 +423,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 85YSJX97S8;
+				DEVELOPMENT_TEAM = Q5T3Q68SMU;
 				INFOPLIST_FILE = "CancerForKids-Master/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

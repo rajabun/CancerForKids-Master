@@ -19,7 +19,7 @@
 		4E8A99F0230D4A6400A90EC1 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4E8A99EF230D4A6400A90EC1 /* Actions.sks */; };
 		4E8A99F2230D4A6400A90EC1 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8A99F1230D4A6400A90EC1 /* GameScene.swift */; };
 		4E8A99F4230D4A6400A90EC1 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8A99F3230D4A6400A90EC1 /* GameViewController.swift */; };
-		4E8A99F7230D4A6400A90EC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E8A99F5230D4A6400A90EC1 /* Main.storyboard */; };
+		4E8A99F7230D4A6400A90EC1 /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E8A99F5230D4A6400A90EC1 /* Game.storyboard */; };
 		4E8A99F9230D4A6400A90EC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E8A99F8230D4A6400A90EC1 /* Assets.xcassets */; };
 		4E8A99FC230D4A6400A90EC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E8A99FA230D4A6400A90EC1 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -38,7 +38,7 @@
 		4E8A99EF230D4A6400A90EC1 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		4E8A99F1230D4A6400A90EC1 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		4E8A99F3230D4A6400A90EC1 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		4E8A99F6230D4A6400A90EC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4E8A99F6230D4A6400A90EC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Game.storyboard; sourceTree = "<group>"; };
 		4E8A99F8230D4A6400A90EC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E8A99FB230D4A6400A90EC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E8A99FD230D4A6400A90EC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +76,18 @@
 			path = Character;
 			sourceTree = "<group>";
 		};
+		4E526D522314E54300ACA520 /* PlayMenu */ = {
+			isa = PBXGroup;
+			children = (
+				4E8A99ED230D4A6400A90EC1 /* GameScene.sks */,
+				4E8A99EF230D4A6400A90EC1 /* Actions.sks */,
+				4E8A99F1230D4A6400A90EC1 /* GameScene.swift */,
+				4E8A99F3230D4A6400A90EC1 /* GameViewController.swift */,
+				4E8A99F5230D4A6400A90EC1 /* Game.storyboard */,
+			);
+			path = PlayMenu;
+			sourceTree = "<group>";
+		};
 		4E8A99DF230D4A6400A90EC1 = {
 			isa = PBXGroup;
 			children = (
@@ -98,11 +110,7 @@
 				4B07D533230E840000151CB3 /* OnBoarding */,
 				4B07D54A230EA60900151CB3 /* Character */,
 				4E8A99EB230D4A6400A90EC1 /* AppDelegate.swift */,
-				4E8A99ED230D4A6400A90EC1 /* GameScene.sks */,
-				4E8A99EF230D4A6400A90EC1 /* Actions.sks */,
-				4E8A99F1230D4A6400A90EC1 /* GameScene.swift */,
-				4E8A99F3230D4A6400A90EC1 /* GameViewController.swift */,
-				4E8A99F5230D4A6400A90EC1 /* Main.storyboard */,
+				4E526D522314E54300ACA520 /* PlayMenu */,
 				4E8A99F8230D4A6400A90EC1 /* Assets.xcassets */,
 				4E8A99FA230D4A6400A90EC1 /* LaunchScreen.storyboard */,
 				4E8A99FD230D4A6400A90EC1 /* Info.plist */,
@@ -169,7 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B07D549230EA52400151CB3 /* Character.storyboard in Resources */,
-				4E8A99F7230D4A6400A90EC1 /* Main.storyboard in Resources */,
+				4E8A99F7230D4A6400A90EC1 /* Game.storyboard in Resources */,
 				4E8A99EE230D4A6400A90EC1 /* GameScene.sks in Resources */,
 				4E8A99F9230D4A6400A90EC1 /* Assets.xcassets in Resources */,
 				4B07D53D230E874B00151CB3 /* Slide.xib in Resources */,
@@ -199,12 +207,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4E8A99F5230D4A6400A90EC1 /* Main.storyboard */ = {
+		4E8A99F5230D4A6400A90EC1 /* Game.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4E8A99F6230D4A6400A90EC1 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Game.storyboard;
 			sourceTree = "<group>";
 		};
 		4E8A99FA230D4A6400A90EC1 /* LaunchScreen.storyboard */ = {
@@ -339,7 +347,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BW4269VNF7;
+				DEVELOPMENT_TEAM = 85YSJX97S8;
 				INFOPLIST_FILE = "CancerForKids-Master/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -357,7 +365,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BW4269VNF7;
+				DEVELOPMENT_TEAM = 85YSJX97S8;
 				INFOPLIST_FILE = "CancerForKids-Master/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

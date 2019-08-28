@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jsj-TS-lgj">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pain Locator View Controller-->
+        <scene sceneID="95u-u1-x3Y">
+            <objects>
+                <viewController id="jsj-TS-lgj" customClass="PainLocatorViewController" customModule="CancerForKids_Master" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Fj-2T-NuE">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundbubble" translatesAutoresizingMaskIntoConstraints="NO" id="W3s-bY-17v">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="badanbugil" translatesAutoresizingMaskIntoConstraints="NO" id="HMo-b4-II1">
+                                <rect key="frame" x="412" y="166" width="245" height="490"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJN-my-O7M">
+                                <rect key="frame" x="424" y="99" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zls-Q1-fQu">
+                                <rect key="frame" x="560" y="99" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tqn-CL-NsG">
+                                <rect key="frame" x="509" y="99" width="8" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seY-gC-m9R">
+                                <rect key="frame" x="479" y="247" width="42" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="iconsakit"/>
+                                <connections>
+                                    <action selector="btnBahuBalon:" destination="jsj-TS-lgj" eventType="touchUpInside" id="Ps5-ET-WnX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g90-Mq-ECt">
+                                <rect key="frame" x="598" y="401" width="42" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="iconsakit"/>
+                                <connections>
+                                    <action selector="btnTanganBalon:" destination="jsj-TS-lgj" eventType="touchUpInside" id="MVz-Kd-uiF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htu-r0-7AX">
+                                <rect key="frame" x="514" y="169" width="42" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="iconsakit"/>
+                                <connections>
+                                    <action selector="btnKepalaBalon:" destination="jsj-TS-lgj" eventType="touchUpInside" id="tfq-KN-EWr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHH-cS-W5A">
+                                <rect key="frame" x="536" y="603" width="42" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="iconsakit"/>
+                                <connections>
+                                    <action selector="btnKakiBalon:" destination="jsj-TS-lgj" eventType="touchUpInside" id="iWr-cw-BFf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9b-QU-x28">
+                                <rect key="frame" x="514" y="291" width="42" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="iconsakit"/>
+                                <connections>
+                                    <action selector="btnDadaBalon:" destination="jsj-TS-lgj" eventType="touchUpInside" id="QLM-8M-Btn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVU-rO-WhK">
+                                <rect key="frame" x="514" y="353" width="42" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="iconsakit"/>
+                                <connections>
+                                    <action selector="btnPerutBalon:" destination="jsj-TS-lgj" eventType="touchUpInside" id="ZIN-nk-BF5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tT-Aj-bM7">
+                                <rect key="frame" x="626" y="90" width="23" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="right-arrow"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAp-5r-O38">
+                                <rect key="frame" x="377" y="90" width="23" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="left-arrow"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Panah_kepala" translatesAutoresizingMaskIntoConstraints="NO" id="1tm-xo-nMj">
+                                <rect key="frame" x="586" y="158" width="127" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bubblepain" translatesAutoresizingMaskIntoConstraints="NO" id="Vwa-Ob-rAE">
+                                <rect key="frame" x="706" y="137" width="203" height="146"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Panah_Kaki" translatesAutoresizingMaskIntoConstraints="NO" id="FgT-5N-94i">
+                                <rect key="frame" x="586" y="591" width="127" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bubblepain" translatesAutoresizingMaskIntoConstraints="NO" id="hwM-Yr-THD">
+                                <rect key="frame" x="706" y="507" width="203" height="146"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Panah_Dada" translatesAutoresizingMaskIntoConstraints="NO" id="EHy-wI-318">
+                                <rect key="frame" x="356" y="315" width="152" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bubblepain" translatesAutoresizingMaskIntoConstraints="NO" id="dps-nx-9Ot">
+                                <rect key="frame" x="159" y="317" width="203" height="146"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Panah_Perut" translatesAutoresizingMaskIntoConstraints="NO" id="5Nf-RL-idN">
+                                <rect key="frame" x="252" y="385" width="361" height="190"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bubblepain" translatesAutoresizingMaskIntoConstraints="NO" id="cia-uy-dpf">
+                                <rect key="frame" x="159" y="502" width="203" height="146"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Panah_Bahu" translatesAutoresizingMaskIntoConstraints="NO" id="mDc-eX-vYf">
+                                <rect key="frame" x="356" y="194" width="127" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bubblepain" translatesAutoresizingMaskIntoConstraints="NO" id="ZeI-4n-yU7">
+                                <rect key="frame" x="159" y="132" width="203" height="146"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Panah_Tangan" translatesAutoresizingMaskIntoConstraints="NO" id="09Y-l5-khK">
+                                <rect key="frame" x="642" y="404" width="71" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bubblepain" translatesAutoresizingMaskIntoConstraints="NO" id="A75-GJ-RDP">
+                                <rect key="frame" x="706" y="322" width="203" height="146"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="W3s-bY-17v" firstAttribute="top" secondItem="2Fj-2T-NuE" secondAttribute="top" id="7iL-wK-1vd"/>
+                            <constraint firstItem="W3s-bY-17v" firstAttribute="bottom" secondItem="HsT-S8-1lP" secondAttribute="bottom" id="TXu-SA-2WV"/>
+                            <constraint firstItem="W3s-bY-17v" firstAttribute="leading" secondItem="HsT-S8-1lP" secondAttribute="leading" id="qLv-Dc-Lud"/>
+                            <constraint firstItem="W3s-bY-17v" firstAttribute="trailing" secondItem="HsT-S8-1lP" secondAttribute="trailing" id="yN0-ol-8V3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HsT-S8-1lP"/>
+                    </view>
+                    <connections>
+                        <outlet property="bahuBalon" destination="ZeI-4n-yU7" id="LQ7-fJ-UHj"/>
+                        <outlet property="bahuPanah" destination="mDc-eX-vYf" id="dhY-Wh-n1l"/>
+                        <outlet property="dadaBalon" destination="dps-nx-9Ot" id="dPN-Ql-64B"/>
+                        <outlet property="dadaPanah" destination="EHy-wI-318" id="Gbd-HZ-lJQ"/>
+                        <outlet property="kakiBalon" destination="hwM-Yr-THD" id="KLs-xK-eYs"/>
+                        <outlet property="kakiPanah" destination="FgT-5N-94i" id="LlT-Cl-wLO"/>
+                        <outlet property="kepalaBalon" destination="Vwa-Ob-rAE" id="LHB-cE-GWc"/>
+                        <outlet property="kepalaPanah" destination="1tm-xo-nMj" id="u4c-Lc-9dw"/>
+                        <outlet property="perutBalon" destination="cia-uy-dpf" id="lOD-Yh-NO9"/>
+                        <outlet property="perutPanah" destination="5Nf-RL-idN" id="4Yf-Nh-Tcb"/>
+                        <outlet property="tanganBalon" destination="A75-GJ-RDP" id="oiN-Vb-hcV"/>
+                        <outlet property="tanganPanah" destination="09Y-l5-khK" id="ixn-Hh-8Ej"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VRh-ro-oxp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-158.203125" y="180.46875"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xgq-bw-hyc">
+            <objects>
+                <viewController id="HgM-p8-RLD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j6Q-uW-VlI">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundbubble" translatesAutoresizingMaskIntoConstraints="NO" id="AFe-sc-Vvb">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AFe-sc-Vvb" firstAttribute="trailing" secondItem="ukb-Aj-ady" secondAttribute="trailing" id="D0z-f7-QuB"/>
+                            <constraint firstItem="AFe-sc-Vvb" firstAttribute="bottom" secondItem="ukb-Aj-ady" secondAttribute="bottom" id="Uoa-pI-OwP"/>
+                            <constraint firstItem="AFe-sc-Vvb" firstAttribute="leading" secondItem="ukb-Aj-ady" secondAttribute="leading" id="oF2-x9-OJP"/>
+                            <constraint firstItem="AFe-sc-Vvb" firstAttribute="top" secondItem="j6Q-uW-VlI" secondAttribute="top" id="rLW-Ar-6L6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ukb-Aj-ady"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DiB-nR-ZF4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="518.5546875" y="179.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Panah_Bahu" width="106" height="50"/>
+        <image name="Panah_Dada" width="155" height="78"/>
+        <image name="Panah_Kaki" width="115" height="19"/>
+        <image name="Panah_Perut" width="162" height="186"/>
+        <image name="Panah_Tangan" width="69" height="20"/>
+        <image name="Panah_kepala" width="125" height="20"/>
+        <image name="backgroundbubble" width="1024" height="768"/>
+        <image name="badanbugil" width="197" height="428"/>
+        <image name="bubblepain" width="180" height="145"/>
+        <image name="iconsakit" width="38" height="38"/>
+        <image name="left-arrow" width="23" height="37"/>
+        <image name="right-arrow" width="23" height="37"/>
+    </resources>
+</document>

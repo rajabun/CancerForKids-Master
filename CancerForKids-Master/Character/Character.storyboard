@@ -364,10 +364,10 @@ Aku melindungi seluruh rakyat tanpa rasa takut. Kamu harus menjadi kuat dan tida
             </objects>
             <point key="canvasLocation" x="4399.21875" y="-241.40625"/>
         </scene>
-        <!--View Controller-->
+        <!--Done Choosing View Controller-->
         <scene sceneID="3nG-ow-Wmt">
             <objects>
-                <viewController id="HHj-io-Kce" sceneMemberID="viewController">
+                <viewController id="HHj-io-Kce" customClass="DoneChoosingViewController" customModule="CancerForKids_Master" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LIR-hr-DvN">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -385,6 +385,7 @@ Aku melindungi seluruh rakyat tanpa rasa takut. Kamu harus menjadi kuat dan tida
                                 <rect key="frame" x="272" y="500" width="480" height="110"/>
                                 <state key="normal" title="Button" image="okee"/>
                                 <connections>
+                                    <action selector="btnDone:" destination="HHj-io-Kce" eventType="touchUpInside" id="RKk-In-h0f"/>
                                     <segue destination="KwL-n0-lJe" kind="show" id="r3s-wf-noL"/>
                                 </connections>
                             </button>
@@ -526,7 +527,7 @@ Aku melindungi seluruh rakyat tanpa rasa takut. Kamu harus menjadi kuat dan tida
         <segue reference="PZ1-qa-mDH"/>
         <segue reference="r3s-wf-noL"/>
         <segue reference="auF-kw-Y45"/>
-        <segue reference="xQa-qO-caB"/>
+        <segue reference="M52-as-s8A"/>
         <segue reference="r7J-Q4-DFa"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -14,6 +14,10 @@
 		4B07D542230E894300151CB3 /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B07D540230E894300151CB3 /* OnboardingController.swift */; };
 		4B07D548230EA52400151CB3 /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B07D546230EA52400151CB3 /* CharacterViewController.swift */; };
 		4B07D549230EA52400151CB3 /* Character.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B07D547230EA52400151CB3 /* Character.storyboard */; };
+		4B4517B123169E6600ADD3B3 /* CancerForKids-Master.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B4517AF23169E6600ADD3B3 /* CancerForKids-Master.xcdatamodeld */; };
+		4B5BC4632316C32800BC89EE /* PainLocatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5BC4622316C32800BC89EE /* PainLocatorViewController.swift */; };
+		4BA655FA231616C500F28EB2 /* DoneChoosingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA655F9231616C500F28EB2 /* DoneChoosingViewController.swift */; };
+		4BA655FC23166A6E00F28EB2 /* PainLocator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA655FB23166A6E00F28EB2 /* PainLocator.storyboard */; };
 		4BCB60592313E7FC00C5005E /* ParentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCB60562313E7FC00C5005E /* ParentsViewController.swift */; };
 		4BCB605A2313E7FC00C5005E /* PertanyaanRahasiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCB60572313E7FC00C5005E /* PertanyaanRahasiaViewController.swift */; };
 		4BCB60602313EB7600C5005E /* Good Unicorn - TTF.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BCB605E2313EB4C00C5005E /* Good Unicorn - TTF.ttf */; };
@@ -46,6 +50,10 @@
 		4B07D540230E894300151CB3 /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
 		4B07D546230EA52400151CB3 /* CharacterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
 		4B07D547230EA52400151CB3 /* Character.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Character.storyboard; sourceTree = "<group>"; };
+		4B4517B023169E6600ADD3B3 /* CancerForKids-Master.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CancerForKids-Master.xcdatamodel"; sourceTree = "<group>"; };
+		4B5BC4622316C32800BC89EE /* PainLocatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PainLocatorViewController.swift; sourceTree = "<group>"; };
+		4BA655F9231616C500F28EB2 /* DoneChoosingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneChoosingViewController.swift; sourceTree = "<group>"; };
+		4BA655FB23166A6E00F28EB2 /* PainLocator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PainLocator.storyboard; sourceTree = "<group>"; };
 		4BCB60562313E7FC00C5005E /* ParentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentsViewController.swift; sourceTree = "<group>"; };
 		4BCB60572313E7FC00C5005E /* PertanyaanRahasiaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PertanyaanRahasiaViewController.swift; sourceTree = "<group>"; };
 		4BCB605D2313E81300C5005E /* Parents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Parents.storyboard; sourceTree = "<group>"; };
@@ -102,10 +110,20 @@
 			children = (
 				4B07D547230EA52400151CB3 /* Character.storyboard */,
 				4B07D546230EA52400151CB3 /* CharacterViewController.swift */,
+				4BA655F9231616C500F28EB2 /* DoneChoosingViewController.swift */,
 				DB369A69230FC9FE0055CC0A /* NamaUserViewController.swift */,
 				DB369A6B230FCA100055CC0A /* DatePickerViewController.swift */,
 			);
 			path = Character;
+			sourceTree = "<group>";
+		};
+		4BA655FD23166AB900F28EB2 /* SakitNyaTuhDisini */ = {
+			isa = PBXGroup;
+			children = (
+				4BA655FB23166A6E00F28EB2 /* PainLocator.storyboard */,
+				4B5BC4622316C32800BC89EE /* PainLocatorViewController.swift */,
+			);
+			path = SakitNyaTuhDisini;
 			sourceTree = "<group>";
 		};
 		4BCB605C2313E80100C5005E /* Parent */ = {
@@ -173,6 +191,7 @@
 		4E8A99EA230D4A6400A90EC1 /* CancerForKids-Master */ = {
 			isa = PBXGroup;
 			children = (
+				4BA655FD23166AB900F28EB2 /* SakitNyaTuhDisini */,
 				4BCB605C2313E80100C5005E /* Parent */,
 				DB369A6D230FFCF30055CC0A /* Sakit */,
 				4B07D533230E840000151CB3 /* OnBoarding */,
@@ -183,6 +202,7 @@
 				4E8A99F8230D4A6400A90EC1 /* Assets.xcassets */,
 				4E8A99FA230D4A6400A90EC1 /* LaunchScreen.storyboard */,
 				4E8A99FD230D4A6400A90EC1 /* Info.plist */,
+				4B4517AF23169E6600ADD3B3 /* CancerForKids-Master.xcdatamodeld */,
 			);
 			path = "CancerForKids-Master";
 			sourceTree = "<group>";
@@ -266,6 +286,7 @@
 				4E8A99FC230D4A6400A90EC1 /* LaunchScreen.storyboard in Resources */,
 				4B07D535230E841300151CB3 /* OnBoarding.storyboard in Resources */,
 				4E526DA42314EE5100ACA520 /* Police_dance.atlas in Resources */,
+				4BA655FC23166A6E00F28EB2 /* PainLocator.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B07D53F230E87CC00151CB3 /* GetStarted.swift in Sources */,
+				4B5BC4632316C32800BC89EE /* PainLocatorViewController.swift in Sources */,
 				DB369A6C230FCA100055CC0A /* DatePickerViewController.swift in Sources */,
 				4E526DA02314EE3A00ACA520 /* GameScene.swift in Sources */,
 				4BCB605A2313E7FC00C5005E /* PertanyaanRahasiaViewController.swift in Sources */,
@@ -285,9 +307,11 @@
 				4E526D9C2314EE3000ACA520 /* HomeViewController.swift in Sources */,
 				4BCB60592313E7FC00C5005E /* ParentsViewController.swift in Sources */,
 				DBBE21B82313F3D600C2E649 /* DaftarViewController.swift in Sources */,
+				4B4517B123169E6600ADD3B3 /* CancerForKids-Master.xcdatamodeld in Sources */,
 				DBBE21BA2313F3FC00C2E649 /* DaftarKegiatanViewController.swift in Sources */,
 				4B07D548230EA52400151CB3 /* CharacterViewController.swift in Sources */,
 				4E526D9E2314EE3500ACA520 /* GameViewController.swift in Sources */,
+				4BA655FA231616C500F28EB2 /* DoneChoosingViewController.swift in Sources */,
 				DBBE21BC2314354E00C2E649 /* PertanyaanRahasiaDuaViewController.swift in Sources */,
 				4E526DAC2314F03000ACA520 /* AudioModel.swift in Sources */,
 				4B07D542230E894300151CB3 /* OnboardingController.swift in Sources */,
@@ -486,6 +510,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4B4517AF23169E6600ADD3B3 /* CancerForKids-Master.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4B4517B023169E6600ADD3B3 /* CancerForKids-Master.xcdatamodel */,
+			);
+			currentVersion = 4B4517B023169E6600ADD3B3 /* CancerForKids-Master.xcdatamodel */;
+			path = "CancerForKids-Master.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4E8A99E0230D4A6400A90EC1 /* Project object */;
 }

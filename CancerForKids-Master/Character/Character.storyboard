@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -45,6 +46,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1F-HR-AK3">
                                 <rect key="frame" x="20" y="20" width="170" height="163"/>
                                 <state key="normal" backgroundImage="backbutton"/>
+                                <connections>
+                                    <segue destination="QxY-de-lkJ" kind="show" id="Nrq-x7-SVD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -83,7 +87,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ioe-l4-ddt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2462.109375" y="-238.28125"/>
+            <point key="canvasLocation" x="2582" y="-978"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="w6t-oE-Txm">
@@ -112,6 +116,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kcm-QW-0fs">
                                 <rect key="frame" x="20" y="20" width="170" height="163"/>
                                 <state key="normal" backgroundImage="backbutton"/>
+                                <connections>
+                                    <segue destination="HIg-OI-3e9" kind="show" id="r7J-Q4-DFa"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -180,6 +187,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82w-Fl-umZ">
                                 <rect key="frame" x="20" y="20" width="170" height="163"/>
                                 <state key="normal" backgroundImage="backbutton"/>
+                                <connections>
+                                    <segue destination="ubG-kQ-vjR" kind="show" id="xQa-qO-caB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -245,6 +255,9 @@ Aku melindungi seluruh rakyat tanpa rasa takut. Kamu harus menjadi kuat dan tida
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whq-bC-9GV">
                                 <rect key="frame" x="20" y="20" width="170" height="163"/>
                                 <state key="normal" backgroundImage="backbutton"/>
+                                <connections>
+                                    <segue destination="O4c-90-FhK" kind="show" id="vFz-hW-WIp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -301,7 +314,7 @@ Aku melindungi seluruh rakyat tanpa rasa takut. Kamu harus menjadi kuat dan tida
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="wsj-iB-TnA">
                                 <rect key="frame" x="0.0" y="294" width="1024" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="588160239.22267199">
-                                    <!--2019-08-22 09:50:39 +0000-->
+                                    <!--2019-08-22 9:50:39 AM +0000-->
                                 </date>
                                 <connections>
                                     <action selector="dateSelectedFromPicker:" destination="O4c-90-FhK" eventType="valueChanged" id="GCn-Io-Ged"/>
@@ -310,6 +323,9 @@ Aku melindungi seluruh rakyat tanpa rasa takut. Kamu harus menjadi kuat dan tida
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxd-kd-2Dh">
                                 <rect key="frame" x="20" y="20" width="170" height="163"/>
                                 <state key="normal" backgroundImage="backbutton"/>
+                                <connections>
+                                    <segue destination="VUL-YT-TuF" kind="show" id="PaU-fL-W7u"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -375,6 +391,9 @@ Aku melindungi seluruh rakyat tanpa rasa takut. Kamu harus menjadi kuat dan tida
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3f-O3-DBl">
                                 <rect key="frame" x="20" y="20" width="170" height="163"/>
                                 <state key="normal" backgroundImage="backbutton"/>
+                                <connections>
+                                    <segue destination="KwL-n0-lJe" kind="show" id="qAx-7f-5QB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -442,10 +461,6 @@ Aku melindungi seluruh rakyat tanpa rasa takut. Kamu harus menjadi kuat dan tida
                                     <segue destination="HIg-OI-3e9" kind="show" id="Fro-Kn-0J7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZvZ-1o-muP">
-                                <rect key="frame" x="20" y="20" width="170" height="459"/>
-                                <state key="normal" backgroundImage="backbutton"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -455,18 +470,14 @@ Aku melindungi seluruh rakyat tanpa rasa takut. Kamu harus menjadi kuat dan tida
                             <constraint firstItem="GSH-zi-NLu" firstAttribute="bottom" secondItem="8lJ-Xy-Kdg" secondAttribute="bottom" constant="30" id="D7l-xf-Lmd"/>
                             <constraint firstItem="uUE-Me-uzB" firstAttribute="centerX" secondItem="Jrr-rJ-HsW" secondAttribute="centerX" id="DOL-5X-lPJ"/>
                             <constraint firstItem="QpV-f0-3SS" firstAttribute="leading" secondItem="Jrr-rJ-HsW" secondAttribute="leading" constant="20" id="MQ6-bN-YIv"/>
-                            <constraint firstItem="ZvZ-1o-muP" firstAttribute="leading" secondItem="GSH-zi-NLu" secondAttribute="leading" constant="20" id="Qkb-Lg-pQA"/>
                             <constraint firstItem="HEy-7P-2GX" firstAttribute="bottom" secondItem="8lJ-Xy-Kdg" secondAttribute="bottom" id="RgG-kf-6H3"/>
-                            <constraint firstItem="QpV-f0-3SS" firstAttribute="top" secondItem="ZvZ-1o-muP" secondAttribute="bottom" constant="243" id="aOQ-uG-rxb"/>
                             <constraint firstItem="ZVW-Xm-kdQ" firstAttribute="bottom" secondItem="GSH-zi-NLu" secondAttribute="bottom" id="dQq-M5-HsW"/>
                             <constraint firstItem="zaJ-C8-Adx" firstAttribute="top" secondItem="GSH-zi-NLu" secondAttribute="top" constant="30" id="jvZ-g1-46r"/>
                             <constraint firstItem="zaJ-C8-Adx" firstAttribute="centerX" secondItem="Jrr-rJ-HsW" secondAttribute="centerX" id="l7J-Kc-Jhb"/>
                             <constraint firstItem="ZVW-Xm-kdQ" firstAttribute="trailing" secondItem="GSH-zi-NLu" secondAttribute="trailing" id="l7X-Id-fyX"/>
                             <constraint firstItem="QpV-f0-3SS" firstAttribute="bottom" secondItem="8lJ-Xy-Kdg" secondAttribute="bottom" id="oH3-RC-5Uh"/>
-                            <constraint firstItem="uUE-Me-uzB" firstAttribute="leading" secondItem="ZvZ-1o-muP" secondAttribute="trailing" constant="260.5" id="wZT-6t-Wnb"/>
                             <constraint firstAttribute="trailing" secondItem="HEy-7P-2GX" secondAttribute="trailing" constant="20" id="x8m-2D-Ik2"/>
                             <constraint firstItem="8lJ-Xy-Kdg" firstAttribute="centerX" secondItem="Jrr-rJ-HsW" secondAttribute="centerX" id="xGB-ED-qIT"/>
-                            <constraint firstItem="ZvZ-1o-muP" firstAttribute="top" secondItem="GSH-zi-NLu" secondAttribute="top" id="yMq-uY-Gd6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GSH-zi-NLu"/>
                     </view>
@@ -510,4 +521,12 @@ Aku melindungi seluruh rakyat tanpa rasa takut. Kamu harus menjadi kuat dan tida
         <image name="tanggallahir" width="447" height="201"/>
         <image name="tentara" width="214" height="325"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Nrq-x7-SVD"/>
+        <segue reference="PZ1-qa-mDH"/>
+        <segue reference="r3s-wf-noL"/>
+        <segue reference="auF-kw-Y45"/>
+        <segue reference="xQa-qO-caB"/>
+        <segue reference="r7J-Q4-DFa"/>
+    </inferredMetricsTieBreakers>
 </document>

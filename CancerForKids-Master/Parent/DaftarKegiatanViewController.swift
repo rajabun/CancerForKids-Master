@@ -50,9 +50,28 @@ class DaftarKegiatanViewController: UIViewController {
         kegiatanMendatangDua.layer.masksToBounds = true
         kegiatanMendatangDua.layer.borderColor = UIColor.orange.cgColor
         kegiatanMendatangDua.layer.borderWidth = 3
-        
-        
     
     }
+    
+    @IBAction func simpanKegiatanButton(_ sender: Any) {
+        let kegiatanHarianSatuu = "\(kegiatanHarianSatu.text!)"
+        print(kegiatanHarianSatuu)
+        let kegiatanHarianDuaa = "\(kegiatanHarianDua.text!)"
+        print(kegiatanHarianDuaa)
+        let kegiatanHarianTigaa = "\(kegiatanHarianTiga.text!)"
+        print(kegiatanHarianTigaa)
+        let kegiatanMendatangSatuu = "\(kegiatanMendatangSatu.text!)"
+        print(kegiatanMendatangSatuu)
+        let kegiatanMendatangDuaa = "\(kegiatanMendatangDua.text!)"
+        print(kegiatanMendatangDuaa
+        
+        //user default charname
+    )}
+}
 
+extension DaftarKegiatanViewController : UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }

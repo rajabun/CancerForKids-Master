@@ -310,31 +310,18 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wij-2c-3VI">
-                                <rect key="frame" x="76" y="525" width="446" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="28"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Phk-AE-GgJ">
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Phk-AE-GgJ">
                                 <rect key="frame" x="76" y="451" width="446" height="66"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="28"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Kegiatan Mendatang" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gh-gr-oUz">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Kegiatan Mendatang" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gh-gr-oUz">
                                 <rect key="frame" x="76" y="389" width="454" height="58"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lr6-5h-1vP">
-                                <rect key="frame" x="76" y="271" width="446" height="49"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="28"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oId-dO-Wvg">
                                 <rect key="frame" x="76" y="328" width="446" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -382,37 +369,36 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="simpan nama"/>
                             </button>
-                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="w85-dH-dWK">
-                                <rect key="frame" x="530" y="128" width="320" height="216"/>
-                                <date key="date" timeIntervalSinceReferenceDate="588509406.22091305">
-                                    <!--2019-08-26 10:50:06 +0000-->
-                                </date>
-                            </datePicker>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RSw-cY-95H">
+                                <rect key="frame" x="76" y="271" width="446" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="28"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EcK-hU-Ryk">
+                                <rect key="frame" x="76" y="525" width="446" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="28"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="z7k-Ra-WeT" firstAttribute="leading" secondItem="zR0-PZ-Hyq" secondAttribute="trailing" constant="249" id="0XR-iI-qet"/>
                             <constraint firstItem="z7k-Ra-WeT" firstAttribute="top" secondItem="qKo-UI-swj" secondAttribute="top" constant="34" id="1LN-vJ-fac"/>
-                            <constraint firstItem="lr6-5h-1vP" firstAttribute="top" secondItem="nid-u1-sgW" secondAttribute="bottom" constant="10" id="AQM-8q-H5l"/>
                             <constraint firstItem="nid-u1-sgW" firstAttribute="top" secondItem="yfW-hj-lcU" secondAttribute="bottom" constant="6" id="COt-Iu-C5G"/>
-                            <constraint firstItem="1gh-gr-oUz" firstAttribute="top" secondItem="lr6-5h-1vP" secondAttribute="bottom" constant="21" id="I9y-jT-d9v"/>
                             <constraint firstItem="nid-u1-sgW" firstAttribute="leading" secondItem="qKo-UI-swj" secondAttribute="leading" constant="76" id="IhG-BQ-SWM"/>
                             <constraint firstItem="IZ2-ek-lAE" firstAttribute="top" secondItem="qKo-UI-swj" secondAttribute="top" constant="1" id="Jxq-dv-QoX"/>
                             <constraint firstItem="nid-u1-sgW" firstAttribute="top" secondItem="z7k-Ra-WeT" secondAttribute="bottom" constant="98" id="PJt-9d-0CS"/>
-                            <constraint firstItem="w85-dH-dWK" firstAttribute="top" secondItem="IZ2-ek-lAE" secondAttribute="bottom" constant="46" id="Qt0-LD-oJP"/>
                             <constraint firstItem="Phk-AE-GgJ" firstAttribute="top" secondItem="1gh-gr-oUz" secondAttribute="bottom" constant="4" id="U2F-Kx-0jT"/>
                             <constraint firstItem="qKo-UI-swj" firstAttribute="trailing" secondItem="z7k-Ra-WeT" secondAttribute="trailing" constant="542" id="Wb4-xz-aZn"/>
                             <constraint firstItem="yfW-hj-lcU" firstAttribute="top" secondItem="zR0-PZ-Hyq" secondAttribute="bottom" constant="1" id="X6n-Lj-dxx"/>
-                            <constraint firstItem="lr6-5h-1vP" firstAttribute="top" secondItem="nid-u1-sgW" secondAttribute="bottom" constant="10" id="XgJ-iL-XCq"/>
-                            <constraint firstItem="w85-dH-dWK" firstAttribute="leading" secondItem="yfW-hj-lcU" secondAttribute="trailing" constant="197" id="YwZ-P6-krB"/>
                             <constraint firstItem="qKo-UI-swj" firstAttribute="trailing" secondItem="IZ2-ek-lAE" secondAttribute="trailing" constant="301" id="diX-dh-BAI"/>
-                            <constraint firstItem="lr6-5h-1vP" firstAttribute="leading" secondItem="qKo-UI-swj" secondAttribute="leading" constant="76" id="fZ7-U9-81j"/>
-                            <constraint firstItem="w85-dH-dWK" firstAttribute="leading" secondItem="nid-u1-sgW" secondAttribute="trailing" constant="8" id="gAP-hV-pPA"/>
-                            <constraint firstItem="w85-dH-dWK" firstAttribute="leading" secondItem="lr6-5h-1vP" secondAttribute="trailing" constant="4" id="gxz-Op-avP"/>
                             <constraint firstItem="yfW-hj-lcU" firstAttribute="leading" secondItem="qKo-UI-swj" secondAttribute="leading" constant="76" id="iC8-BE-x8o"/>
                             <constraint firstItem="nid-u1-sgW" firstAttribute="top" secondItem="yfW-hj-lcU" secondAttribute="bottom" constant="6" id="nCu-XI-KKf"/>
                             <constraint firstItem="IZ2-ek-lAE" firstAttribute="leading" secondItem="zR0-PZ-Hyq" secondAttribute="trailing" constant="327" id="sDt-az-jqY"/>
-                            <constraint firstItem="1gh-gr-oUz" firstAttribute="top" secondItem="lr6-5h-1vP" secondAttribute="bottom" constant="21" id="t7e-4Y-bxK"/>
                             <constraint firstItem="1gh-gr-oUz" firstAttribute="leading" secondItem="qKo-UI-swj" secondAttribute="leading" constant="72" id="w0r-oG-wY0"/>
                             <constraint firstItem="qKo-UI-swj" firstAttribute="trailing" secondItem="1gh-gr-oUz" secondAttribute="trailing" constant="498" id="wsD-hl-FVs"/>
                         </constraints>
@@ -420,11 +406,11 @@
                     </view>
                     <connections>
                         <outlet property="dateTimePicker" destination="Ahf-0J-E4X" id="OSa-PV-jfG"/>
-                        <outlet property="kegiatanHarianDua" destination="lr6-5h-1vP" id="S05-vc-kyu"/>
+                        <outlet property="kegiatanHarianDua" destination="RSw-cY-95H" id="8el-cc-0LH"/>
                         <outlet property="kegiatanHarianSatu" destination="nid-u1-sgW" id="aZj-dN-wQn"/>
-                        <outlet property="kegiatanMendatangDua" destination="Wij-2c-3VI" id="rl4-QY-D7x"/>
+                        <outlet property="kegiatanHarianTiga" destination="oId-dO-Wvg" id="Gn1-Hv-Uaj"/>
+                        <outlet property="kegiatanMendatangDua" destination="EcK-hU-Ryk" id="XtO-Fs-5oy"/>
                         <outlet property="kegiatanMendatangSatu" destination="Phk-AE-GgJ" id="CKd-jt-cdN"/>
-                        <outlet property="timePicker" destination="w85-dH-dWK" id="a6C-mN-cig"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cni-bG-fXg" userLabel="First Responder" sceneMemberID="firstResponder"/>

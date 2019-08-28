@@ -11,10 +11,12 @@ import UIKit
 class DaftarKegiatanViewController: UIViewController {
 
     @IBOutlet var kegiatanHarianSatu: UITextField!
-    @IBOutlet var kegiatanHarianDua: UITextField!
+    @IBOutlet var kegiatanHarianDua:UITextField!
+
+    @IBOutlet var kegiatanHarianTiga: UITextField!
     @IBOutlet var kegiatanMendatangSatu: UITextField!
     @IBOutlet var kegiatanMendatangDua: UITextField!
-    @IBOutlet var kegiatanMendatangTiga: UITextField!
+    
     
     @IBOutlet var timePicker: UIDatePicker!
     @IBOutlet var dateTimePicker: UIDatePicker!
@@ -33,6 +35,10 @@ class DaftarKegiatanViewController: UIViewController {
         kegiatanHarianDua.layer.borderColor = UIColor.orange.cgColor
         kegiatanHarianDua.layer.borderWidth = 3
         
+        kegiatanHarianTiga.layer.cornerRadius = 20.0
+        kegiatanHarianTiga.layer.masksToBounds = true
+        kegiatanHarianTiga.layer.borderColor = UIColor.orange.cgColor
+        kegiatanHarianTiga.layer.borderWidth = 3
         
         kegiatanMendatangSatu.layer.cornerRadius = 20.0
         kegiatanMendatangSatu.layer.masksToBounds = true
@@ -46,21 +52,7 @@ class DaftarKegiatanViewController: UIViewController {
         kegiatanMendatangDua.layer.borderWidth = 3
         
         
-        kegiatanMendatangTiga.layer.cornerRadius = 20.0
-        kegiatanMendatangTiga.layer.masksToBounds = true
-        kegiatanMendatangTiga.layer.borderColor = UIColor.orange.cgColor
-        kegiatanMendatangTiga.layer.borderWidth = 3
-    }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
 
 }

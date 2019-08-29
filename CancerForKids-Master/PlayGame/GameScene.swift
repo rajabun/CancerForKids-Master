@@ -37,7 +37,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate
     let backButton = SKSpriteNode(imageNamed: "BackButton.png")
     var smileEmojiView = SKSpriteNode(imageNamed: "ConfuseEmoji.png")
     var progressBarView = SKSpriteNode(imageNamed: "ProgressBarEmoticons50%.png")
-    //    let halfOvalImage = SKSpriteNode(imageNamed: "HalfOvalPlayMenu.png")
     
     //yang gerak, dibikin satu aja kategorinya gapapa gausah tiap node dibikin
     let ObatCategory   : UInt32 = 0x1 << 1
@@ -49,7 +48,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate
     var isFingerOnTouch = false
     
     var audioReady = AudioModel()
-    var viewController: UIViewController?
+    var gameViewController: GameViewController?
     
     //counter buat ganti2 texture progress bar
     var textureProgressBarCounter = 3
@@ -278,8 +277,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate
             {
                 // Call the function here.
                 //backgroundColor = .blue
-                removeAllChildren()
-                segue()
+                //removeAllChildren()
+                self.gameViewController?.performSegue(withIdentifier: "PlayToHomeIdentifier", sender: self)
                 print("Tombol back berhasil ditekan")
             }
             else
@@ -460,11 +459,5 @@ class GameScene: SKScene, SKPhysicsContactDelegate
         let moveActionWithDone = SKAction.sequence([moveAction, doneAction])
         ninjaCat.run(moveActionWithDone, withKey:"ninjaCatMoving")
     }
-    
-    func segue()
-    {
-        viewController?.performSegue(withIdentifier: "push", sender: viewController)
-    }
-
 }
 

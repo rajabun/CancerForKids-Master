@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "HomeFillCloud.png",
+      "filename" : "Police.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "HomeFillCloud@2x.png",
+      "filename" : "Police@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "HomeFillCloud@3x.png",
+      "filename" : "Police@3x.png",
       "scale" : "3x"
     }
   ],

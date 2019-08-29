@@ -19,7 +19,7 @@ class DoneChoosingViewController: UIViewController {
     
     @IBAction func btnDone(_ sender: Any) {
         UserDefaults.standard.set(true, forKey: "FinishChoosingChar")
-        let storyboard = UIStoryboard(name: "PainLocator", bundle: nil)
+        let storyboard = UIStoryboard(name: "Game", bundle: nil)
         guard let vc = storyboard.instantiateInitialViewController() else {return}
         present(vc, animated: true, completion: nil)
     }

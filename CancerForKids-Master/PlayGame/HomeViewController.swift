@@ -11,16 +11,56 @@ import UIKit
 class HomeViewController: UIViewController
 {
 
+    @IBOutlet weak var characterImage: UIImageView!
+    @IBOutlet weak var balloonImage: UIImageView!
     override func viewDidLoad()
     {
         super.viewDidLoad()
         view.backgroundColor = UIColor(patternImage: UIImage(named: "HomeBackgroundWithBackground.png")!)
+        characterImage.image  = UIImage(named: "police")
+        balloonImage.image  = UIImage(named: "HomeFillCloud")
 //        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
 //        backgroundImage.image = UIImage(named: "HomeBackgroundWithBackground.png")
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func periksaTubuhButtonAction(_ sender: UIButton)
+    {
+        
+    }
+    
+    @IBAction func daftarKegiatanButtonAction(_ sender: UIButton)
+    {
+        
+    }
+    
+    @IBAction func catatanKesehatanButtonAction(_ sender: UIButton)
+    {
+        
+    }
+    
+    
+    @IBAction func areaOrangTuaButtonAction(_ sender: UIButton)
+    {
+        
+    }
+    
+    
+    @IBAction func playButtonAction(_ sender: UIButton)
+    {
+        
+    }
+    
+    @IBAction func polisiButtonAction(_ sender: UIButton)
+    {
+        
+    }
+    
+    @IBAction func rewardButtonAction(_ sender: UIButton)
+    {
+        
+    }
+    
     /*
     // MARK: - Navigation
 

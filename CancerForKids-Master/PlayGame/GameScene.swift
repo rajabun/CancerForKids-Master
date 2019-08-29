@@ -10,15 +10,19 @@ import SpriteKit
 
 enum ZPositions: Int
 {
-    case background
-    case foreground
-    case player
-    case otherNodes
+    case background //0
+    case foreground //1
+    case player //2
+    case otherNodes //3
 }
 
-struct ColliderType
+enum textureCounter: Int
 {
-    
+    case onePercent //0
+    case twentyFivePercent //1
+    case fiftyPercent //2
+    case seventyFivePercent //3
+    case oneHundredPercent //4
 }
 
 class GameScene: SKScene, SKPhysicsContactDelegate
@@ -31,13 +35,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate
     let makanButton = SKSpriteNode(imageNamed: "MakanButton.png")
     let danceButton = SKSpriteNode(imageNamed: "MusicButton.png")
     let backButton = SKSpriteNode(imageNamed: "BackButton.png")
-    var smileEmojiView = SKSpriteNode(imageNamed: "SmileEmoji.png")
+    var smileEmojiView = SKSpriteNode(imageNamed: "ConfuseEmoji.png")
     var progressBarView = SKSpriteNode(imageNamed: "ProgressBarEmoticons50%.png")
-//    let halfOvalImage = SKSpriteNode(imageNamed: "HalfOvalPlayMenu.png")
+    //    let halfOvalImage = SKSpriteNode(imageNamed: "HalfOvalPlayMenu.png")
     
-    //yang gerak
-    let ObatCategory   : UInt32 = 0x1 << 0
-    let MakanCategory : UInt32 = 0x1 << 1
+    //yang gerak, dibikin satu aja kategorinya gapapa gausah tiap node dibikin
+    let ObatCategory   : UInt32 = 0x1 << 1
     
     //yang diem
     let PlayerCategory : UInt32 = 0x1 << 2
@@ -47,6 +50,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate
     
     var audioReady = AudioModel()
     var viewController: UIViewController?
+    
+    //counter buat ganti2 texture progress bar
+    var textureProgressBarCounter = 3
     
     override func didMove(to view: SKView)
     {
@@ -58,7 +64,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate
         buildDance()
         animateDance()
         
-        //buildPhysics()
+        buildPhysics()
     }
     
     func buildChildNodes()
@@ -66,11 +72,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate
         background.position = CGPoint(x: frame.size.width / 2, y: frame.size.height / 2)
         background.zPosition = CGFloat(ZPositions.background.rawValue)
         addChild(background)
-        
-        //        halfOvalImage.position = CGPoint(x: 830, y: 365)
-        //        background.zPosition = CGFloat(ZPositions.foreground.rawValue)
-        //        halfOvalImage.name = "HalfOval"
-        //        addChild(halfOvalImage)
         
         obatButton.position = CGPoint(x: 845, y: 532)
         obatButton.zPosition = CGFloat(ZPositions.foreground.rawValue)
@@ -122,12 +123,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate
         }
         ninjaCatAnimationFrames = danceFrames
         
-//        let firstFrameTexture = ninjaCatAnimationFrames[0]
-//        ninjaCat = SKSpriteNode(texture: firstFrameTexture)
-//        ninjaCat.position = updateLocation
+        //        let firstFrameTexture = ninjaCatAnimationFrames[0]
+        //        ninjaCat = SKSpriteNode(texture: firstFrameTexture)
+        //        ninjaCat.position = updateLocation
         ninjaCat.position = CGPoint(x: frame.midX, y: 336)
         ninjaCat.zPosition = CGFloat(ZPositions.player.rawValue)
-//        ninjaCat.size = CGSize(width: 136, height: 301)
         ninjaCat.size = CGSize(width: 386, height: 422)
         ninjaCat.name = "ninjaCatDance"
         addChild(ninjaCat)
@@ -139,17 +139,21 @@ class GameScene: SKScene, SKPhysicsContactDelegate
         obatButton.physicsBody = SKPhysicsBody(rectangleOf: obatButton.size)
         makanButton.physicsBody = SKPhysicsBody(rectangleOf: makanButton.size)
         
-        //yang gerak
+        //yang gerak dibikin satu aja kategorinya gapapa gausah tiap node dibikin
         obatButton.physicsBody!.categoryBitMask = ObatCategory
-        makanButton.physicsBody!.categoryBitMask = MakanCategory
-        
-        //        obatButton.physicsBody!.applyImpulse(CGVector(dx: 2.0, dy: -2.0))
+        makanButton.physicsBody!.categoryBitMask = ObatCategory
         
         //yang diem
         ninjaCat.physicsBody!.categoryBitMask = PlayerCategory
         
+        obatButton.physicsBody!.collisionBitMask = ObatCategory
+        makanButton.physicsBody!.collisionBitMask = ObatCategory
+        ninjaCat.physicsBody!.collisionBitMask = PlayerCategory
+        
         //tombol obat kontak dengan karakter
         obatButton.physicsBody!.contactTestBitMask = PlayerCategory
+        makanButton.physicsBody!.contactTestBitMask = PlayerCategory
+        ninjaCat.physicsBody!.contactTestBitMask = ObatCategory
     }
     
     func animateDance()
@@ -175,12 +179,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate
         }
         ninjaCatAnimationFrames = runFrames
         
-//        let firstFrameTexture = ninjaCatAnimationFrames[0]
-//        ninjaCat = SKSpriteNode(texture: firstFrameTexture)
-//        ninjaCat.position = updateLocation
+        //        let firstFrameTexture = ninjaCatAnimationFrames[0]
+        //        ninjaCat = SKSpriteNode(texture: firstFrameTexture)
+        //        ninjaCat.position = updateLocation
         ninjaCat.position = CGPoint(x: frame.midX, y: frame.midY)
         ninjaCat.zPosition = CGFloat(ZPositions.player.rawValue)
-//        ninjaCat.size = CGSize(width: 136, height: 301)
         ninjaCat.size = CGSize(width: 257, height: 449)
         ninjaCat.name = "ninjaCatRun"
         addChild(ninjaCat)
@@ -210,12 +213,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate
         }
         ninjaCatAnimationFrames = attackFrames
         
-//        let firstFrameTexture = ninjaCatAnimationFrames[0]
-//        ninjaCat = SKSpriteNode(texture: firstFrameTexture)
-//        ninjaCat.position = updateLocation
+        //        let firstFrameTexture = ninjaCatAnimationFrames[0]
+        //        ninjaCat = SKSpriteNode(texture: firstFrameTexture)
+        //        ninjaCat.position = updateLocation
         ninjaCat.position = CGPoint(x: frame.midX, y: frame.midY)
         ninjaCat.zPosition = CGFloat(ZPositions.player.rawValue)
-//        ninjaCat.size = CGSize(width: 136, height: 301)
         ninjaCat.size = CGSize(width: 357, height: 477)
         ninjaCat.name = "ninjaCatAttack"
         addChild(ninjaCat)
@@ -244,25 +246,21 @@ class GameScene: SKScene, SKPhysicsContactDelegate
             {
                 // Call the function here.
                 backgroundColor = .black
-                audioReady.audioClick()
+                //                audioReady.audioClick()
                 removeAnimation()
                 buildAttack()
                 animateAttack()
                 print("Tombol obat berhasil ditekan")
-                smileEmojiView.texture = SKTexture(imageNamed: "SadEmoji.png")
-                progressBarView.texture = SKTexture(imageNamed: "ProgressBarEmoticons1%.png")
             }
             else if touchedNode.name == "MakanButton"
             {
                 // Call the function here.
                 backgroundColor = .yellow
-                audioReady.audioClick()
+                //                audioReady.audioClick()
                 removeAnimation()
                 buildRun()
                 animateRun()
                 print("Tombol makan berhasil ditekan")
-                smileEmojiView.texture = SKTexture(imageNamed: "ScareEmoji.png")
-                progressBarView.texture = SKTexture(imageNamed: "ProgressBarEmoticons25%.png")
             }
             else if touchedNode.name == "DanceButton"
             {
@@ -303,16 +301,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate
                 obatButton.position.x = location.x
                 obatButton.position.y = location.y
                 obatButton.zPosition = CGFloat(ZPositions.otherNodes.rawValue)
-                print("Obat Button Position :")
-                print("x: \(obatButton.position.x), y: \(obatButton.position.y)")
+                //                print("Obat Button Position :")
+                //                print("x: \(obatButton.position.x), y: \(obatButton.position.y)")
             }
             else if touchedNode.name == "MakanButton"
             {
                 makanButton.position.x = location.x
                 makanButton.position.y = location.y
                 makanButton.zPosition = CGFloat(ZPositions.otherNodes.rawValue)
-                print("Makan Button Position :")
-                print("x: \(makanButton.position.x), y: \(makanButton.position.y)")
+                //                print("Makan Button Position :")
+                //                print("x: \(makanButton.position.x), y: \(makanButton.position.y)")
             }
         }
     }
@@ -339,38 +337,55 @@ class GameScene: SKScene, SKPhysicsContactDelegate
                 makanButton.position = CGPoint(x: 815, y: 381)
                 makanButton.zPosition = CGFloat(ZPositions.foreground.rawValue)
             }
-//            if let body = physicsWorld.body(at: location)
-//            {
-//                if body.node!.name == "ObatButton"
-//                {
-//                    print("Began touch on paddle")
-//                    isFingerOnTouch = true
-//                }
-//            }
+        }
+    }
+    
+    func changeProgressBarTexture()
+    {
+        if textureProgressBarCounter == 1
+        {
+            textureProgressBarCounter += 1
+            smileEmojiView.texture = SKTexture(imageNamed: "SadEmoji.png")
+            progressBarView.texture = SKTexture(imageNamed: "ProgressBarEmoticons25%.png")
+        }
+        else if textureProgressBarCounter == 2
+        {
+            textureProgressBarCounter += 1
+            smileEmojiView.texture = SKTexture(imageNamed: "ConfuseEmoji.png")
+            progressBarView.texture = SKTexture(imageNamed: "ProgressBarEmoticons50%.png")
+        }
+        else if textureProgressBarCounter == 3
+        {
+            textureProgressBarCounter += 1
+            smileEmojiView.texture = SKTexture(imageNamed: "SmileEmoji.png")
+            progressBarView.texture = SKTexture(imageNamed: "ProgressBarEmoticons75%.png")
+        }
+        else if textureProgressBarCounter == 4
+        {
+            textureProgressBarCounter += 1
+            smileEmojiView.texture = SKTexture(imageNamed: "HappyEmoji.png")
+            progressBarView.texture = SKTexture(imageNamed: "ProgressBarEmoticons100%.png")
         }
     }
     
     func didBegin(_ contact: SKPhysicsContact)
     {
-        //self.physicsWorld.contactDelegate = self
-        // 1
-        var firstBody = SKPhysicsBody(rectangleOf: ninjaCat.size)
-        var secondBody = SKPhysicsBody(rectangleOf: obatButton.size)
-        // 2
-        if contact.bodyA.categoryBitMask < contact.bodyB.categoryBitMask
+        print("The \(contact.bodyA.node!.name!) entered in contact with the \(contact.bodyB.node!.name!)")
+        
+        if contact.bodyA.node!.name! == "ninjaCatAttack" || contact.bodyA.node!.name! == "ninjaCatRun"
         {
-            firstBody = contact.bodyA
-            secondBody = contact.bodyB
+            print("polisi ketemu obat")
+            audioReady.audioClick()
+            changeProgressBarTexture()
+            
         }
-        else
+        else if contact.bodyB.node!.name! == "Obat Button"
         {
-            firstBody = contact.bodyB
-            secondBody = contact.bodyA
+            print("polisi ganteng")
         }
-        // 3
-        if firstBody.categoryBitMask == ObatCategory && secondBody.categoryBitMask == PlayerCategory
+        else if contact.bodyB.node!.name! == "Makan Button"
         {
-            print("Hit player. First contact has been made.")
+            print("polisi uwaw")
         }
     }
     
@@ -450,27 +465,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate
     {
         viewController?.performSegue(withIdentifier: "push", sender: viewController)
     }
-    
-    //    //Changing Animation Facing Direction
-    //    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?)
-    //    {
-    //        let touch = touches.first!
-    //        let location = touch.location(in: self)
-    //
-    //        var multiplierForDirection: CGFloat
-    //        if location.x < frame.midX
-    //        {
-    //            // walk left
-    //            multiplierForDirection = 1.0
-    //        }
-    //        else
-    //        {
-    //            // walk right
-    //            multiplierForDirection = -1.0
-    //        }
-    //
-    //        ninjaCat.xScale = abs(ninjaCat.xScale) * multiplierForDirection
-    //        animateDance()
-    //    }
+
 }
 

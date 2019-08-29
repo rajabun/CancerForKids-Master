@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -65,6 +64,7 @@
                                 <state key="normal" backgroundImage="PlayButton"/>
                                 <connections>
                                     <action selector="playButtonAction:" destination="4Zf-Ev-A1A" eventType="touchUpInside" id="pB4-On-Yxh"/>
+                                    <segue destination="BV1-FR-VrT" kind="show" identifier="HomeToPlayIdentifier" id="zYp-VE-zo9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nuf-KI-ary" userLabel="Reward Button">
@@ -83,8 +83,8 @@
                                     <action selector="polisiButtonAction:" destination="4Zf-Ev-A1A" eventType="touchUpInside" id="jQ6-ZU-Sn0"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z3n-ri-XD9">
-                                <rect key="frame" x="749" y="229" width="240" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HomePolice" translatesAutoresizingMaskIntoConstraints="NO" id="Z3n-ri-XD9">
+                                <rect key="frame" x="749" y="229" width="221" height="489"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5AB-Dk-GsF" userLabel="Area Orang Tua Button">
@@ -95,8 +95,8 @@
                                     <action selector="areaOrangTuaButtonAction:" destination="4Zf-Ev-A1A" eventType="touchUpInside" id="13F-xP-Cqn"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OuJ-L1-iQv">
-                                <rect key="frame" x="435" y="74" width="240" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HomeFillCloud" translatesAutoresizingMaskIntoConstraints="NO" id="OuJ-L1-iQv">
+                                <rect key="frame" x="435" y="74" width="352" height="177"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -117,6 +117,8 @@
         <image name="AreaOrangTuaButton" width="321" height="95"/>
         <image name="CatatanKesehatanButton" width="323" height="95"/>
         <image name="DaftarKegiatanButton" width="323" height="95"/>
+        <image name="HomeFillCloud" width="392" height="216"/>
+        <image name="HomePolice" width="210" height="484"/>
         <image name="PeriksaTubuhButton" width="330" height="111"/>
         <image name="PlayButton" width="160" height="156"/>
         <image name="PolisiButton" width="106" height="105"/>

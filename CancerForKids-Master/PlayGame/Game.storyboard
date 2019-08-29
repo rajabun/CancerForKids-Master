@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -34,73 +35,102 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9su-RW-YNS" userLabel="Periksa TubuhButton">
-                                <rect key="frame" x="55" y="113" width="330" height="111"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9su-RW-YNS" userLabel="Periksa TubuhButton">
+                                <rect key="frame" x="55" y="113" width="706" height="111"/>
                                 <state key="normal" backgroundImage="PeriksaTubuhButton"/>
                                 <connections>
                                     <action selector="periksaTubuhButtonAction:" destination="4Zf-Ev-A1A" eventType="touchUpInside" id="gWX-Ep-Bkw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZM-fX-WPK" userLabel="Daftar Kegiatan Button">
-                                <rect key="frame" x="62" y="216" width="323" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZM-fX-WPK" userLabel="Daftar Kegiatan Button">
+                                <rect key="frame" x="62" y="216" width="699" height="95"/>
                                 <state key="normal" backgroundImage="DaftarKegiatanButton"/>
                                 <connections>
                                     <action selector="daftarKegiatanButtonAction:" destination="4Zf-Ev-A1A" eventType="touchUpInside" id="IKf-hZ-lCQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="md7-Ds-o2a" userLabel="Catatan Kesehatan Button">
-                                <rect key="frame" x="62" y="320" width="323" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="md7-Ds-o2a" userLabel="Catatan Kesehatan Button">
+                                <rect key="frame" x="62" y="320" width="517" height="95"/>
                                 <state key="normal" backgroundImage="CatatanKesehatanButton"/>
                                 <connections>
                                     <action selector="catatanKesehatanButtonAction:" destination="4Zf-Ev-A1A" eventType="touchUpInside" id="8lC-kL-mTh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKH-q3-hBW" userLabel="Play Button">
-                                <rect key="frame" x="147" y="575" width="160" height="156"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKH-q3-hBW" userLabel="Play Button">
+                                <rect key="frame" x="147" y="662" width="160" height="69"/>
                                 <state key="normal" backgroundImage="PlayButton"/>
                                 <connections>
                                     <action selector="playButtonAction:" destination="4Zf-Ev-A1A" eventType="touchUpInside" id="pB4-On-Yxh"/>
                                     <segue destination="BV1-FR-VrT" kind="show" identifier="HomeToPlayIdentifier" id="zYp-VE-zo9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nuf-KI-ary" userLabel="Reward Button">
-                                <rect key="frame" x="313" y="626" width="110" height="105"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nuf-KI-ary" userLabel="Reward Button">
+                                <rect key="frame" x="313" y="713" width="110" height="18"/>
                                 <state key="normal" backgroundImage="RewardButton"/>
                                 <connections>
                                     <action selector="rewardButtonAction:" destination="4Zf-Ev-A1A" eventType="touchUpInside" id="Fvg-2x-Ko3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjd-nv-4Jr" userLabel="Polisi Button">
-                                <rect key="frame" x="35" y="626" width="106" height="105"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjd-nv-4Jr" userLabel="Polisi Button">
+                                <rect key="frame" x="35" y="713" width="106" height="18"/>
                                 <state key="normal" backgroundImage="PolisiButton"/>
                                 <connections>
                                     <action selector="polisiButtonAction:" destination="4Zf-Ev-A1A" eventType="touchUpInside" id="jQ6-ZU-Sn0"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HomePolice" translatesAutoresizingMaskIntoConstraints="NO" id="Z3n-ri-XD9">
-                                <rect key="frame" x="749" y="229" width="221" height="489"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomePolice" translatesAutoresizingMaskIntoConstraints="NO" id="Z3n-ri-XD9">
+                                <rect key="frame" x="943" y="229" width="16" height="489"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5AB-Dk-GsF" userLabel="Area Orang Tua Button">
-                                <rect key="frame" x="62" y="424" width="321" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5AB-Dk-GsF" userLabel="Area Orang Tua Button">
+                                <rect key="frame" x="62" y="424" width="515" height="95"/>
                                 <state key="normal" backgroundImage="AreaOrangTuaButton"/>
                                 <connections>
                                     <action selector="areaOrangTuaButtonAction:" destination="4Zf-Ev-A1A" eventType="touchUpInside" id="13F-xP-Cqn"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HomeFillCloud" translatesAutoresizingMaskIntoConstraints="NO" id="OuJ-L1-iQv">
-                                <rect key="frame" x="435" y="74" width="352" height="177"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomeFillCloud" translatesAutoresizingMaskIntoConstraints="NO" id="OuJ-L1-iQv">
+                                <rect key="frame" x="811" y="74" width="16" height="177"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.1907650846" green="0.64379758880000004" blue="0.23095728160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="fjd-nv-4Jr" firstAttribute="leading" secondItem="pCd-IS-zR9" secondAttribute="leading" constant="35" id="0vL-7C-ZKe"/>
+                            <constraint firstItem="Z3n-ri-XD9" firstAttribute="leading" secondItem="Nuf-KI-ary" secondAttribute="trailing" constant="326" id="3rF-pY-tG1"/>
+                            <constraint firstItem="pCd-IS-zR9" firstAttribute="bottom" secondItem="9su-RW-YNS" secondAttribute="bottom" constant="544" id="53f-Jc-LDN"/>
+                            <constraint firstItem="pCd-IS-zR9" firstAttribute="trailing" secondItem="Z3n-ri-XD9" secondAttribute="trailing" constant="65" id="5Za-XC-7Qg"/>
+                            <constraint firstItem="GZM-fX-WPK" firstAttribute="leading" secondItem="pCd-IS-zR9" secondAttribute="leading" constant="62" id="7tL-ht-Dj1"/>
+                            <constraint firstItem="5AB-Dk-GsF" firstAttribute="top" secondItem="md7-Ds-o2a" secondAttribute="bottom" constant="9" id="7uJ-I2-eBF"/>
+                            <constraint firstItem="fjd-nv-4Jr" firstAttribute="top" secondItem="5AB-Dk-GsF" secondAttribute="bottom" constant="107" id="8Ih-My-6V1"/>
+                            <constraint firstItem="pCd-IS-zR9" firstAttribute="bottom" secondItem="WKH-q3-hBW" secondAttribute="bottom" constant="37" id="9Hb-jn-xAv"/>
+                            <constraint firstItem="5AB-Dk-GsF" firstAttribute="leading" secondItem="pCd-IS-zR9" secondAttribute="leading" constant="62" id="BbT-8Y-lRg"/>
+                            <constraint firstItem="Nuf-KI-ary" firstAttribute="top" secondItem="5AB-Dk-GsF" secondAttribute="bottom" constant="107" id="BgE-pJ-si0"/>
+                            <constraint firstItem="OuJ-L1-iQv" firstAttribute="leading" secondItem="9su-RW-YNS" secondAttribute="trailing" constant="50" id="Fme-S1-DK9"/>
+                            <constraint firstItem="GZM-fX-WPK" firstAttribute="top" secondItem="pCd-IS-zR9" secondAttribute="top" constant="196" id="Hp1-zX-42y"/>
+                            <constraint firstItem="Nuf-KI-ary" firstAttribute="leading" secondItem="WKH-q3-hBW" secondAttribute="trailing" constant="6" id="Ilx-rZ-C6U"/>
+                            <constraint firstItem="md7-Ds-o2a" firstAttribute="top" secondItem="GZM-fX-WPK" secondAttribute="bottom" constant="9" id="Kqd-V6-Mn8"/>
+                            <constraint firstItem="9su-RW-YNS" firstAttribute="top" secondItem="pCd-IS-zR9" secondAttribute="top" constant="93" id="Nob-cL-cHO"/>
+                            <constraint firstItem="Z3n-ri-XD9" firstAttribute="leading" secondItem="Nuf-KI-ary" secondAttribute="trailing" constant="326" id="RCA-oh-5dh"/>
+                            <constraint firstItem="md7-Ds-o2a" firstAttribute="leading" secondItem="pCd-IS-zR9" secondAttribute="leading" constant="62" id="WjQ-5F-GeB"/>
+                            <constraint firstItem="Nuf-KI-ary" firstAttribute="leading" secondItem="WKH-q3-hBW" secondAttribute="trailing" constant="6" id="XPe-3g-RiJ"/>
+                            <constraint firstItem="Z3n-ri-XD9" firstAttribute="leading" secondItem="5AB-Dk-GsF" secondAttribute="trailing" constant="366" id="ahz-2h-8jB"/>
+                            <constraint firstItem="md7-Ds-o2a" firstAttribute="top" secondItem="GZM-fX-WPK" secondAttribute="bottom" constant="9" id="c7T-0W-wwK"/>
+                            <constraint firstItem="Z3n-ri-XD9" firstAttribute="leading" secondItem="md7-Ds-o2a" secondAttribute="trailing" constant="364" id="dwX-KN-bqB"/>
+                            <constraint firstItem="OuJ-L1-iQv" firstAttribute="top" secondItem="pCd-IS-zR9" secondAttribute="top" constant="54" id="fGm-qz-scj"/>
+                            <constraint firstItem="Z3n-ri-XD9" firstAttribute="top" secondItem="pCd-IS-zR9" secondAttribute="top" constant="209" id="h0a-tL-fyl"/>
+                            <constraint firstItem="WKH-q3-hBW" firstAttribute="top" secondItem="5AB-Dk-GsF" secondAttribute="bottom" constant="56" id="ik1-CY-9Cn"/>
+                            <constraint firstItem="pCd-IS-zR9" firstAttribute="bottom" secondItem="OuJ-L1-iQv" secondAttribute="bottom" constant="517" id="jP2-kQ-alp"/>
+                            <constraint firstItem="5AB-Dk-GsF" firstAttribute="top" secondItem="md7-Ds-o2a" secondAttribute="bottom" constant="9" id="kmS-tB-p3J"/>
+                            <constraint firstItem="WKH-q3-hBW" firstAttribute="top" secondItem="5AB-Dk-GsF" secondAttribute="bottom" constant="56" id="myt-g3-vIe"/>
+                            <constraint firstItem="WKH-q3-hBW" firstAttribute="leading" secondItem="fjd-nv-4Jr" secondAttribute="trailing" constant="6" id="ned-7E-ouG"/>
+                            <constraint firstItem="WKH-q3-hBW" firstAttribute="leading" secondItem="fjd-nv-4Jr" secondAttribute="trailing" constant="6" id="o03-h0-jtR"/>
+                            <constraint firstItem="OuJ-L1-iQv" firstAttribute="leading" secondItem="GZM-fX-WPK" secondAttribute="trailing" constant="50" id="orl-dC-6UL"/>
+                            <constraint firstItem="pCd-IS-zR9" firstAttribute="trailing" secondItem="OuJ-L1-iQv" secondAttribute="trailing" constant="197" id="qH3-t1-VGO"/>
+                            <constraint firstItem="OuJ-L1-iQv" firstAttribute="leading" secondItem="9su-RW-YNS" secondAttribute="trailing" constant="50" id="rHk-OT-8PR"/>
+                            <constraint firstItem="pCd-IS-zR9" firstAttribute="bottom" secondItem="Nuf-KI-ary" secondAttribute="bottom" constant="37" id="rLe-bC-XW9"/>
+                            <constraint firstItem="pCd-IS-zR9" firstAttribute="bottom" secondItem="fjd-nv-4Jr" secondAttribute="bottom" constant="37" id="vu2-G3-nmw"/>
+                            <constraint firstItem="9su-RW-YNS" firstAttribute="leading" secondItem="pCd-IS-zR9" secondAttribute="leading" constant="55" id="yFj-SI-2Gp"/>
+                            <constraint firstItem="pCd-IS-zR9" firstAttribute="bottom" secondItem="Z3n-ri-XD9" secondAttribute="bottom" constant="50" id="ysh-rT-UnV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="pCd-IS-zR9"/>
                     </view>
                     <connections>

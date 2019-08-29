@@ -27,9 +27,9 @@
 		4E526DA02314EE3A00ACA520 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E526D9F2314EE3A00ACA520 /* GameScene.swift */; };
 		4E526DA22314EE4200ACA520 /* Police_attack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 4E526DA12314EE4200ACA520 /* Police_attack.atlas */; };
 		4E526DA42314EE5100ACA520 /* Police_dance.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 4E526DA32314EE5100ACA520 /* Police_dance.atlas */; };
-		4E526DA92314EE6200ACA520 /* Switch-Click.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4E526DA72314EE6200ACA520 /* Switch-Click.wav */; };
-		4E526DAA2314EE6200ACA520 /* Joy & Calm.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4E526DA82314EE6200ACA520 /* Joy & Calm.m4a */; };
 		4E526DAC2314F03000ACA520 /* AudioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E526DAB2314F03000ACA520 /* AudioModel.swift */; };
+		4E5D735423177DD7009D6CC6 /* Joy & Calm.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4E5D735323177DD7009D6CC6 /* Joy & Calm.m4a */; };
+		4E5D735623177E09009D6CC6 /* Switch-Click.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4E5D735523177E09009D6CC6 /* Switch-Click.wav */; };
 		4E8A99EC230D4A6400A90EC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8A99EB230D4A6400A90EC1 /* AppDelegate.swift */; };
 		4E8A99F9230D4A6400A90EC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E8A99F8230D4A6400A90EC1 /* Assets.xcassets */; };
 		4E8A99FC230D4A6400A90EC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E8A99FA230D4A6400A90EC1 /* LaunchScreen.storyboard */; };
@@ -65,9 +65,9 @@
 		4E526DA12314EE4200ACA520 /* Police_attack.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Police_attack.atlas; sourceTree = "<group>"; };
 		4E526DA32314EE5100ACA520 /* Police_dance.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Police_dance.atlas; sourceTree = "<group>"; };
 		4E526DA52314EE5400ACA520 /* Police_run.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Police_run.atlas; sourceTree = "<group>"; };
-		4E526DA72314EE6200ACA520 /* Switch-Click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Switch-Click.wav"; sourceTree = "<group>"; };
-		4E526DA82314EE6200ACA520 /* Joy & Calm.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Joy & Calm.m4a"; sourceTree = "<group>"; };
 		4E526DAB2314F03000ACA520 /* AudioModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioModel.swift; sourceTree = "<group>"; };
+		4E5D735323177DD7009D6CC6 /* Joy & Calm.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Joy & Calm.m4a"; sourceTree = "<group>"; };
+		4E5D735523177E09009D6CC6 /* Switch-Click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Switch-Click.wav"; sourceTree = "<group>"; };
 		4E8A99E8230D4A6400A90EC1 /* CancerForKids-Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CancerForKids-Master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E8A99EB230D4A6400A90EC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E8A99F8230D4A6400A90EC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -166,8 +166,8 @@
 		4E526DA62314EE6200ACA520 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				4E526DA72314EE6200ACA520 /* Switch-Click.wav */,
-				4E526DA82314EE6200ACA520 /* Joy & Calm.m4a */,
+				4E5D735523177E09009D6CC6 /* Switch-Click.wav */,
+				4E5D735323177DD7009D6CC6 /* Joy & Calm.m4a */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -275,13 +275,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B07D549230EA52400151CB3 /* Character.storyboard in Resources */,
+				4E5D735623177E09009D6CC6 /* Switch-Click.wav in Resources */,
 				4E526DA22314EE4200ACA520 /* Police_attack.atlas in Resources */,
 				4E8A99F9230D4A6400A90EC1 /* Assets.xcassets in Resources */,
-				4E526DAA2314EE6200ACA520 /* Joy & Calm.m4a in Resources */,
+				4E5D735423177DD7009D6CC6 /* Joy & Calm.m4a in Resources */,
 				4BCB60602313EB7600C5005E /* Good Unicorn - TTF.ttf in Resources */,
 				4E526D9A2314EE2700ACA520 /* Game.storyboard in Resources */,
 				DB369A73230FFD3D0055CC0A /* sakit.storyboard in Resources */,
-				4E526DA92314EE6200ACA520 /* Switch-Click.wav in Resources */,
 				4B07D53D230E874B00151CB3 /* Slide.xib in Resources */,
 				4E8A99FC230D4A6400A90EC1 /* LaunchScreen.storyboard in Resources */,
 				4B07D535230E841300151CB3 /* OnBoarding.storyboard in Resources */,

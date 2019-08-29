@@ -12,99 +12,178 @@ class PainLocatorViewController: UIViewController {
 
     @IBOutlet weak var bahuBalon: UIImageView!
     @IBOutlet weak var bahuPanah: UIImageView!
+    @IBOutlet weak var bahuPersen: UILabel!
+    @IBOutlet weak var bahuPosisi: UILabel!
+    @IBOutlet weak var bahuEmoji: UIImageView!
     
     @IBOutlet weak var dadaBalon: UIImageView!
     @IBOutlet weak var dadaPanah: UIImageView!
+    @IBOutlet weak var dadaPersen: UILabel!
+    @IBOutlet weak var dadaPosisi: UILabel!
+    @IBOutlet weak var dadaEmoji: UIImageView!
     
     @IBOutlet weak var perutBalon: UIImageView!
     @IBOutlet weak var perutPanah: UIImageView!
+    @IBOutlet weak var perutPersen: UILabel!
+    @IBOutlet weak var perutPosisi: UILabel!
+    @IBOutlet weak var perutEmoji: UIImageView!
     
     @IBOutlet weak var kepalaBalon: UIImageView!
     @IBOutlet weak var kepalaPanah: UIImageView!
+    @IBOutlet weak var kepalaPersen: UILabel!
+    @IBOutlet weak var kepalaPosisi: UILabel!
+    @IBOutlet weak var kepalaEmoji: UIImageView!
     
     @IBOutlet weak var tanganBalon: UIImageView!
     @IBOutlet weak var tanganPanah: UIImageView!
+    @IBOutlet weak var tanganPersen: UILabel!
+    @IBOutlet weak var tanganPosisi: UILabel!
+    @IBOutlet weak var tanganEmoji: UIImageView!
     
     @IBOutlet weak var kakiBalon: UIImageView!
     @IBOutlet weak var kakiPanah: UIImageView!
+    @IBOutlet weak var kakiPersen: UILabel!
+    @IBOutlet weak var kakiPosisi: UILabel!
+    @IBOutlet weak var kakiEmoji: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         bahuBalon.isHidden = true
         bahuPanah.isHidden = true
+        bahuPersen.isHidden = true
+        bahuPosisi.isHidden = true
+        bahuEmoji.isHidden = true
+        
         dadaBalon.isHidden = true
         dadaPanah.isHidden = true
+        dadaPersen.isHidden = true
+        dadaPosisi.isHidden = true
+        dadaEmoji.isHidden = true
+        
         perutBalon.isHidden = true
         perutPanah.isHidden = true
+        perutPersen.isHidden = true
+        perutPosisi.isHidden = true
+        perutEmoji.isHidden = true
+        
         kepalaBalon.isHidden = true
         kepalaPanah.isHidden = true
+        kepalaPersen.isHidden = true
+        kepalaPosisi.isHidden = true
+        kepalaEmoji.isHidden = true
+        
         tanganBalon.isHidden = true
         tanganPanah.isHidden = true
+        tanganPersen.isHidden = true
+        tanganPosisi.isHidden = true
+        tanganEmoji.isHidden = true
+        
         kakiBalon.isHidden = true
         kakiPanah.isHidden = true
+        kakiPersen.isHidden = true
+        kakiPosisi.isHidden = true
+        kakiEmoji.isHidden = true
         
         
         // Do any additional setup after loading the view.
     }
     
     @IBAction func btnBahuBalon(_ sender: Any) {
-        if bahuBalon.isHidden == true && bahuPanah.isHidden == true{
+        if bahuBalon.isHidden == true && bahuPanah.isHidden == true && bahuPersen.isHidden==true && bahuPosisi.isHidden==true && bahuEmoji.isHidden==true{
+            
             bahuBalon.isHidden = false
             bahuPanah.isHidden = false
-        }else if bahuBalon.isHidden == false && bahuPanah.isHidden == false{
+            bahuPersen.isHidden = false
+            bahuPosisi.isHidden = false
+            bahuEmoji.isHidden = false
+        }else if bahuBalon.isHidden == false && bahuPanah.isHidden == false && bahuPersen.isHidden==false && bahuPosisi.isHidden==false && bahuEmoji.isHidden==false{
+            
             bahuBalon.isHidden = true
             bahuPanah.isHidden = true
+            bahuPersen.isHidden = true
+            bahuPosisi.isHidden = true
+            bahuEmoji.isHidden = true
         }
     }
     
     @IBAction func btnDadaBalon(_ sender: Any) {
-        if dadaBalon.isHidden == true && dadaPanah.isHidden == true{
+        if dadaBalon.isHidden == true && dadaPanah.isHidden == true && dadaPersen.isHidden==true && dadaPosisi.isHidden==true && dadaEmoji.isHidden==true{
             dadaBalon.isHidden = false
             dadaPanah.isHidden = false
-        }else if dadaBalon.isHidden == false && dadaPanah.isHidden == false{
+            dadaPersen.isHidden = false
+            dadaPosisi.isHidden = false
+            dadaEmoji.isHidden = false
+        }else if dadaBalon.isHidden == false && dadaPanah.isHidden == false && dadaPersen.isHidden==false && dadaPosisi.isHidden==false && dadaEmoji.isHidden==false{
             dadaBalon.isHidden = true
             dadaPanah.isHidden = true
+            dadaPersen.isHidden = true
+            dadaPosisi.isHidden = true
+            dadaEmoji.isHidden = true
         }
     }
     
     @IBAction func btnPerutBalon(_ sender: Any) {
-        if perutBalon.isHidden == true && perutPanah.isHidden == true{
+        if perutBalon.isHidden == true && perutPanah.isHidden == true && perutPersen.isHidden==true && perutPosisi.isHidden==true && perutEmoji.isHidden==true{
             perutBalon.isHidden = false
             perutPanah.isHidden = false
-        }else if perutBalon.isHidden == false && perutPanah.isHidden == false{
+            perutPersen.isHidden = false
+            perutPosisi.isHidden = false
+            perutEmoji.isHidden = false
+        }else if perutBalon.isHidden == false && perutPanah.isHidden == false && perutPersen.isHidden==false && perutPosisi.isHidden==false && perutEmoji.isHidden==false{
             perutBalon.isHidden = true
             perutPanah.isHidden = true
+            perutPersen.isHidden = true
+            perutPosisi.isHidden = true
+            perutEmoji.isHidden = true
         }
         
     }
     @IBAction func btnKepalaBalon(_ sender: Any) {
-        if kepalaBalon.isHidden == true && kepalaPanah.isHidden == true{
+        if kepalaBalon.isHidden == true && kepalaPanah.isHidden == true && kepalaPersen.isHidden==true && kepalaPosisi.isHidden==true && kepalaEmoji.isHidden==true{
             kepalaBalon.isHidden = false
             kepalaPanah.isHidden = false
-        }else if kepalaBalon.isHidden == false && kepalaPanah.isHidden == false{
+            kepalaPersen.isHidden = false
+            kepalaPosisi.isHidden = false
+            kepalaEmoji.isHidden = false
+        }else if kepalaBalon.isHidden == false && kepalaPanah.isHidden == false && kepalaPersen.isHidden==false && kepalaPosisi.isHidden==false && kepalaEmoji.isHidden==false{
             kepalaBalon.isHidden = true
             kepalaPanah.isHidden = true
+            kepalaPersen.isHidden = true
+            kepalaPosisi.isHidden = true
+            kepalaEmoji.isHidden = true
         }
         
     }
     @IBAction func btnTanganBalon(_ sender: Any) {
-        if tanganBalon.isHidden == true && tanganPanah.isHidden == true{
+        if tanganBalon.isHidden == true && tanganPanah.isHidden == true && tanganPersen.isHidden==true && tanganPosisi.isHidden==true && tanganEmoji.isHidden==true{
             tanganBalon.isHidden = false
             tanganPanah.isHidden = false
-        }else if tanganBalon.isHidden == false && tanganPanah.isHidden == false{
+            tanganPersen.isHidden = false
+            tanganPosisi.isHidden = false
+            tanganEmoji.isHidden = false
+        }else if tanganBalon.isHidden == false && tanganPanah.isHidden == false && tanganPersen.isHidden==false && tanganPosisi.isHidden==false && tanganEmoji.isHidden==false{
             tanganBalon.isHidden = true
             tanganPanah.isHidden = true
+            tanganPersen.isHidden = true
+            tanganPosisi.isHidden = true
+            tanganEmoji.isHidden = true
         }
     }
     
     @IBAction func btnKakiBalon(_ sender: Any) {
-        if kakiBalon.isHidden == true && kakiPanah.isHidden == true{
+        if kakiBalon.isHidden == true && kakiPanah.isHidden == true && kakiPersen.isHidden==true && kakiPosisi.isHidden==true && kakiEmoji.isHidden==true{
             kakiBalon.isHidden = false
             kakiPanah.isHidden = false
-        }else if kakiBalon.isHidden == false && kakiPanah.isHidden == false{
+            kakiPersen.isHidden = false
+            kakiPosisi.isHidden = false
+            kakiEmoji.isHidden = false
+        }else if kakiBalon.isHidden == false && kakiPanah.isHidden == false && kakiPersen.isHidden==false && kakiPosisi.isHidden==false && kakiEmoji.isHidden==false{
             kakiBalon.isHidden = true
             kakiPanah.isHidden = true
+            kakiPersen.isHidden = true
+            kakiPosisi.isHidden = true
+            kakiEmoji.isHidden = true
         }
         
     }

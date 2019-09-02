@@ -48,7 +48,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate
     var isFingerOnTouch = false
     
     var audioReady = AudioModel()
-    var gameViewController: GameViewController?
+    
+    //tambahin weak biar memorinya gak nambah dan numpuk terus saat masuk ke game scene
+    weak var gameViewController: UIViewController?
     
     //counter buat ganti2 texture progress bar
     var textureProgressBarCounter = 3
@@ -254,7 +256,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate
             {
                 // Call the function here.
                 backgroundColor = .green
-                audioReady.audioPlay()
+                DispatchQueue.global().async
+                {
+                    self.audioReady.audioPlay()
+                }
                 removeAnimation()
                 buildDance()
                 animateDance()
@@ -330,7 +335,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate
     
     func segueToHome()
     {
-        audioReady.audioStop()
+        DispatchQueue.global().async
+        {
+            self.audioReady.audioStop()
+        }
+        //segue biasa, bisa numpuk dan nambah memori terus
         self.gameViewController?.performSegue(withIdentifier: "PlayToHomeIdentifier", sender: gameViewController)
     }
     
@@ -374,7 +383,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate
         if contact.bodyA.node!.name! == "ninjaCatAttack" || contact.bodyA.node!.name! == "ninjaCatRun"
         {
             print("polisi ketemu obat")
-            audioReady.audioClick()
+            
+            DispatchQueue.global().async
+            {
+                self.audioReady.audioClick()
+            }
+            
             changeProgressBarTexture()
             
         }

@@ -12,17 +12,39 @@ class DaftarKegiatanViewController: UIViewController {
 
     @IBOutlet var kegiatanHarianSatu: UITextField!
     @IBOutlet var kegiatanHarianDua:UITextField!
-
     @IBOutlet var kegiatanHarianTiga: UITextField!
+    
     @IBOutlet var kegiatanMendatangSatu: UITextField!
     @IBOutlet var kegiatanMendatangDua: UITextField!
     
+    @IBOutlet var jamHarianSatu: UITextField!
+    @IBOutlet var jamHarianDua: UITextField!
+    @IBOutlet var jamHarianTiga: UITextField!
     
-    @IBOutlet var timePicker: UIDatePicker!
-    @IBOutlet var dateTimePicker: UIDatePicker!
+    @IBOutlet var jamMendatangSatu: UITextField!
+    @IBOutlet var jamMendatangDua: UITextField!
+
+    private var datePicker: UIDatePicker?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        datePicker = UIDatePicker()
+        datePicker?.datePickerMode = .time
+        datePicker?.addTarget(self, action: #selector(DaftarKegiatanViewController.dateChanged(datePicker:)),for: .valueChanged)
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(DaftarKegiatanViewController.viewTapped(gestureRecognizer:)))
+        
+        view.addGestureRecognizer(tapGesture)
+        
+        
+        jamHarianSatu.inputView = datePicker
+        jamHarianDua.inputView = datePicker
+        jamHarianTiga.inputView = datePicker
+        
+        jamMendatangSatu.inputView = datePicker
+        jamMendatangDua.inputView = datePicker
+        
 
         kegiatanHarianSatu.layer.cornerRadius = 20.0
         kegiatanHarianSatu.layer.masksToBounds = true
@@ -53,6 +75,24 @@ class DaftarKegiatanViewController: UIViewController {
     
     }
     
+    @objc func viewTapped(gestureRecognizer: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
+    
+    @objc func dateChanged(datePicker: UIDatePicker) {
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "HH:MM"
+        jamHarianSatu.text = dateFormatter.string(from: datePicker.date)
+        jamHarianDua.text = dateFormatter.string(from: datePicker.date)
+        jamHarianTiga.text = dateFormatter.string(from: datePicker.date)
+        jamMendatangSatu.text = dateFormatter.string(from: datePicker.date)
+        jamMendatangDua.text = dateFormatter.string(from: datePicker.date)
+        
+        view.endEditing(true)
+        
+    }
+    
     @IBAction func simpanKegiatanButton(_ sender: Any) {
         let kegiatanHarianSatuu = "\(kegiatanHarianSatu.text!)"
         print(kegiatanHarianSatuu)
@@ -63,10 +103,10 @@ class DaftarKegiatanViewController: UIViewController {
         let kegiatanMendatangSatuu = "\(kegiatanMendatangSatu.text!)"
         print(kegiatanMendatangSatuu)
         let kegiatanMendatangDuaa = "\(kegiatanMendatangDua.text!)"
-        print(kegiatanMendatangDuaa
+        print(kegiatanMendatangDuaa)
         
         //user default charname
-    )}
+    }
 }
 
 extension DaftarKegiatanViewController : UITextFieldDelegate{

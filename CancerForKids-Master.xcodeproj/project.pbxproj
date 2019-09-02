@@ -36,6 +36,7 @@
 		DB369A6C230FCA100055CC0A /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB369A6B230FCA100055CC0A /* DatePickerViewController.swift */; };
 		DB369A6F230FFD100055CC0A /* sakitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB369A6E230FFD100055CC0A /* sakitViewController.swift */; };
 		DB369A73230FFD3D0055CC0A /* sakit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB369A72230FFD3D0055CC0A /* sakit.storyboard */; };
+		DB620D0F231D04AE00CA1727 /* Parents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BCB605D2313E81300C5005E /* Parents.storyboard */; };
 		DBBE21B82313F3D600C2E649 /* DaftarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBE21B72313F3D600C2E649 /* DaftarViewController.swift */; };
 		DBBE21BA2313F3FC00C2E649 /* DaftarKegiatanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBE21B92313F3FC00C2E649 /* DaftarKegiatanViewController.swift */; };
 		DBBE21BC2314354E00C2E649 /* PertanyaanRahasiaDuaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBE21BB2314354E00C2E649 /* PertanyaanRahasiaDuaViewController.swift */; };
@@ -271,6 +272,7 @@
 			files = (
 				4B07D549230EA52400151CB3 /* Character.storyboard in Resources */,
 				4E5D735623177E09009D6CC6 /* Switch-Click.wav in Resources */,
+				DB620D0F231D04AE00CA1727 /* Parents.storyboard in Resources */,
 				4E8A99F9230D4A6400A90EC1 /* Assets.xcassets in Resources */,
 				4E5D735423177DD7009D6CC6 /* Joy & Calm.m4a in Resources */,
 				4BCB60602313EB7600C5005E /* Good Unicorn - TTF.ttf in Resources */,
@@ -449,7 +451,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 85YSJX97S8;
+				DEVELOPMENT_TEAM = Q5T3Q68SMU;
 				INFOPLIST_FILE = "CancerForKids-Master/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -468,7 +470,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 85YSJX97S8;
+				DEVELOPMENT_TEAM = Q5T3Q68SMU;
 				INFOPLIST_FILE = "CancerForKids-Master/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -24,26 +24,45 @@ class DaftarKegiatanViewController: UIViewController {
     @IBOutlet var jamMendatangSatu: UITextField!
     @IBOutlet var jamMendatangDua: UITextField!
 
-    private var datePicker: UIDatePicker?
+    private var datePickerJamHarianSatu: UIDatePicker?
+     private var datePickerJamHarianDua: UIDatePicker?
+     private var datePickerJamHarianTiga: UIDatePicker?
+     private var datePickerJamMendatangSatu: UIDatePicker?
+     private var datePickerJamMendatangDua: UIDatePicker?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        datePicker = UIDatePicker()
-        datePicker?.datePickerMode = .time
-        datePicker?.addTarget(self, action: #selector(DaftarKegiatanViewController.dateChanged(datePicker:)),for: .valueChanged)
+        datePickerJamHarianSatu = UIDatePicker()
+        datePickerJamHarianSatu?.datePickerMode = .time
+        datePickerJamHarianDua = UIDatePicker()
+        datePickerJamHarianDua?.datePickerMode = .time
+        datePickerJamHarianTiga = UIDatePicker()
+        datePickerJamHarianTiga?.datePickerMode = .time
+        
+        datePickerJamMendatangSatu = UIDatePicker()
+        datePickerJamMendatangSatu?.datePickerMode = .dateAndTime
+        datePickerJamMendatangDua = UIDatePicker()
+        datePickerJamMendatangDua?.datePickerMode = .dateAndTime
+        
+        
+        datePickerJamHarianSatu!.addTarget(self, action: #selector(DaftarKegiatanViewController.dateChanged(datePicker:)),for: .valueChanged)
+        datePickerJamHarianDua!.addTarget(self, action: #selector(DaftarKegiatanViewController.dateChanged(datePicker:)),for: .valueChanged)
+        datePickerJamHarianTiga!.addTarget(self, action: #selector(DaftarKegiatanViewController.dateChanged(datePicker:)),for: .valueChanged)
+        datePickerJamMendatangSatu!.addTarget(self, action: #selector(DaftarKegiatanViewController.dateChanged(datePicker:)),for: .valueChanged)
+        datePickerJamMendatangDua!.addTarget(self, action: #selector(DaftarKegiatanViewController.dateChanged(datePicker:)),for: .valueChanged)
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(DaftarKegiatanViewController.viewTapped(gestureRecognizer:)))
         
         view.addGestureRecognizer(tapGesture)
         
         
-        jamHarianSatu.inputView = datePicker
-        jamHarianDua.inputView = datePicker
-        jamHarianTiga.inputView = datePicker
+        jamHarianSatu.inputView = datePickerJamHarianSatu
+        jamHarianDua.inputView = datePickerJamHarianDua
+        jamHarianTiga.inputView = datePickerJamHarianTiga
         
-        jamMendatangSatu.inputView = datePicker
-        jamMendatangDua.inputView = datePicker
+        jamMendatangSatu.inputView = datePickerJamMendatangSatu
+        jamMendatangDua.inputView = datePickerJamMendatangDua
         
 
         kegiatanHarianSatu.layer.cornerRadius = 20.0
@@ -80,16 +99,26 @@ class DaftarKegiatanViewController: UIViewController {
     }
     
     @objc func dateChanged(datePicker: UIDatePicker) {
-        
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "HH:MM"
-        jamHarianSatu.text = dateFormatter.string(from: datePicker.date)
-        jamHarianDua.text = dateFormatter.string(from: datePicker.date)
-        jamHarianTiga.text = dateFormatter.string(from: datePicker.date)
-        jamMendatangSatu.text = dateFormatter.string(from: datePicker.date)
-        jamMendatangDua.text = dateFormatter.string(from: datePicker.date)
+        dateFormatter.dateFormat = "HH:mm"
         
-        view.endEditing(true)
+        let dateFormatterMendatang = DateFormatter()
+        dateFormatter.dateFormat = "dd/MM/yyyy HH:mm"
+        
+        if datePicker == datePickerJamHarianSatu{
+            jamHarianSatu.text = dateFormatter.string(from: datePicker.date)
+        }
+        else if  datePicker == datePickerJamHarianDua
+        {
+            jamHarianDua.text = dateFormatter.string(from: datePicker.date)}
+        else if  datePicker == datePickerJamHarianTiga
+        {   jamHarianTiga.text = dateFormatter.string(from: datePicker.date)}
+        else if  datePicker == datePickerJamMendatangSatu
+        {   jamMendatangSatu.text = dateFormatterMendatang.string(from: datePicker.date)}
+        else if  datePicker == datePickerJamHarianDua
+        { jamMendatangDua.text = dateFormatterMendatang.string(from: datePicker.date)}
+        
+        //view.endEditing(true)
         
     }
     

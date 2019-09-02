@@ -27,7 +27,7 @@ class CharacterViewController: UIViewController {
 
     @IBAction func enterNameButton(_ sender: Any) {
         let charName = "\(roundTF.text!)"
-        print(charName)
+        UserDefaults.standard.set(charName, forKey: "charName")
         //user default charname
     }
 }

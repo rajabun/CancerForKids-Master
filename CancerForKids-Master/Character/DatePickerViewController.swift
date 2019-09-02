@@ -26,6 +26,7 @@ class DatePickerViewController: UIViewController {
     
     @IBAction func btnSimpanTanggalLahir(_ sender: Any) {
         tglLahir = datePicker.date
+        UserDefaults.standard.set(tglLahir, forKey: "tglLahir")
         //user default tanggal lahir
     }
     @IBAction func dateSelectedFromPicker(_ :  AnyObject){

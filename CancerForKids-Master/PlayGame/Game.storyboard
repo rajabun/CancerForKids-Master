@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Zf-Ev-A1A">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,7 +12,7 @@
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="BelajarAnimasiDenganSpriteKit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="CancerForKids_Master" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,7 +20,7 @@
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
                     </view>
                     <connections>
-                        <segue destination="4Zf-Ev-A1A" kind="show" identifier="push" id="2Zu-81-DPy"/>
+                        <segue destination="4Zf-Ev-A1A" kind="show" identifier="PlayToHomeIdentifier" customClass="SegueFromLeft" customModule="CancerForKids_Master" customModuleProvider="target" id="2Zu-81-DPy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
@@ -29,17 +29,127 @@
         <!--Home View Controller-->
         <scene sceneID="XeF-0O-vD0">
             <objects>
-                <viewController id="4Zf-Ev-A1A" customClass="HomeViewController" customModule="BelajarAnimasiDenganSpriteKit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4Zf-Ev-A1A" customClass="HomeViewController" customModule="CancerForKids_Master" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bae-8e-NJa">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9su-RW-YNS" userLabel="Periksa TubuhButton">
+                                <rect key="frame" x="55" y="113" width="706" height="111"/>
+                                <state key="normal" backgroundImage="PeriksaTubuhButton"/>
+                                <connections>
+                                    <action selector="periksaTubuhButtonAction:" destination="4Zf-Ev-A1A" eventType="touchUpInside" id="gWX-Ep-Bkw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZM-fX-WPK" userLabel="Daftar Kegiatan Button">
+                                <rect key="frame" x="62" y="216" width="323" height="95"/>
+                                <state key="normal" backgroundImage="DaftarKegiatanButton"/>
+                                <connections>
+                                    <action selector="daftarKegiatanButtonAction:" destination="4Zf-Ev-A1A" eventType="touchUpInside" id="IKf-hZ-lCQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="md7-Ds-o2a" userLabel="Catatan Kesehatan Button">
+                                <rect key="frame" x="62" y="320" width="517" height="95"/>
+                                <state key="normal" backgroundImage="CatatanKesehatanButton"/>
+                                <connections>
+                                    <action selector="catatanKesehatanButtonAction:" destination="4Zf-Ev-A1A" eventType="touchUpInside" id="8lC-kL-mTh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nuf-KI-ary" userLabel="Reward Button">
+                                <rect key="frame" x="313" y="626" width="110" height="105"/>
+                                <state key="normal" backgroundImage="RewardButton"/>
+                                <connections>
+                                    <action selector="rewardButtonAction:" destination="4Zf-Ev-A1A" eventType="touchUpInside" id="Fvg-2x-Ko3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjd-nv-4Jr" userLabel="Polisi Button">
+                                <rect key="frame" x="35" y="626" width="106" height="105"/>
+                                <state key="normal" backgroundImage="PolisiButton"/>
+                                <connections>
+                                    <action selector="polisiButtonAction:" destination="4Zf-Ev-A1A" eventType="touchUpInside" id="jQ6-ZU-Sn0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKH-q3-hBW" userLabel="Play Button">
+                                <rect key="frame" x="147" y="575" width="160" height="156"/>
+                                <state key="normal" backgroundImage="PlayButton"/>
+                                <connections>
+                                    <action selector="playButtonAction:" destination="4Zf-Ev-A1A" eventType="touchUpInside" id="pB4-On-Yxh"/>
+                                    <segue destination="BV1-FR-VrT" kind="show" identifier="HomeToPlayIdentifier" id="zYp-VE-zo9"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomePolice" translatesAutoresizingMaskIntoConstraints="NO" id="Z3n-ri-XD9">
+                                <rect key="frame" x="943" y="229" width="16" height="489"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5AB-Dk-GsF" userLabel="Area Orang Tua Button">
+                                <rect key="frame" x="62" y="424" width="515" height="95"/>
+                                <state key="normal" backgroundImage="AreaOrangTuaButton"/>
+                                <connections>
+                                    <action selector="areaOrangTuaButtonAction:" destination="4Zf-Ev-A1A" eventType="touchUpInside" id="13F-xP-Cqn"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomeFillCloud" translatesAutoresizingMaskIntoConstraints="NO" id="OuJ-L1-iQv">
+                                <rect key="frame" x="811" y="74" width="16" height="177"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="0.1907650846" green="0.64379758880000004" blue="0.23095728160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="OuJ-L1-iQv" firstAttribute="leading" secondItem="9su-RW-YNS" secondAttribute="trailing" constant="50" id="2jX-FL-NMJ"/>
+                            <constraint firstItem="pCd-IS-zR9" firstAttribute="bottom" secondItem="GZM-fX-WPK" secondAttribute="bottom" constant="457" id="5x8-vL-RKv"/>
+                            <constraint firstItem="GZM-fX-WPK" firstAttribute="top" secondItem="pCd-IS-zR9" secondAttribute="top" constant="196" id="6sV-pP-Q8T"/>
+                            <constraint firstItem="Nuf-KI-ary" firstAttribute="leading" secondItem="pCd-IS-zR9" secondAttribute="leading" constant="313" id="7ln-QX-VzL"/>
+                            <constraint firstItem="md7-Ds-o2a" firstAttribute="top" secondItem="pCd-IS-zR9" secondAttribute="top" constant="300" id="9cz-sf-3RY"/>
+                            <constraint firstItem="pCd-IS-zR9" firstAttribute="bottom" secondItem="fjd-nv-4Jr" secondAttribute="bottom" constant="37" id="CEs-fN-YrU"/>
+                            <constraint firstItem="5AB-Dk-GsF" firstAttribute="leading" secondItem="pCd-IS-zR9" secondAttribute="leading" constant="62" id="E69-MQ-2iT"/>
+                            <constraint firstItem="OuJ-L1-iQv" firstAttribute="leading" secondItem="9su-RW-YNS" secondAttribute="trailing" constant="50" id="F7j-kj-bpd"/>
+                            <constraint firstItem="Z3n-ri-XD9" firstAttribute="top" secondItem="pCd-IS-zR9" secondAttribute="top" constant="209" id="H5W-KK-ABc"/>
+                            <constraint firstItem="pCd-IS-zR9" firstAttribute="trailing" secondItem="GZM-fX-WPK" secondAttribute="trailing" constant="639" id="L7d-Vw-CG0"/>
+                            <constraint firstItem="pCd-IS-zR9" firstAttribute="bottom" secondItem="Nuf-KI-ary" secondAttribute="bottom" constant="37" id="Lc0-LM-COJ"/>
+                            <constraint firstItem="pCd-IS-zR9" firstAttribute="trailing" secondItem="WKH-q3-hBW" secondAttribute="trailing" constant="717" id="Oni-Ix-4qj"/>
+                            <constraint firstItem="Nuf-KI-ary" firstAttribute="top" secondItem="pCd-IS-zR9" secondAttribute="top" constant="606" id="RtS-0v-HNp"/>
+                            <constraint firstItem="9su-RW-YNS" firstAttribute="leading" secondItem="pCd-IS-zR9" secondAttribute="leading" constant="55" id="STe-3G-BZy"/>
+                            <constraint firstItem="fjd-nv-4Jr" firstAttribute="leading" secondItem="pCd-IS-zR9" secondAttribute="leading" constant="35" id="UH6-Uf-f6E"/>
+                            <constraint firstItem="pCd-IS-zR9" firstAttribute="trailing" secondItem="fjd-nv-4Jr" secondAttribute="trailing" constant="883" id="WoH-nS-UOo"/>
+                            <constraint firstItem="GZM-fX-WPK" firstAttribute="leading" secondItem="pCd-IS-zR9" secondAttribute="leading" constant="62" id="ZLM-Yg-BtS"/>
+                            <constraint firstItem="md7-Ds-o2a" firstAttribute="leading" secondItem="pCd-IS-zR9" secondAttribute="leading" constant="62" id="bPU-DT-YCV"/>
+                            <constraint firstItem="5AB-Dk-GsF" firstAttribute="top" secondItem="pCd-IS-zR9" secondAttribute="top" constant="404" id="dWO-2c-mJF"/>
+                            <constraint firstItem="pCd-IS-zR9" firstAttribute="bottom" secondItem="Z3n-ri-XD9" secondAttribute="bottom" constant="50" id="dhH-26-oPj"/>
+                            <constraint firstItem="pCd-IS-zR9" firstAttribute="trailing" secondItem="OuJ-L1-iQv" secondAttribute="trailing" constant="197" id="eqW-Ph-mbU"/>
+                            <constraint firstItem="OuJ-L1-iQv" firstAttribute="top" secondItem="pCd-IS-zR9" secondAttribute="top" constant="54" id="ihr-M9-MLF"/>
+                            <constraint firstItem="pCd-IS-zR9" firstAttribute="trailing" secondItem="Z3n-ri-XD9" secondAttribute="trailing" constant="65" id="j6X-4r-oPy"/>
+                            <constraint firstItem="9su-RW-YNS" firstAttribute="top" secondItem="pCd-IS-zR9" secondAttribute="top" constant="93" id="jdO-eb-XaS"/>
+                            <constraint firstItem="fjd-nv-4Jr" firstAttribute="top" secondItem="pCd-IS-zR9" secondAttribute="top" constant="606" id="jfS-tU-Rva"/>
+                            <constraint firstItem="pCd-IS-zR9" firstAttribute="bottom" secondItem="md7-Ds-o2a" secondAttribute="bottom" constant="353" id="ktR-wq-Snx"/>
+                            <constraint firstItem="pCd-IS-zR9" firstAttribute="bottom" secondItem="WKH-q3-hBW" secondAttribute="bottom" constant="37" id="luD-KW-dzL"/>
+                            <constraint firstItem="pCd-IS-zR9" firstAttribute="bottom" secondItem="9su-RW-YNS" secondAttribute="bottom" constant="544" id="ppM-Sh-IIt"/>
+                            <constraint firstItem="Z3n-ri-XD9" firstAttribute="leading" secondItem="5AB-Dk-GsF" secondAttribute="trailing" constant="366" id="pyh-jr-01k"/>
+                            <constraint firstItem="WKH-q3-hBW" firstAttribute="leading" secondItem="pCd-IS-zR9" secondAttribute="leading" constant="147" id="rlV-sx-O2Z"/>
+                            <constraint firstItem="WKH-q3-hBW" firstAttribute="top" secondItem="pCd-IS-zR9" secondAttribute="top" constant="555" id="sjh-1B-4Nl"/>
+                            <constraint firstItem="pCd-IS-zR9" firstAttribute="bottom" secondItem="5AB-Dk-GsF" secondAttribute="bottom" constant="249" id="v43-4G-zQS"/>
+                            <constraint firstItem="Z3n-ri-XD9" firstAttribute="leading" secondItem="md7-Ds-o2a" secondAttribute="trailing" constant="364" id="vrW-UJ-OXb"/>
+                            <constraint firstItem="pCd-IS-zR9" firstAttribute="trailing" secondItem="Nuf-KI-ary" secondAttribute="trailing" constant="601" id="xs8-9J-ta0"/>
+                            <constraint firstItem="pCd-IS-zR9" firstAttribute="bottom" secondItem="OuJ-L1-iQv" secondAttribute="bottom" constant="517" id="zlD-cC-S4W"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="pCd-IS-zR9"/>
                     </view>
+                    <connections>
+                        <outlet property="balloonImage" destination="OuJ-L1-iQv" id="z23-9s-xmV"/>
+                        <outlet property="characterImage" destination="Z3n-ri-XD9" id="dAa-MP-y6g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tOL-ZC-mmt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="823" y="23"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AreaOrangTuaButton" width="321" height="95"/>
+        <image name="CatatanKesehatanButton" width="323" height="95"/>
+        <image name="DaftarKegiatanButton" width="323" height="95"/>
+        <image name="HomeFillCloud" width="392" height="216"/>
+        <image name="HomePolice" width="210" height="484"/>
+        <image name="PeriksaTubuhButton" width="330" height="111"/>
+        <image name="PlayButton" width="160" height="156"/>
+        <image name="PolisiButton" width="106" height="105"/>
+        <image name="RewardButton" width="110" height="105"/>
+    </resources>
 </document>

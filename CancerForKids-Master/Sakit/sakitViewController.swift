@@ -16,7 +16,10 @@ class sakitViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func btnSakitKepala(_ sender: Any) {
+        
+    }
+    
     /*
     // MARK: - Navigation
 

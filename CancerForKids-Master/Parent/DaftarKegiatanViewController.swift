@@ -119,11 +119,11 @@ class DaftarKegiatanViewController: UIViewController {
         dateFormatterMendatang.dateFormat = "dd/MM/yyyy HH:mm"
         
         if  datePicker == datePickerJamMendatangSatu
-        {   jamMendatangSatu.text = dateFormatterMendatang.string(from: datePicker.date)}
+        {   jamMendatangSatu.text = dateFormatterMendatang.string(from: datePicker.date)
+            print(dateFormatterMendatang.string(from: datePicker.date))
+        }
         else if  datePicker == datePickerJamHarianDua
         { jamMendatangDua.text = dateFormatterMendatang.string(from: datePicker.date)}
-        
-        
     }
     
     @IBAction func simpanKegiatanButton(_ sender: Any) {

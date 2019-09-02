@@ -21,8 +21,6 @@
 		4E526D9C2314EE3000ACA520 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E526D9B2314EE3000ACA520 /* HomeViewController.swift */; };
 		4E526D9E2314EE3500ACA520 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E526D9D2314EE3500ACA520 /* GameViewController.swift */; };
 		4E526DA02314EE3A00ACA520 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E526D9F2314EE3A00ACA520 /* GameScene.swift */; };
-		4E526DA22314EE4200ACA520 /* Police_attack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 4E526DA12314EE4200ACA520 /* Police_attack.atlas */; };
-		4E526DA42314EE5100ACA520 /* Police_dance.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 4E526DA32314EE5100ACA520 /* Police_dance.atlas */; };
 		4E526DAC2314F03000ACA520 /* AudioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E526DAB2314F03000ACA520 /* AudioModel.swift */; };
 		4E5D735423177DD7009D6CC6 /* Joy & Calm.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4E5D735323177DD7009D6CC6 /* Joy & Calm.m4a */; };
 		4E5D735623177E09009D6CC6 /* Switch-Click.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4E5D735523177E09009D6CC6 /* Switch-Click.wav */; };
@@ -55,9 +53,6 @@
 		4E526D9B2314EE3000ACA520 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4E526D9D2314EE3500ACA520 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		4E526D9F2314EE3A00ACA520 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		4E526DA12314EE4200ACA520 /* Police_attack.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Police_attack.atlas; sourceTree = "<group>"; };
-		4E526DA32314EE5100ACA520 /* Police_dance.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Police_dance.atlas; sourceTree = "<group>"; };
-		4E526DA52314EE5400ACA520 /* Police_run.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Police_run.atlas; sourceTree = "<group>"; };
 		4E526DAB2314F03000ACA520 /* AudioModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioModel.swift; sourceTree = "<group>"; };
 		4E5D735323177DD7009D6CC6 /* Joy & Calm.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Joy & Calm.m4a"; sourceTree = "<group>"; };
 		4E5D735523177E09009D6CC6 /* Switch-Click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Switch-Click.wav"; sourceTree = "<group>"; };
@@ -137,9 +132,6 @@
 				4E526DAB2314F03000ACA520 /* AudioModel.swift */,
 				4EE846FA231CCF740049BD98 /* SegueFromLeft.swift */,
 				4E526DA62314EE6200ACA520 /* Sounds */,
-				4E526DA32314EE5100ACA520 /* Police_dance.atlas */,
-				4E526DA52314EE5400ACA520 /* Police_run.atlas */,
-				4E526DA12314EE4200ACA520 /* Police_attack.atlas */,
 				4E526D9F2314EE3A00ACA520 /* GameScene.swift */,
 				4E526D9D2314EE3500ACA520 /* GameViewController.swift */,
 				4E526D9B2314EE3000ACA520 /* HomeViewController.swift */,
@@ -259,7 +251,6 @@
 			files = (
 				4B07D549230EA52400151CB3 /* Character.storyboard in Resources */,
 				4E5D735623177E09009D6CC6 /* Switch-Click.wav in Resources */,
-				4E526DA22314EE4200ACA520 /* Police_attack.atlas in Resources */,
 				4E8A99F9230D4A6400A90EC1 /* Assets.xcassets in Resources */,
 				4E5D735423177DD7009D6CC6 /* Joy & Calm.m4a in Resources */,
 				4BCB60602313EB7600C5005E /* Good Unicorn - TTF.ttf in Resources */,
@@ -268,7 +259,6 @@
 				4B07D53D230E874B00151CB3 /* Slide.xib in Resources */,
 				4E8A99FC230D4A6400A90EC1 /* LaunchScreen.storyboard in Resources */,
 				4B07D535230E841300151CB3 /* OnBoarding.storyboard in Resources */,
-				4E526DA42314EE5100ACA520 /* Police_dance.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

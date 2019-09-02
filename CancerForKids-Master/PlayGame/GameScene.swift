@@ -34,7 +34,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate
     let obatButton = SKSpriteNode(imageNamed: "ObatButton.png")
     let makanButton = SKSpriteNode(imageNamed: "MakanButton.png")
     let danceButton = SKSpriteNode(imageNamed: "MusicButton.png")
-    let backButton = SKSpriteNode(imageNamed: "BackButton.png")
+    let backButton = SKSpriteNode(imageNamed: "backbutton.png")
     var smileEmojiView = SKSpriteNode(imageNamed: "ConfuseEmoji.png")
     var progressBarView = SKSpriteNode(imageNamed: "ProgressBarEmoticons50%.png")
     

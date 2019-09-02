@@ -25,10 +25,10 @@ class DaftarKegiatanViewController: UIViewController {
     @IBOutlet var jamMendatangDua: UITextField!
 
     private var datePickerJamHarianSatu: UIDatePicker?
-     private var datePickerJamHarianDua: UIDatePicker?
-     private var datePickerJamHarianTiga: UIDatePicker?
-     private var datePickerJamMendatangSatu: UIDatePicker?
-     private var datePickerJamMendatangDua: UIDatePicker?
+    private var datePickerJamHarianDua: UIDatePicker?
+    private var datePickerJamHarianTiga: UIDatePicker?
+    private var datePickerJamMendatangSatu: UIDatePicker?
+    private var datePickerJamMendatangDua: UIDatePicker?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,8 +49,8 @@ class DaftarKegiatanViewController: UIViewController {
         datePickerJamHarianSatu!.addTarget(self, action: #selector(DaftarKegiatanViewController.dateChanged(datePicker:)),for: .valueChanged)
         datePickerJamHarianDua!.addTarget(self, action: #selector(DaftarKegiatanViewController.dateChanged(datePicker:)),for: .valueChanged)
         datePickerJamHarianTiga!.addTarget(self, action: #selector(DaftarKegiatanViewController.dateChanged(datePicker:)),for: .valueChanged)
-        datePickerJamMendatangSatu!.addTarget(self, action: #selector(DaftarKegiatanViewController.dateChanged(datePicker:)),for: .valueChanged)
-        datePickerJamMendatangDua!.addTarget(self, action: #selector(DaftarKegiatanViewController.dateChanged(datePicker:)),for: .valueChanged)
+        datePickerJamMendatangSatu!.addTarget(self, action: #selector(DaftarKegiatanViewController.dateAndTimeChanged(datePicker:)),for: .valueChanged)
+        datePickerJamMendatangDua!.addTarget(self, action: #selector(DaftarKegiatanViewController.dateAndTimeChanged(datePicker:)),for: .valueChanged)
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(DaftarKegiatanViewController.viewTapped(gestureRecognizer:)))
         
@@ -102,9 +102,6 @@ class DaftarKegiatanViewController: UIViewController {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "HH:mm"
         
-        let dateFormatterMendatang = DateFormatter()
-        dateFormatter.dateFormat = "dd/MM/yyyy HH:mm"
-        
         if datePicker == datePickerJamHarianSatu{
             jamHarianSatu.text = dateFormatter.string(from: datePicker.date)
         }
@@ -113,12 +110,19 @@ class DaftarKegiatanViewController: UIViewController {
             jamHarianDua.text = dateFormatter.string(from: datePicker.date)}
         else if  datePicker == datePickerJamHarianTiga
         {   jamHarianTiga.text = dateFormatter.string(from: datePicker.date)}
-        else if  datePicker == datePickerJamMendatangSatu
+        //view.endEditing(true)
+    }
+    
+    @objc func dateAndTimeChanged(datePicker: UIDatePicker){
+        
+        let dateFormatterMendatang = DateFormatter()
+        dateFormatterMendatang.dateFormat = "dd/MM/yyyy HH:mm"
+        
+        if  datePicker == datePickerJamMendatangSatu
         {   jamMendatangSatu.text = dateFormatterMendatang.string(from: datePicker.date)}
         else if  datePicker == datePickerJamHarianDua
         { jamMendatangDua.text = dateFormatterMendatang.string(from: datePicker.date)}
         
-        //view.endEditing(true)
         
     }
     

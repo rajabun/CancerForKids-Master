@@ -34,7 +34,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate
     let obatButton = SKSpriteNode(imageNamed: "ObatButton.png")
     let makanButton = SKSpriteNode(imageNamed: "MakanButton.png")
     let danceButton = SKSpriteNode(imageNamed: "MusicButton.png")
-    let backButton = SKSpriteNode(imageNamed: "backbutton.png")
+    let backButton = SKSpriteNode(imageNamed: "BackButton.png")
     var smileEmojiView = SKSpriteNode(imageNamed: "ConfuseEmoji.png")
     var progressBarView = SKSpriteNode(imageNamed: "ProgressBarEmoticons50%.png")
     
@@ -74,37 +74,31 @@ class GameScene: SKScene, SKPhysicsContactDelegate
         
         obatButton.position = CGPoint(x: 845, y: 532)
         obatButton.zPosition = CGFloat(ZPositions.foreground.rawValue)
-        //obatButton.size = CGSize(width: 79, height: 79)
         obatButton.name = "ObatButton"
         addChild(obatButton)
         
         makanButton.position = CGPoint(x: 815, y: 381)
         makanButton.zPosition = CGFloat(ZPositions.foreground.rawValue)
-        //makanButton.size = CGSize(width: 96, height: 95)
         makanButton.name = "MakanButton"
         addChild(makanButton)
         
         danceButton.position = CGPoint(x: 854, y: 232)
         danceButton.zPosition = CGFloat(ZPositions.foreground.rawValue)
-        //danceButton.size = CGSize(width: 79, height: 79)
         danceButton.name = "DanceButton"
         addChild(danceButton)
         
         backButton.position = CGPoint(x: 85, y: 671)
         backButton.zPosition = CGFloat(ZPositions.foreground.rawValue)
-        //backButton.size = CGSize(width: 79, height: 79)
         backButton.name = "BackButton"
         addChild(backButton)
         
         smileEmojiView.position = CGPoint(x: 967, y: 590)
         smileEmojiView.zPosition = CGFloat(ZPositions.foreground.rawValue)
-        //smileEmojiView.size = CGSize(width: 79, height: 79)
         smileEmojiView.name = "SmileEmojiView"
         addChild(smileEmojiView)
         
         progressBarView.position = CGPoint(x: 967, y: 381)
         progressBarView.zPosition = CGFloat(ZPositions.foreground.rawValue)
-        //progressBarView.size = CGSize(width: 79, height: 79)
         progressBarView.name = "ProgressBarView"
         addChild(progressBarView)
     }
@@ -122,9 +116,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate
         }
         ninjaCatAnimationFrames = danceFrames
         
-        //        let firstFrameTexture = ninjaCatAnimationFrames[0]
-        //        ninjaCat = SKSpriteNode(texture: firstFrameTexture)
-        //        ninjaCat.position = updateLocation
         ninjaCat.position = CGPoint(x: frame.midX, y: 336)
         ninjaCat.zPosition = CGFloat(ZPositions.player.rawValue)
         ninjaCat.size = CGSize(width: 386, height: 422)
@@ -134,22 +125,26 @@ class GameScene: SKScene, SKPhysicsContactDelegate
     
     func buildPhysics()
     {
-        ninjaCat.physicsBody = SKPhysicsBody(rectangleOf: ninjaCat.size)
+        ninjaCat.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: 100, height: 200))
         obatButton.physicsBody = SKPhysicsBody(rectangleOf: obatButton.size)
         makanButton.physicsBody = SKPhysicsBody(rectangleOf: makanButton.size)
         
         //yang gerak dibikin satu aja kategorinya gapapa gausah tiap node dibikin
+        //kalau dua node melakukan hal yang sama, bisa dibikin satu kategori saja
         obatButton.physicsBody!.categoryBitMask = ObatCategory
         makanButton.physicsBody!.categoryBitMask = ObatCategory
         
         //yang diem
         ninjaCat.physicsBody!.categoryBitMask = PlayerCategory
         
-        obatButton.physicsBody!.collisionBitMask = ObatCategory
-        makanButton.physicsBody!.collisionBitMask = ObatCategory
+        //deteksi dan simulasi collision
         ninjaCat.physicsBody!.collisionBitMask = PlayerCategory
         
-        //tombol obat kontak dengan karakter
+        //jika collisionBitMasknya bernilai 0, maka collision tidak disimulasikan. Tidak tabrakan
+        obatButton.physicsBody!.collisionBitMask = 0
+        makanButton.physicsBody!.collisionBitMask = 0
+        
+        //deteksi tombol obat dan makan melakukan kontak dengan karakter
         obatButton.physicsBody!.contactTestBitMask = PlayerCategory
         makanButton.physicsBody!.contactTestBitMask = PlayerCategory
         ninjaCat.physicsBody!.contactTestBitMask = ObatCategory
@@ -178,9 +173,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate
         }
         ninjaCatAnimationFrames = runFrames
         
-        //        let firstFrameTexture = ninjaCatAnimationFrames[0]
-        //        ninjaCat = SKSpriteNode(texture: firstFrameTexture)
-        //        ninjaCat.position = updateLocation
         ninjaCat.position = CGPoint(x: frame.midX, y: frame.midY)
         ninjaCat.zPosition = CGFloat(ZPositions.player.rawValue)
         ninjaCat.size = CGSize(width: 257, height: 449)
@@ -212,9 +204,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate
         }
         ninjaCatAnimationFrames = attackFrames
         
-        //        let firstFrameTexture = ninjaCatAnimationFrames[0]
-        //        ninjaCat = SKSpriteNode(texture: firstFrameTexture)
-        //        ninjaCat.position = updateLocation
         ninjaCat.position = CGPoint(x: frame.midX, y: frame.midY)
         ninjaCat.zPosition = CGFloat(ZPositions.player.rawValue)
         ninjaCat.size = CGSize(width: 357, height: 477)
@@ -278,7 +267,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate
                 // Call the function here.
                 //backgroundColor = .blue
                 //removeAllChildren()
-                self.gameViewController?.performSegue(withIdentifier: "PlayToHomeIdentifier", sender: self)
+                segueToHome()
                 print("Tombol back berhasil ditekan")
             }
             else
@@ -339,6 +328,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate
         }
     }
     
+    func segueToHome()
+    {
+        audioReady.audioStop()
+        self.gameViewController?.performSegue(withIdentifier: "PlayToHomeIdentifier", sender: gameViewController)
+    }
+    
     func changeProgressBarTexture()
     {
         if textureProgressBarCounter == 1
@@ -362,6 +357,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate
         else if textureProgressBarCounter == 4
         {
             textureProgressBarCounter += 1
+            smileEmojiView.texture = SKTexture(imageNamed: "HappyEmoji.png")
+            progressBarView.texture = SKTexture(imageNamed: "ProgressBarEmoticons100%.png")
+        }
+        else if textureProgressBarCounter == 5
+        {
             smileEmojiView.texture = SKTexture(imageNamed: "HappyEmoji.png")
             progressBarView.texture = SKTexture(imageNamed: "ProgressBarEmoticons100%.png")
         }

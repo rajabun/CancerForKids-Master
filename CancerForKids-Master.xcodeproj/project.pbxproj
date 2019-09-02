@@ -29,6 +29,7 @@
 		4E8A99EC230D4A6400A90EC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8A99EB230D4A6400A90EC1 /* AppDelegate.swift */; };
 		4E8A99F9230D4A6400A90EC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E8A99F8230D4A6400A90EC1 /* Assets.xcassets */; };
 		4E8A99FC230D4A6400A90EC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E8A99FA230D4A6400A90EC1 /* LaunchScreen.storyboard */; };
+		4EE846FB231CCF740049BD98 /* SegueFromLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE846FA231CCF740049BD98 /* SegueFromLeft.swift */; };
 		DB369A6A230FC9FE0055CC0A /* NamaUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB369A69230FC9FE0055CC0A /* NamaUserViewController.swift */; };
 		DB369A6C230FCA100055CC0A /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB369A6B230FCA100055CC0A /* DatePickerViewController.swift */; };
 		DB369A6F230FFD100055CC0A /* sakitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB369A6E230FFD100055CC0A /* sakitViewController.swift */; };
@@ -65,6 +66,7 @@
 		4E8A99F8230D4A6400A90EC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E8A99FB230D4A6400A90EC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E8A99FD230D4A6400A90EC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EE846FA231CCF740049BD98 /* SegueFromLeft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueFromLeft.swift; sourceTree = "<group>"; };
 		DB369A69230FC9FE0055CC0A /* NamaUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamaUserViewController.swift; sourceTree = "<group>"; };
 		DB369A6B230FCA100055CC0A /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		DB369A6E230FFD100055CC0A /* sakitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sakitViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				4E526DAB2314F03000ACA520 /* AudioModel.swift */,
+				4EE846FA231CCF740049BD98 /* SegueFromLeft.swift */,
 				4E526DA62314EE6200ACA520 /* Sounds */,
 				4E526DA32314EE5100ACA520 /* Police_dance.atlas */,
 				4E526DA52314EE5400ACA520 /* Police_run.atlas */,
@@ -276,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EE846FB231CCF740049BD98 /* SegueFromLeft.swift in Sources */,
 				4B07D53F230E87CC00151CB3 /* GetStarted.swift in Sources */,
 				DB369A6C230FCA100055CC0A /* DatePickerViewController.swift in Sources */,
 				4E526DA02314EE3A00ACA520 /* GameScene.swift in Sources */,

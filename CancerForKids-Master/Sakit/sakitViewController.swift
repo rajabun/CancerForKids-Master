@@ -17,6 +17,7 @@ class sakitViewController: UIViewController {
     }
     
     @IBAction func btnSakitKepala(_ sender: Any) {
+        UserDefaults.standard.set("kepala", forKey: "kepala")
         
     }
     

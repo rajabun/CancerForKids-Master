@@ -20,15 +20,15 @@ class SudahMilihSakitViewController: UIViewController {
     }
     
     @IBAction func btnOkeSakit(_ sender: Any) {
-        formatter.dateStyle = .short
-        formatter.timeStyle = .short
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .medium
         let tanggalSakit = formatter.string(from: currentDateTime)
         UserDefaults.standard.set(tanggalSakit, forKey: "tanggalSakit")
     }
     
     @IBAction func btnOkeSehat(_ sender: Any) {
-        formatter.dateStyle = .short
-        formatter.timeStyle = .short
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .medium
         let tanggalSakit = formatter.string(from: currentDateTime)
         UserDefaults.standard.set(tanggalSakit, forKey: "tanggalSakit")
     }

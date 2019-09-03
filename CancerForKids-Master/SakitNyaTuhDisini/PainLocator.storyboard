@@ -304,6 +304,12 @@
                         <outlet property="perutPanah" destination="5Nf-RL-idN" id="4Yf-Nh-Tcb"/>
                         <outlet property="perutPersen" destination="DQC-OJ-5LT" id="ivB-oZ-h4f"/>
                         <outlet property="perutPosisi" destination="Gc3-3i-KwT" id="5zz-39-P4U"/>
+                        <outlet property="sakitBahu" destination="seY-gC-m9R" id="hgC-45-QWo"/>
+                        <outlet property="sakitDada" destination="L9b-QU-x28" id="XWO-k1-D8C"/>
+                        <outlet property="sakitKaki" destination="sHH-cS-W5A" id="87r-79-2IA"/>
+                        <outlet property="sakitKepala" destination="htu-r0-7AX" id="Xny-pM-9TI"/>
+                        <outlet property="sakitPerut" destination="bVU-rO-WhK" id="b0k-BR-u1e"/>
+                        <outlet property="sakitTangan" destination="g90-Mq-ECt" id="GDc-nU-0oY"/>
                         <outlet property="tanganBalon" destination="A75-GJ-RDP" id="oiN-Vb-hcV"/>
                         <outlet property="tanganEmoji" destination="e2h-WF-6m4" id="wTZ-XX-zjA"/>
                         <outlet property="tanganPanah" destination="09Y-l5-khK" id="ixn-Hh-8Ej"/>

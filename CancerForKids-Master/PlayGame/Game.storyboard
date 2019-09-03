@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -36,7 +35,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9su-RW-YNS" userLabel="Periksa TubuhButton">
-                                <rect key="frame" x="55" y="113" width="330" height="111"/>
+                                <rect key="frame" x="55" y="113" width="706" height="111"/>
                                 <state key="normal" backgroundImage="PeriksaTubuhButton"/>
                                 <connections>
                                     <action selector="periksaTubuhButtonAction:" destination="4Zf-Ev-A1A" eventType="touchUpInside" id="gWX-Ep-Bkw"/>
@@ -50,7 +49,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="md7-Ds-o2a" userLabel="Catatan Kesehatan Button">
-                                <rect key="frame" x="62" y="320" width="323" height="95"/>
+                                <rect key="frame" x="62" y="320" width="517" height="95"/>
                                 <state key="normal" backgroundImage="CatatanKesehatanButton"/>
                                 <connections>
                                     <action selector="catatanKesehatanButtonAction:" destination="4Zf-Ev-A1A" eventType="touchUpInside" id="8lC-kL-mTh"/>
@@ -79,17 +78,17 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomePolice" translatesAutoresizingMaskIntoConstraints="NO" id="Z3n-ri-XD9">
-                                <rect key="frame" x="749" y="229" width="210" height="489"/>
+                                <rect key="frame" x="943" y="229" width="16" height="489"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5AB-Dk-GsF" userLabel="Area Orang Tua Button">
-                                <rect key="frame" x="62" y="424" width="321" height="95"/>
+                                <rect key="frame" x="62" y="424" width="515" height="95"/>
                                 <state key="normal" backgroundImage="AreaOrangTuaButton"/>
                                 <connections>
                                     <action selector="areaOrangTuaButtonAction:" destination="4Zf-Ev-A1A" eventType="touchUpInside" id="13F-xP-Cqn"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomeFillCloud" translatesAutoresizingMaskIntoConstraints="NO" id="OuJ-L1-iQv">
-                                <rect key="frame" x="434.99999999999994" y="74" width="392.00000000000017" height="177"/>
+                                <rect key="frame" x="811" y="74" width="16" height="177"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.1907650846" green="0.64379758880000004" blue="0.23095728160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -336,4 +335,7 @@
         <image name="Tanggal" width="212" height="80"/>
         <image name="TingkatKesakitan" width="212" height="80"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="zYp-VE-zo9"/>
+    </inferredMetricsTieBreakers>
 </document>

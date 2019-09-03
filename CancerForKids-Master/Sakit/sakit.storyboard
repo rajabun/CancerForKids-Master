@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="n46-v2-7fF">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,7 +12,7 @@
         <!--Sakit View Controller-->
         <scene sceneID="O2y-75-Fie">
             <objects>
-                <viewController id="n46-v2-7fF" customClass="sakitViewController" customModule="CancerForKids_Master" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sakit" id="n46-v2-7fF" customClass="sakitViewController" customModule="CancerForKids_Master" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vU8-Ww-Bgg">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -26,7 +26,7 @@
                                 <state key="normal" title="Button" image="backbutton"/>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubble police" translatesAutoresizingMaskIntoConstraints="NO" id="aX5-5l-ATT">
-                                <rect key="frame" x="40" y="65" width="796" height="649"/>
+                                <rect key="frame" x="40" y="65" width="796.00000000000023" height="649"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bagian tubuh mana yang sakit hari ini? Cerita sama aku yuk " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8U-c4-yEH">
                                 <rect key="frame" x="229" y="87" width="567" height="206"/>
@@ -35,35 +35,60 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSS-CJ-hnh">
-                                <rect key="frame" x="311" y="340" width="252" height="22"/>
+                                <rect key="frame" x="311" y="340" width="252" height="66"/>
                                 <state key="normal" title="Button" image="Button_Kepala"/>
                                 <connections>
                                     <action selector="btnSakitKepala:" destination="n46-v2-7fF" eventType="touchUpInside" id="BAC-zh-fuv"/>
+                                    <segue destination="Sh5-VZ-h55" kind="presentation" id="1rj-yz-pBP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdl-cq-Qti">
-                                <rect key="frame" x="312" y="370" width="252" height="22"/>
+                                <rect key="frame" x="312" y="414" width="252" height="66"/>
                                 <state key="normal" title="Button" image="Button_Pundak"/>
+                                <connections>
+                                    <action selector="btnSakitPundak:" destination="n46-v2-7fF" eventType="touchUpInside" id="xml-rJ-6co"/>
+                                    <segue destination="Sh5-VZ-h55" kind="presentation" id="wif-xf-L4I"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEG-Wh-MQh">
-                                <rect key="frame" x="312" y="400" width="252" height="22"/>
+                                <rect key="frame" x="312" y="488" width="252" height="66"/>
                                 <state key="normal" title="Button" image="Button_Dada"/>
+                                <connections>
+                                    <action selector="btnSakitDada:" destination="n46-v2-7fF" eventType="touchUpInside" id="Kmy-Nn-1zl"/>
+                                    <segue destination="Sh5-VZ-h55" kind="presentation" id="pNZ-KV-bjE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wyd-1S-OTE">
-                                <rect key="frame" x="562" y="370" width="252" height="22"/>
+                                <rect key="frame" x="562" y="414" width="252" height="66"/>
                                 <state key="normal" title="Button" image="Button_Tangan"/>
+                                <connections>
+                                    <action selector="btnSakitTangan:" destination="n46-v2-7fF" eventType="touchUpInside" id="Hev-47-6ZK"/>
+                                    <segue destination="Sh5-VZ-h55" kind="presentation" id="c1v-0u-2in"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bM-R9-v5I">
-                                <rect key="frame" x="562" y="400" width="252" height="22"/>
+                                <rect key="frame" x="562" y="488" width="252" height="66"/>
                                 <state key="normal" title="Button" image="Button_Kaki"/>
+                                <connections>
+                                    <action selector="btnSakitKaki:" destination="n46-v2-7fF" eventType="touchUpInside" id="XdM-Py-ntZ"/>
+                                    <segue destination="Sh5-VZ-h55" kind="presentation" id="Fyd-ye-gUN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Sk-5Q-Xcl">
-                                <rect key="frame" x="319" y="430" width="435" height="198"/>
+                                <rect key="frame" x="319" y="562" width="435" height="66"/>
                                 <state key="normal" image="Button_SayaSehatHariIni"/>
+                                <connections>
+                                    <action selector="btnSehat:" destination="n46-v2-7fF" eventType="touchUpInside" id="lGO-si-0Zq"/>
+                                    <segue destination="IzW-Oa-ez4" kind="presentation" id="8an-k2-IIW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHT-lp-m46">
-                                <rect key="frame" x="562" y="340" width="252" height="22"/>
+                                <rect key="frame" x="562" y="340" width="252" height="66"/>
                                 <state key="normal" title="Button" image="Button_Perut"/>
+                                <connections>
+                                    <action selector="btnSakitPerut:" destination="n46-v2-7fF" eventType="touchUpInside" id="xFA-rh-8pE"/>
+                                    <segue destination="Sh5-VZ-h55" kind="presentation" id="dwe-l8-2wp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -116,10 +141,10 @@
             </objects>
             <point key="canvasLocation" x="-347.4609375" y="-239.0625"/>
         </scene>
-        <!--View Controller-->
+        <!--Sudah Milih Sakit View Controller-->
         <scene sceneID="nAK-Cp-k31">
             <objects>
-                <viewController id="2NT-f8-pdh" sceneMemberID="viewController">
+                <viewController id="2NT-f8-pdh" customClass="SudahMilihSakitViewController" customModule="CancerForKids_Master" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XtF-0b-a2g">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -138,19 +163,22 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="police" translatesAutoresizingMaskIntoConstraints="NO" id="lNk-c5-IIg">
                                 <rect key="frame" x="60" y="210" width="221" height="489"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEW-se-qKd">
+                                <rect key="frame" x="280" y="409" width="554" height="90"/>
+                                <state key="normal" title="Button" image="okebutton"/>
+                                <connections>
+                                    <action selector="btnOkeSakit:" destination="2NT-f8-pdh" eventType="touchUpInside" id="4kT-3z-veJ"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubble" translatesAutoresizingMaskIntoConstraints="NO" id="D9c-6e-IcZ">
+                                <rect key="frame" x="224" y="24" width="741" height="333"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kamu anak yang kuat!!! Tetap semangat untuk menjalankan pengobatanmu ya. Untuk mengurangi rasa sakitmu, yuk main sama aku!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ca-5Y-ONH">
                                 <rect key="frame" x="295" y="50" width="598" height="244"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEW-se-qKd">
-                                <rect key="frame" x="280" y="409" width="554" height="90"/>
-                                <state key="normal" title="Button" image="okebutton"/>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubble" translatesAutoresizingMaskIntoConstraints="NO" id="D9c-6e-IcZ">
-                                <rect key="frame" x="224" y="24" width="741" height="333"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -182,12 +210,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V9d-4l-Yjc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-353.3203125" y="447.65625"/>
+            <point key="canvasLocation" x="-347" y="505"/>
         </scene>
-        <!--View Controller-->
+        <!--Range Sakit View Controller-->
         <scene sceneID="E8n-AV-gWh">
             <objects>
-                <viewController id="Sh5-VZ-h55" sceneMemberID="viewController">
+                <viewController id="Sh5-VZ-h55" customClass="RangeSakitViewController" customModule="CancerForKids_Master" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xrw-gf-Vrx">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -209,59 +237,99 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="2aZ-Tl-u0j">
-                                <rect key="frame" x="343" y="305" width="375" height="31"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="2aZ-Tl-u0j">
+                                <rect key="frame" x="343" y="305" width="375" height="24.5"/>
+                                <connections>
+                                    <action selector="weightChanged:" destination="Sh5-VZ-h55" eventType="valueChanged" id="jj2-UZ-tkU"/>
+                                </connections>
                             </slider>
-                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PgZ-3T-IlT">
-                                <rect key="frame" x="410" y="562" width="240" height="110"/>
-                                <state key="normal" title="Button" image="simpan nama"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F1H-QW-Hdw">
                                 <rect key="frame" x="14" y="24" width="136" height="123"/>
                                 <state key="normal" title="Button" image="backbutton"/>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Confuse Emoji Button" translatesAutoresizingMaskIntoConstraints="NO" id="aIP-mg-1sG">
-                                <rect key="frame" x="410" y="391" width="240" height="136"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Confuse Emoji Button-1" translatesAutoresizingMaskIntoConstraints="NO" id="aIP-mg-1sG">
+                                <rect key="frame" x="410" y="384.5" width="240" height="136"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Azb-qT-rtW">
+                                <rect key="frame" x="345" y="335.5" width="11" height="27.5"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbO-Eh-LRw">
+                                <rect key="frame" x="687" y="335.5" width="29" height="27.5"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sij-3x-lD6">
+                                <rect key="frame" x="488" y="335.5" width="84" height="27.5"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PgZ-3T-IlT">
+                                <rect key="frame" x="342" y="552.5" width="377" height="116.5"/>
+                                <state key="normal" title="Button" image="simpan nama"/>
+                                <connections>
+                                    <action selector="btnSimpanSakit:" destination="Sh5-VZ-h55" eventType="touchUpInside" id="onn-hN-hc8"/>
+                                    <segue destination="2NT-f8-pdh" kind="show" id="fjg-tE-jk1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="MV0-tr-SeE" firstAttribute="top" secondItem="cgR-7p-53Z" secondAttribute="top" constant="195" id="2Sb-Fw-jOB"/>
                             <constraint firstItem="MV0-tr-SeE" firstAttribute="leading" secondItem="cgR-7p-53Z" secondAttribute="leading" constant="60" id="3Ng-Yr-OX7"/>
                             <constraint firstItem="MV0-tr-SeE" firstAttribute="top" secondItem="F1H-QW-Hdw" secondAttribute="bottom" constant="68" id="3qI-o4-3uL"/>
+                            <constraint firstItem="xbO-Eh-LRw" firstAttribute="leading" secondItem="sij-3x-lD6" secondAttribute="trailing" constant="115" id="47J-uh-tQ5"/>
                             <constraint firstItem="aIP-mg-1sG" firstAttribute="top" secondItem="2aZ-Tl-u0j" secondAttribute="bottom" constant="56" id="7NI-Ot-NGL"/>
                             <constraint firstItem="2aZ-Tl-u0j" firstAttribute="leading" secondItem="MV0-tr-SeE" secondAttribute="trailing" constant="75" id="7SY-d1-w8Y"/>
-                            <constraint firstItem="cgR-7p-53Z" firstAttribute="bottom" secondItem="PgZ-3T-IlT" secondAttribute="bottom" constant="96" id="8Kf-W8-6cO"/>
                             <constraint firstItem="2aZ-Tl-u0j" firstAttribute="top" secondItem="bs9-vx-XRl" secondAttribute="bottom" constant="35" id="8WM-da-fKj"/>
+                            <constraint firstItem="Azb-qT-rtW" firstAttribute="top" secondItem="2aZ-Tl-u0j" secondAttribute="bottom" constant="7" id="9re-dX-ceD"/>
+                            <constraint firstItem="PgZ-3T-IlT" firstAttribute="top" secondItem="aIP-mg-1sG" secondAttribute="bottom" constant="32" id="A4l-Ru-2eU"/>
                             <constraint firstItem="cgR-7p-53Z" firstAttribute="bottom" secondItem="MV0-tr-SeE" secondAttribute="bottom" constant="69" id="AXL-2q-gHz"/>
                             <constraint firstItem="aIP-mg-1sG" firstAttribute="top" secondItem="2aZ-Tl-u0j" secondAttribute="bottom" constant="56" id="DRM-IR-f0B"/>
-                            <constraint firstItem="PgZ-3T-IlT" firstAttribute="top" secondItem="aIP-mg-1sG" secondAttribute="bottom" constant="35" id="LN9-cX-Q4c"/>
-                            <constraint firstItem="cgR-7p-53Z" firstAttribute="trailing" secondItem="PgZ-3T-IlT" secondAttribute="trailing" constant="374" id="MDY-GU-g7d"/>
+                            <constraint firstItem="cgR-7p-53Z" firstAttribute="trailing" secondItem="sij-3x-lD6" secondAttribute="trailing" constant="452" id="NNE-R2-SXa"/>
                             <constraint firstItem="bs9-vx-XRl" firstAttribute="leading" secondItem="F1H-QW-Hdw" secondAttribute="trailing" constant="87" id="OWC-UU-vrP"/>
                             <constraint firstItem="cgR-7p-53Z" firstAttribute="bottom" secondItem="bs9-vx-XRl" secondAttribute="bottom" constant="498" id="OjV-hQ-d3l"/>
                             <constraint firstItem="cgR-7p-53Z" firstAttribute="trailing" secondItem="MV0-tr-SeE" secondAttribute="trailing" constant="754" id="Tpe-yP-qh4"/>
-                            <constraint firstItem="PgZ-3T-IlT" firstAttribute="top" secondItem="aIP-mg-1sG" secondAttribute="bottom" constant="35" id="WDM-k5-TI3"/>
+                            <constraint firstItem="PgZ-3T-IlT" firstAttribute="leading" secondItem="MV0-tr-SeE" secondAttribute="trailing" constant="72" id="VDJ-mu-LZB"/>
+                            <constraint firstItem="cgR-7p-53Z" firstAttribute="bottom" secondItem="xbO-Eh-LRw" secondAttribute="bottom" constant="405" id="WtQ-I6-Xmj"/>
+                            <constraint firstItem="Azb-qT-rtW" firstAttribute="leading" secondItem="MV0-tr-SeE" secondAttribute="trailing" constant="75" id="XKO-8r-nsF"/>
                             <constraint firstItem="cgR-7p-53Z" firstAttribute="trailing" secondItem="aIP-mg-1sG" secondAttribute="trailing" constant="374" id="YJb-Sv-QFK"/>
                             <constraint firstItem="bs9-vx-XRl" firstAttribute="leading" secondItem="cgR-7p-53Z" secondAttribute="leading" constant="237" id="eTz-PJ-zhG"/>
                             <constraint firstItem="cgR-7p-53Z" firstAttribute="trailing" secondItem="2aZ-Tl-u0j" secondAttribute="trailing" constant="308" id="gOA-VL-w0l"/>
                             <constraint firstItem="F1H-QW-Hdw" firstAttribute="top" secondItem="cgR-7p-53Z" secondAttribute="top" constant="4" id="hJn-MY-Kls"/>
+                            <constraint firstItem="cgR-7p-53Z" firstAttribute="bottom" secondItem="Azb-qT-rtW" secondAttribute="bottom" constant="405" id="ie1-DF-9G4"/>
+                            <constraint firstItem="sij-3x-lD6" firstAttribute="leading" secondItem="Azb-qT-rtW" secondAttribute="trailing" constant="132" id="ief-TM-GNP"/>
+                            <constraint firstItem="cgR-7p-53Z" firstAttribute="trailing" secondItem="xbO-Eh-LRw" secondAttribute="trailing" constant="308" id="kso-ml-5qg"/>
                             <constraint firstItem="aIP-mg-1sG" firstAttribute="leading" secondItem="MV0-tr-SeE" secondAttribute="trailing" constant="140" id="l6k-Wa-3d2"/>
+                            <constraint firstItem="cgR-7p-53Z" firstAttribute="bottom" secondItem="sij-3x-lD6" secondAttribute="bottom" constant="405" id="lfF-AE-2vc"/>
                             <constraint firstItem="bs9-vx-XRl" firstAttribute="top" secondItem="cgR-7p-53Z" secondAttribute="top" constant="28" id="mFh-3Q-1LM"/>
+                            <constraint firstItem="sij-3x-lD6" firstAttribute="top" secondItem="2aZ-Tl-u0j" secondAttribute="bottom" constant="7" id="oc9-oh-2co"/>
                             <constraint firstItem="F1H-QW-Hdw" firstAttribute="leading" secondItem="cgR-7p-53Z" secondAttribute="leading" constant="14" id="ske-mb-NjM"/>
-                            <constraint firstItem="PgZ-3T-IlT" firstAttribute="leading" secondItem="MV0-tr-SeE" secondAttribute="trailing" constant="140" id="tGf-sd-zO0"/>
                             <constraint firstItem="cgR-7p-53Z" firstAttribute="trailing" secondItem="bs9-vx-XRl" secondAttribute="trailing" constant="226" id="vGU-M5-xxl"/>
+                            <constraint firstItem="cgR-7p-53Z" firstAttribute="trailing" secondItem="Azb-qT-rtW" secondAttribute="trailing" constant="668" id="w66-0x-zkb"/>
+                            <constraint firstItem="xbO-Eh-LRw" firstAttribute="top" secondItem="2aZ-Tl-u0j" secondAttribute="bottom" constant="7" id="wjr-1a-EqF"/>
+                            <constraint firstItem="cgR-7p-53Z" firstAttribute="bottom" secondItem="PgZ-3T-IlT" secondAttribute="bottom" constant="99" id="x4x-D0-cKo"/>
+                            <constraint firstItem="cgR-7p-53Z" firstAttribute="trailing" secondItem="PgZ-3T-IlT" secondAttribute="trailing" constant="305" id="zbX-tH-Luc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cgR-7p-53Z"/>
                     </view>
+                    <connections>
+                        <outlet property="emojiImageView" destination="aIP-mg-1sG" id="1po-0m-bKd"/>
+                        <outlet property="sakitLabel" destination="sij-3x-lD6" id="FkR-ug-ZbH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w2N-dH-ZmZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="286.5234375" y="-238.28125"/>
+            <point key="canvasLocation" x="298.828125" y="-239.0625"/>
         </scene>
-        <!--View Controller-->
+        <!--Sudah Milih Sakit View Controller-->
         <scene sceneID="Aff-Zz-Lda">
             <objects>
-                <viewController id="IzW-Oa-ez4" sceneMemberID="viewController">
+                <viewController id="IzW-Oa-ez4" customClass="SudahMilihSakitViewController" customModule="CancerForKids_Master" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PHu-1m-8yJ">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -272,6 +340,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ee-kL-CKw">
                                 <rect key="frame" x="280" y="409" width="480" height="110"/>
                                 <state key="normal" title="Button" image="okebutton"/>
+                                <connections>
+                                    <action selector="btnOkeSehat:" destination="IzW-Oa-ez4" eventType="touchUpInside" id="Vjm-4P-kfw"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubble" translatesAutoresizingMaskIntoConstraints="NO" id="Yhh-Q9-Mi0">
                                 <rect key="frame" x="244" y="93" width="634" height="281"/>
@@ -324,7 +395,7 @@ Tetap jaga kesehatanmu ya. </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fs1-LR-w0D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="281.8359375" y="440.625"/>
+            <point key="canvasLocation" x="299" y="506"/>
         </scene>
     </scenes>
     <resources>
@@ -335,7 +406,7 @@ Tetap jaga kesehatanmu ya. </string>
         <image name="Button_Pundak" width="198" height="66"/>
         <image name="Button_SayaSehatHariIni" width="417" height="66"/>
         <image name="Button_Tangan" width="192" height="66"/>
-        <image name="Confuse Emoji Button" width="144" height="136"/>
+        <image name="Confuse Emoji Button-1" width="136" height="136"/>
         <image name="backbutton" width="170" height="163"/>
         <image name="backgroundbubble" width="1024" height="768"/>
         <image name="bubble" width="583" height="222"/>
@@ -344,4 +415,7 @@ Tetap jaga kesehatanmu ya. </string>
         <image name="police" width="210" height="484"/>
         <image name="simpan nama" width="500" height="110"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="dwe-l8-2wp"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -24,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunrise" translatesAutoresizingMaskIntoConstraints="NO" id="97H-8K-G9x">
-                                <rect key="frame" x="392" y="69.999999999999986" width="240" height="128.00000000000003"/>
+                                <rect key="frame" x="392" y="70" width="240" height="128"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="07:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4O-cI-saW">
                                 <rect key="frame" x="422" y="247" width="180" height="111"/>
@@ -32,7 +32,7 @@
                                 <color key="textColor" red="0.99770766496658325" green="0.5405922532081604" blue="0.11347354203462601" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 dari 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baC-9j-I3I">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="1 dari 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baC-9j-I3I">
                                 <rect key="frame" x="426" y="652" width="173" height="96"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="60"/>
                                 <color key="textColor" red="0.015413308516144753" green="0.56913238763809204" blue="0.51372730731964111" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -51,7 +51,7 @@
                                     <segue destination="3TN-No-gsM" kind="show" id="4mn-pF-MP0"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_sukses" translatesAutoresizingMaskIntoConstraints="NO" id="tl4-8v-rJI">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="icon_sukses" translatesAutoresizingMaskIntoConstraints="NO" id="tl4-8v-rJI">
                                 <rect key="frame" x="392" y="500" width="240" height="122"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ar4-kf-6hC">
@@ -135,10 +135,10 @@
                                 <rect key="frame" x="20" y="384" width="52" height="75"/>
                                 <state key="normal" title="Button" image="left-arrow-1"/>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_sukses" translatesAutoresizingMaskIntoConstraints="NO" id="SJK-aV-1GL">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="icon_sukses" translatesAutoresizingMaskIntoConstraints="NO" id="SJK-aV-1GL">
                                 <rect key="frame" x="392" y="500" width="240" height="122"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 dari 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCK-Md-oau">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2 dari 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCK-Md-oau">
                                 <rect key="frame" x="396" y="652" width="233" height="96"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="60"/>
                                 <color key="textColor" red="0.01541330852" green="0.56913238759999996" blue="0.51372730730000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -221,10 +221,10 @@
                                     <segue destination="3TN-No-gsM" kind="show" id="EdR-zd-A2a"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_sukses" translatesAutoresizingMaskIntoConstraints="NO" id="P5c-Jt-ZfM">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="icon_sukses" translatesAutoresizingMaskIntoConstraints="NO" id="P5c-Jt-ZfM">
                                 <rect key="frame" x="392" y="500" width="240" height="122"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 dari 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0w-H0-6tm">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="3 dari 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0w-H0-6tm">
                                 <rect key="frame" x="396" y="652" width="233" height="96"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="60"/>
                                 <color key="textColor" red="0.01541330852" green="0.56913238759999996" blue="0.51372730730000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -280,7 +280,7 @@
         <image name="sunrise" width="333" height="187"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="k0I-5L-kPW"/>
-        <segue reference="EdR-zd-A2a"/>
+        <segue reference="hO3-ce-U4h"/>
+        <segue reference="4mn-pF-MP0"/>
     </inferredMetricsTieBreakers>
 </document>

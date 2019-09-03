@@ -15,39 +15,79 @@ class PainLocatorViewController: UIViewController {
     @IBOutlet weak var bahuPersen: UILabel!
     @IBOutlet weak var bahuPosisi: UILabel!
     @IBOutlet weak var bahuEmoji: UIImageView!
+    @IBOutlet weak var sakitBahu: UIButton!
     
     @IBOutlet weak var dadaBalon: UIImageView!
     @IBOutlet weak var dadaPanah: UIImageView!
     @IBOutlet weak var dadaPersen: UILabel!
     @IBOutlet weak var dadaPosisi: UILabel!
     @IBOutlet weak var dadaEmoji: UIImageView!
+    @IBOutlet weak var sakitDada: UIButton!
     
     @IBOutlet weak var perutBalon: UIImageView!
     @IBOutlet weak var perutPanah: UIImageView!
     @IBOutlet weak var perutPersen: UILabel!
     @IBOutlet weak var perutPosisi: UILabel!
     @IBOutlet weak var perutEmoji: UIImageView!
+    @IBOutlet weak var sakitPerut: UIButton!
     
     @IBOutlet weak var kepalaBalon: UIImageView!
     @IBOutlet weak var kepalaPanah: UIImageView!
     @IBOutlet weak var kepalaPersen: UILabel!
     @IBOutlet weak var kepalaPosisi: UILabel!
     @IBOutlet weak var kepalaEmoji: UIImageView!
+    @IBOutlet weak var sakitKepala: UIButton!
     
     @IBOutlet weak var tanganBalon: UIImageView!
     @IBOutlet weak var tanganPanah: UIImageView!
     @IBOutlet weak var tanganPersen: UILabel!
     @IBOutlet weak var tanganPosisi: UILabel!
     @IBOutlet weak var tanganEmoji: UIImageView!
+    @IBOutlet weak var sakitTangan: UIButton!
     
     @IBOutlet weak var kakiBalon: UIImageView!
     @IBOutlet weak var kakiPanah: UIImageView!
     @IBOutlet weak var kakiPersen: UILabel!
     @IBOutlet weak var kakiPosisi: UILabel!
     @IBOutlet weak var kakiEmoji: UIImageView!
+    @IBOutlet weak var sakitKaki: UIButton!
+    
+    var posisiSakit = UserDefaults.standard.string(forKey: "sakitnyatuhdisini")
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        sakitKepala.isHidden = true
+        sakitBahu.isHidden = true
+        sakitDada.isHidden = true
+        sakitPerut.isHidden = true
+        sakitTangan.isHidden = true
+        sakitKaki.isHidden = true
+        
+        if sakitKepala.isHidden == true && sakitBahu.isHidden == true && sakitDada.isHidden == true && sakitPerut.isHidden == true && sakitTangan.isHidden == true && sakitKaki.isHidden == true{
+            switch posisiSakit {
+            case "kepala":
+                sakitKepala.isHidden = false
+                break;
+            case "pundak":
+                sakitBahu.isHidden = false
+                break;
+            case "dada":
+                sakitDada.isHidden = false
+                break;
+            case "perut":
+                sakitPerut.isHidden = false
+                break;
+            case "tangan":
+                sakitTangan.isHidden = false
+                break;
+            case "kaki":
+                sakitKaki.isHidden = false
+                break;
+            default:
+                break;
+            }
+        }
         
         bahuBalon.isHidden = true
         bahuPanah.isHidden = true
@@ -84,6 +124,7 @@ class PainLocatorViewController: UIViewController {
         kakiPersen.isHidden = true
         kakiPosisi.isHidden = true
         kakiEmoji.isHidden = true
+        
         
         
         // Do any additional setup after loading the view.

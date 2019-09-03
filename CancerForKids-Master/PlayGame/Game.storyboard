@@ -30,7 +30,7 @@
         <!--Home View Controller-->
         <scene sceneID="XeF-0O-vD0">
             <objects>
-                <viewController id="4Zf-Ev-A1A" customClass="HomeViewController" customModule="CancerForKids_Master" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Home" id="4Zf-Ev-A1A" customClass="HomeViewController" customModule="CancerForKids_Master" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bae-8e-NJa">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,6 +40,7 @@
                                 <state key="normal" backgroundImage="PeriksaTubuhButton"/>
                                 <connections>
                                     <action selector="periksaTubuhButtonAction:" destination="4Zf-Ev-A1A" eventType="touchUpInside" id="gWX-Ep-Bkw"/>
+                                    <segue destination="Wrg-WP-6zT" kind="show" id="tr4-78-sbh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZM-fX-WPK" userLabel="Daftar Kegiatan Button">
@@ -140,6 +141,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tOL-ZC-mmt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="823" y="23"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="NHH-4g-kYT">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="PainLocator" id="Wrg-WP-6zT" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lEP-zy-0ND" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1088" y="638"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="jPX-Tg-0bd">
+            <objects>
+                <viewControllerPlaceholder id="dCZ-wt-Q1g" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XHc-mB-TMZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="798" y="-559"/>
         </scene>
     </scenes>
     <resources>

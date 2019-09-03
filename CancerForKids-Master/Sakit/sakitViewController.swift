@@ -17,8 +17,32 @@ class sakitViewController: UIViewController {
     }
     
     @IBAction func btnSakitKepala(_ sender: Any) {
-        UserDefaults.standard.set("kepala", forKey: "kepala")
+        UserDefaults.standard.set("kepala", forKey: "sakitnyatuhdisini")
         
+    }
+    
+    @IBAction func btnSakitPundak(_ sender: Any) {
+        UserDefaults.standard.set("pundak", forKey: "sakitnyatuhdisini")
+    }
+    
+    @IBAction func btnSakitDada(_ sender: Any) {
+        UserDefaults.standard.set("dada", forKey: "sakitnyatuhdisini")
+    }
+    
+    @IBAction func btnSakitPerut(_ sender: Any) {
+        UserDefaults.standard.set("perut", forKey: "sakitnyatuhdisini")
+    }
+    
+    @IBAction func btnSakitTangan(_ sender: Any) {
+        UserDefaults.standard.set("tangan", forKey: "sakitnyatuhdisini")
+    }
+    
+    @IBAction func btnSakitKaki(_ sender: Any) {
+        UserDefaults.standard.set("kaki", forKey: "sakitnyatuhdisini")
+    }
+    
+    @IBAction func btnSehat(_ sender: Any) {
+        UserDefaults.standard.set("sehat", forKey: "sakitnyatuhdisini")
     }
     
     /*

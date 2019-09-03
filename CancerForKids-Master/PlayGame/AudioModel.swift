@@ -48,4 +48,9 @@ class AudioModel
         }
         //free license audio by : http://soundbible.com/1705-Click2.html
     }
+    
+    func audioStop()
+    {
+        player?.stop()
+    }
 }

@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,7 +20,7 @@
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
                     </view>
                     <connections>
-                        <segue destination="4Zf-Ev-A1A" kind="show" identifier="push" id="2Zu-81-DPy"/>
+                        <segue destination="4Zf-Ev-A1A" kind="show" identifier="PlayToHomeIdentifier" customClass="SegueFromLeft" customModule="CancerForKids_Master" customModuleProvider="target" id="2Zu-81-DPy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>

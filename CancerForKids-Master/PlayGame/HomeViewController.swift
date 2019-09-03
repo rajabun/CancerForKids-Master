@@ -19,8 +19,6 @@ class HomeViewController: UIViewController
         view.backgroundColor = UIColor(patternImage: UIImage(named: "HomeBackgroundWithRectangle.png")!)
         characterImage.image  = UIImage(named: "HomePolice")
         balloonImage.image  = UIImage(named: "HomeFillCloud")
-        //        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        //        backgroundImage.image = UIImage(named: "HomeBackgroundWithBackground.png")
         // Do any additional setup after loading the view.
     }
     
@@ -60,15 +58,4 @@ class HomeViewController: UIViewController
     {
         
     }
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
 }

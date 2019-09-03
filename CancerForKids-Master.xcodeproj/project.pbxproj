@@ -31,18 +31,18 @@
 		4E526D9C2314EE3000ACA520 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E526D9B2314EE3000ACA520 /* HomeViewController.swift */; };
 		4E526D9E2314EE3500ACA520 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E526D9D2314EE3500ACA520 /* GameViewController.swift */; };
 		4E526DA02314EE3A00ACA520 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E526D9F2314EE3A00ACA520 /* GameScene.swift */; };
-		4E526DA22314EE4200ACA520 /* Police_attack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 4E526DA12314EE4200ACA520 /* Police_attack.atlas */; };
-		4E526DA42314EE5100ACA520 /* Police_dance.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 4E526DA32314EE5100ACA520 /* Police_dance.atlas */; };
 		4E526DAC2314F03000ACA520 /* AudioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E526DAB2314F03000ACA520 /* AudioModel.swift */; };
 		4E5D735423177DD7009D6CC6 /* Joy & Calm.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4E5D735323177DD7009D6CC6 /* Joy & Calm.m4a */; };
 		4E5D735623177E09009D6CC6 /* Switch-Click.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4E5D735523177E09009D6CC6 /* Switch-Click.wav */; };
 		4E8A99EC230D4A6400A90EC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8A99EB230D4A6400A90EC1 /* AppDelegate.swift */; };
 		4E8A99F9230D4A6400A90EC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E8A99F8230D4A6400A90EC1 /* Assets.xcassets */; };
 		4E8A99FC230D4A6400A90EC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E8A99FA230D4A6400A90EC1 /* LaunchScreen.storyboard */; };
+		4EE846FB231CCF740049BD98 /* SegueFromLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE846FA231CCF740049BD98 /* SegueFromLeft.swift */; };
 		DB369A6A230FC9FE0055CC0A /* NamaUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB369A69230FC9FE0055CC0A /* NamaUserViewController.swift */; };
 		DB369A6C230FCA100055CC0A /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB369A6B230FCA100055CC0A /* DatePickerViewController.swift */; };
 		DB369A6F230FFD100055CC0A /* sakitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB369A6E230FFD100055CC0A /* sakitViewController.swift */; };
 		DB369A73230FFD3D0055CC0A /* sakit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB369A72230FFD3D0055CC0A /* sakit.storyboard */; };
+		DB620D0F231D04AE00CA1727 /* Parents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BCB605D2313E81300C5005E /* Parents.storyboard */; };
 		DBBE21B82313F3D600C2E649 /* DaftarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBE21B72313F3D600C2E649 /* DaftarViewController.swift */; };
 		DBBE21BA2313F3FC00C2E649 /* DaftarKegiatanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBE21B92313F3FC00C2E649 /* DaftarKegiatanViewController.swift */; };
 		DBBE21BC2314354E00C2E649 /* PertanyaanRahasiaDuaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBE21BB2314354E00C2E649 /* PertanyaanRahasiaDuaViewController.swift */; };
@@ -74,9 +74,6 @@
 		4E526D9B2314EE3000ACA520 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4E526D9D2314EE3500ACA520 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		4E526D9F2314EE3A00ACA520 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		4E526DA12314EE4200ACA520 /* Police_attack.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Police_attack.atlas; sourceTree = "<group>"; };
-		4E526DA32314EE5100ACA520 /* Police_dance.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Police_dance.atlas; sourceTree = "<group>"; };
-		4E526DA52314EE5400ACA520 /* Police_run.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Police_run.atlas; sourceTree = "<group>"; };
 		4E526DAB2314F03000ACA520 /* AudioModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioModel.swift; sourceTree = "<group>"; };
 		4E5D735323177DD7009D6CC6 /* Joy & Calm.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Joy & Calm.m4a"; sourceTree = "<group>"; };
 		4E5D735523177E09009D6CC6 /* Switch-Click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Switch-Click.wav"; sourceTree = "<group>"; };
@@ -85,6 +82,7 @@
 		4E8A99F8230D4A6400A90EC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E8A99FB230D4A6400A90EC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E8A99FD230D4A6400A90EC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EE846FA231CCF740049BD98 /* SegueFromLeft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueFromLeft.swift; sourceTree = "<group>"; };
 		DB369A69230FC9FE0055CC0A /* NamaUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamaUserViewController.swift; sourceTree = "<group>"; };
 		DB369A6B230FCA100055CC0A /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		DB369A6E230FFD100055CC0A /* sakitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sakitViewController.swift; sourceTree = "<group>"; };
@@ -181,10 +179,8 @@
 			isa = PBXGroup;
 			children = (
 				4E526DAB2314F03000ACA520 /* AudioModel.swift */,
+				4EE846FA231CCF740049BD98 /* SegueFromLeft.swift */,
 				4E526DA62314EE6200ACA520 /* Sounds */,
-				4E526DA32314EE5100ACA520 /* Police_dance.atlas */,
-				4E526DA52314EE5400ACA520 /* Police_run.atlas */,
-				4E526DA12314EE4200ACA520 /* Police_attack.atlas */,
 				4E526D9F2314EE3A00ACA520 /* GameScene.swift */,
 				4E526D9D2314EE3500ACA520 /* GameViewController.swift */,
 				4E526D9B2314EE3000ACA520 /* HomeViewController.swift */,
@@ -310,7 +306,7 @@
 			files = (
 				4B07D549230EA52400151CB3 /* Character.storyboard in Resources */,
 				4E5D735623177E09009D6CC6 /* Switch-Click.wav in Resources */,
-				4E526DA22314EE4200ACA520 /* Police_attack.atlas in Resources */,
+				DB620D0F231D04AE00CA1727 /* Parents.storyboard in Resources */,
 				4E8A99F9230D4A6400A90EC1 /* Assets.xcassets in Resources */,
 				4E5D735423177DD7009D6CC6 /* Joy & Calm.m4a in Resources */,
 				4B5418FC231E66E000EC0F19 /* Reminder.storyboard in Resources */,
@@ -333,6 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EE846FB231CCF740049BD98 /* SegueFromLeft.swift in Sources */,
 				4B07D53F230E87CC00151CB3 /* GetStarted.swift in Sources */,
 				4B5BC4632316C32800BC89EE /* PainLocatorViewController.swift in Sources */,
 				DB369A6C230FCA100055CC0A /* DatePickerViewController.swift in Sources */,
@@ -495,7 +492,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BW4269VNF7;
+				DEVELOPMENT_TEAM = Q5T3Q68SMU;
 				INFOPLIST_FILE = "CancerForKids-Master/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -514,7 +511,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BW4269VNF7;
+				DEVELOPMENT_TEAM = Q5T3Q68SMU;
 				INFOPLIST_FILE = "CancerForKids-Master/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14492.1" systemVersion="18G87" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14492.1" systemVersion="18G95" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ActivityList" representedClassName="ActivityList" syncable="YES" codeGenerationType="class">
+        <attribute name="jamKegiatanHarian" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="jamKegiatanMendatang" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="kegiatanHarian" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="kegiatanMendatang" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="AgendaKegiatanHarian" representedClassName="AgendaKegiatanHarian" syncable="YES" codeGenerationType="class">
+        <attribute name="bagian" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="jam" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tanggal" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tingkatKesakitan" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="AgendaKegiatanHarian" positionX="-45" positionY="0" width="128" height="105"/>
+        <element name="ActivityList" positionX="-18" positionY="54" width="128" height="105"/>
+    </elements>
 </model>

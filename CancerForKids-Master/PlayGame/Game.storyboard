@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -29,17 +30,16 @@
         <!--Home View Controller-->
         <scene sceneID="XeF-0O-vD0">
             <objects>
-                <viewController storyboardIdentifier="Home" id="4Zf-Ev-A1A" customClass="HomeViewController" customModule="CancerForKids_Master" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4Zf-Ev-A1A" customClass="HomeViewController" customModule="CancerForKids_Master" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bae-8e-NJa">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9su-RW-YNS" userLabel="Periksa TubuhButton">
-                                <rect key="frame" x="55" y="113" width="706" height="111"/>
+                                <rect key="frame" x="55" y="113" width="330" height="111"/>
                                 <state key="normal" backgroundImage="PeriksaTubuhButton"/>
                                 <connections>
                                     <action selector="periksaTubuhButtonAction:" destination="4Zf-Ev-A1A" eventType="touchUpInside" id="gWX-Ep-Bkw"/>
-                                    <segue destination="Wrg-WP-6zT" kind="show" id="tr4-78-sbh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZM-fX-WPK" userLabel="Daftar Kegiatan Button">
@@ -50,7 +50,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="md7-Ds-o2a" userLabel="Catatan Kesehatan Button">
-                                <rect key="frame" x="62" y="320" width="517" height="95"/>
+                                <rect key="frame" x="62" y="320" width="323" height="95"/>
                                 <state key="normal" backgroundImage="CatatanKesehatanButton"/>
                                 <connections>
                                     <action selector="catatanKesehatanButtonAction:" destination="4Zf-Ev-A1A" eventType="touchUpInside" id="8lC-kL-mTh"/>
@@ -79,17 +79,17 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomePolice" translatesAutoresizingMaskIntoConstraints="NO" id="Z3n-ri-XD9">
-                                <rect key="frame" x="943" y="229" width="16" height="489"/>
+                                <rect key="frame" x="749" y="229" width="210" height="489"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5AB-Dk-GsF" userLabel="Area Orang Tua Button">
-                                <rect key="frame" x="62" y="424" width="515" height="95"/>
+                                <rect key="frame" x="62" y="424" width="321" height="95"/>
                                 <state key="normal" backgroundImage="AreaOrangTuaButton"/>
                                 <connections>
                                     <action selector="areaOrangTuaButtonAction:" destination="4Zf-Ev-A1A" eventType="touchUpInside" id="13F-xP-Cqn"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomeFillCloud" translatesAutoresizingMaskIntoConstraints="NO" id="OuJ-L1-iQv">
-                                <rect key="frame" x="811" y="74" width="16" height="177"/>
+                                <rect key="frame" x="434.99999999999994" y="74" width="392.00000000000017" height="177"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.1907650846" green="0.64379758880000004" blue="0.23095728160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -141,32 +141,106 @@
             </objects>
             <point key="canvasLocation" x="823" y="23"/>
         </scene>
-        <!--Storyboard Reference-->
-        <scene sceneID="NHH-4g-kYT">
+        <!--Detail Kegiatan View Controller-->
+        <scene sceneID="W33-ze-nBa">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="PainLocator" id="Wrg-WP-6zT" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lEP-zy-0ND" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Ckb-Kj-ceX" customClass="DetailKegiatanViewController" customModule="CancerForKids_Master" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0v5-FG-MSD">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AgendaKegiatan" translatesAutoresizingMaskIntoConstraints="NO" id="iMe-s6-9MY" userLabel="Agenda Kegiatan Title">
+                                <rect key="frame" x="418" y="65" width="324" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Kalendar" translatesAutoresizingMaskIntoConstraints="NO" id="Pvb-Gx-UrN">
+                                <rect key="frame" x="398" y="76" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tanggal" translatesAutoresizingMaskIntoConstraints="NO" id="Uyh-sZ-mU3" userLabel="Tanggal Column">
+                                <rect key="frame" x="76" y="175" width="212" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Jam" translatesAutoresizingMaskIntoConstraints="NO" id="SQT-mQ-xwx" userLabel="Jam Column">
+                                <rect key="frame" x="296" y="175" width="212" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bagian" translatesAutoresizingMaskIntoConstraints="NO" id="v78-Lv-CrX" userLabel="Bagian Column">
+                                <rect key="frame" x="516" y="175" width="212" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TingkatKesakitan" translatesAutoresizingMaskIntoConstraints="NO" id="y3S-WY-bCR" userLabel="Tingkat Kesakitan Column">
+                                <rect key="frame" x="736" y="175" width="212" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4bo-vj-A9h" userLabel="Tanggal Table View">
+                                <rect key="frame" x="76" y="263" width="212" height="459"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TanggalCell" id="Uzs-gM-zeG" userLabel="TanggalCell" customClass="TanggalTableViewCell" customModule="CancerForKids_Master" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="212" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Uzs-gM-zeG" id="IFu-cu-BB2">
+                                            <rect key="frame" x="0.0" y="0.0" width="212" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="02-10-2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E71-vo-LAy">
+                                                    <rect key="frame" x="15" y="11" width="182" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="tanggalLabel" destination="E71-vo-LAy" id="g8N-uE-FsJ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Ckb-Kj-ceX" id="nSQ-Nv-Gp5"/>
+                                    <outlet property="delegate" destination="Ckb-Kj-ceX" id="OZ6-EI-wnL"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ha1-n4-QaY">
+                                <rect key="frame" x="159" y="76" width="126" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.97647058819999999" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="addTanggal:" destination="Ckb-Kj-ceX" eventType="touchUpInside" id="9US-DZ-xdm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="rLj-W7-Mzy"/>
+                    </view>
+                    <connections>
+                        <outlet property="tanggalTableView" destination="4bo-vj-A9h" id="OY9-GP-aes"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HP0-VK-dV9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1088" y="638"/>
-        </scene>
-        <!--Storyboard Reference-->
-        <scene sceneID="jPX-Tg-0bd">
-            <objects>
-                <viewControllerPlaceholder id="dCZ-wt-Q1g" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XHc-mB-TMZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="798" y="-559"/>
+            <point key="canvasLocation" x="1602.5390625" y="21.875"/>
         </scene>
     </scenes>
     <resources>
+        <image name="AgendaKegiatan" width="205" height="111"/>
         <image name="AreaOrangTuaButton" width="321" height="95"/>
+        <image name="Bagian" width="212" height="80"/>
         <image name="CatatanKesehatanButton" width="323" height="95"/>
         <image name="DaftarKegiatanButton" width="323" height="95"/>
         <image name="HomeFillCloud" width="392" height="216"/>
         <image name="HomePolice" width="210" height="484"/>
+        <image name="Jam" width="212" height="80"/>
+        <image name="Kalendar" width="80" height="80"/>
         <image name="PeriksaTubuhButton" width="330" height="111"/>
         <image name="PlayButton" width="160" height="156"/>
         <image name="PolisiButton" width="106" height="105"/>
         <image name="RewardButton" width="110" height="105"/>
+        <image name="Tanggal" width="212" height="80"/>
+        <image name="TingkatKesakitan" width="212" height="80"/>
     </resources>
 </document>

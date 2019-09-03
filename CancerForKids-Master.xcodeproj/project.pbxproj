@@ -34,6 +34,8 @@
 		4E526DAC2314F03000ACA520 /* AudioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E526DAB2314F03000ACA520 /* AudioModel.swift */; };
 		4E5D735423177DD7009D6CC6 /* Joy & Calm.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4E5D735323177DD7009D6CC6 /* Joy & Calm.m4a */; };
 		4E5D735623177E09009D6CC6 /* Switch-Click.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4E5D735523177E09009D6CC6 /* Switch-Click.wav */; };
+		4E6F3DAA231E76F0004FC500 /* DetailKegiatanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F3DA9231E76F0004FC500 /* DetailKegiatanViewController.swift */; };
+		4E6F3DAC231E78D9004FC500 /* TanggalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F3DAB231E78D9004FC500 /* TanggalTableViewCell.swift */; };
 		4E8A99EC230D4A6400A90EC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8A99EB230D4A6400A90EC1 /* AppDelegate.swift */; };
 		4E8A99F9230D4A6400A90EC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E8A99F8230D4A6400A90EC1 /* Assets.xcassets */; };
 		4E8A99FC230D4A6400A90EC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E8A99FA230D4A6400A90EC1 /* LaunchScreen.storyboard */; };
@@ -77,6 +79,8 @@
 		4E526DAB2314F03000ACA520 /* AudioModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioModel.swift; sourceTree = "<group>"; };
 		4E5D735323177DD7009D6CC6 /* Joy & Calm.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Joy & Calm.m4a"; sourceTree = "<group>"; };
 		4E5D735523177E09009D6CC6 /* Switch-Click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Switch-Click.wav"; sourceTree = "<group>"; };
+		4E6F3DA9231E76F0004FC500 /* DetailKegiatanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailKegiatanViewController.swift; sourceTree = "<group>"; };
+		4E6F3DAB231E78D9004FC500 /* TanggalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanggalTableViewCell.swift; sourceTree = "<group>"; };
 		4E8A99E8230D4A6400A90EC1 /* CancerForKids-Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CancerForKids-Master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E8A99EB230D4A6400A90EC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E8A99F8230D4A6400A90EC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -185,6 +189,8 @@
 				4E526D9D2314EE3500ACA520 /* GameViewController.swift */,
 				4E526D9B2314EE3000ACA520 /* HomeViewController.swift */,
 				4E526D992314EE2700ACA520 /* Game.storyboard */,
+				4E6F3DA9231E76F0004FC500 /* DetailKegiatanViewController.swift */,
+				4E6F3DAB231E78D9004FC500 /* TanggalTableViewCell.swift */,
 			);
 			path = PlayGame;
 			sourceTree = "<group>";
@@ -332,10 +338,12 @@
 				4EE846FB231CCF740049BD98 /* SegueFromLeft.swift in Sources */,
 				4B07D53F230E87CC00151CB3 /* GetStarted.swift in Sources */,
 				4B5BC4632316C32800BC89EE /* PainLocatorViewController.swift in Sources */,
+				4E6F3DAA231E76F0004FC500 /* DetailKegiatanViewController.swift in Sources */,
 				DB369A6C230FCA100055CC0A /* DatePickerViewController.swift in Sources */,
 				4E526DA02314EE3A00ACA520 /* GameScene.swift in Sources */,
 				4BCB605A2313E7FC00C5005E /* PertanyaanRahasiaViewController.swift in Sources */,
 				DB369A6F230FFD100055CC0A /* sakitViewController.swift in Sources */,
+				4E6F3DAC231E78D9004FC500 /* TanggalTableViewCell.swift in Sources */,
 				4B9DCEC2231D385700ACEC1F /* WaktunyaViewController.swift in Sources */,
 				DB369A6A230FC9FE0055CC0A /* NamaUserViewController.swift in Sources */,
 				4B9DCEBC231CDD0900ACEC1F /* RangeSakitViewController.swift in Sources */,
@@ -494,7 +502,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q5T3Q68SMU;
 				INFOPLIST_FILE = "CancerForKids-Master/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -513,7 +521,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q5T3Q68SMU;
 				INFOPLIST_FILE = "CancerForKids-Master/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

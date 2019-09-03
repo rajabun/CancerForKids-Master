@@ -322,7 +322,6 @@
 				4B07D53D230E874B00151CB3 /* Slide.xib in Resources */,
 				4E8A99FC230D4A6400A90EC1 /* LaunchScreen.storyboard in Resources */,
 				4B07D535230E841300151CB3 /* OnBoarding.storyboard in Resources */,
-				4E526DA42314EE5100ACA520 /* Police_dance.atlas in Resources */,
 				4B9DCEC0231D384400ACEC1F /* DaftarKegiatan.storyboard in Resources */,
 				4BA655FC23166A6E00F28EB2 /* PainLocator.storyboard in Resources */,
 			);
@@ -500,7 +499,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Q5T3Q68SMU;
+				DEVELOPMENT_TEAM = BW4269VNF7;
 				INFOPLIST_FILE = "CancerForKids-Master/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -519,7 +518,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Q5T3Q68SMU;
+				DEVELOPMENT_TEAM = BW4269VNF7;
 				INFOPLIST_FILE = "CancerForKids-Master/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (

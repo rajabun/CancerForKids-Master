@@ -30,7 +30,7 @@ class NamaUserViewController: UIViewController {
         
     @IBAction func enterButton(_ sender: Any) {
         let name = "\(textFieldUser.text!)"
-        UserDefaults.standard.set(name, forKey: "name")
+        UserDefaults.standard.set(name, forKey: "namaUser")
         //user default name
         }
     }

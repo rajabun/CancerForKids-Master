@@ -10,6 +10,9 @@ import UIKit
 
 class SudahMilihSakitViewController: UIViewController {
 
+    let currentDateTime = Date()
+    let formatter = DateFormatter()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,11 +20,17 @@ class SudahMilihSakitViewController: UIViewController {
     }
     
     @IBAction func btnOkeSakit(_ sender: Any) {
-        UserDefaults.standard.set(Date(), forKey: "tanggalSakit")
+        formatter.dateStyle = .short
+        formatter.timeStyle = .short
+        let tanggalSakit = formatter.string(from: currentDateTime)
+        UserDefaults.standard.set(tanggalSakit, forKey: "tanggalSakit")
     }
     
     @IBAction func btnOkeSehat(_ sender: Any) {
-        UserDefaults.standard.set(Date(), forKey: "tanggalSakit")
+        formatter.dateStyle = .short
+        formatter.timeStyle = .short
+        let tanggalSakit = formatter.string(from: currentDateTime)
+        UserDefaults.standard.set(tanggalSakit, forKey: "tanggalSakit")
     }
     /*
     // MARK: - Navigation

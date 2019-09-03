@@ -18,6 +18,8 @@ class DetailKegiatanViewController: UIViewController, UITableViewDelegate, UITab
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
+    let tglSakit = UserDefaults.standard.string(forKey: "tanggalSakit")
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -109,32 +111,33 @@ class DetailKegiatanViewController: UIViewController, UITableViewDelegate, UITab
     
     @IBAction func addTanggal(_ sender: UIButton)
     {
-        let alert = UIAlertController(title: "New Name",
-                                      message: "Add a new name",
-                                      preferredStyle: .alert)
-        
-        let saveAction = UIAlertAction(title: "Save", style: .default) {
-            [unowned self] action in
+//        let alert = UIAlertController(title: "New Name",
+//                                      message: "Add a new name",
+//                                      preferredStyle: .alert)
+//
+//        let saveAction = UIAlertAction(title: "Save", style: .default) {
+//            [unowned self] action in
+
+            let nameToSave = self.tglSakit
+//            guard let textField = alert.textFields?.first,
+//                let nameToSave = textField.text else {
+//                    return
+//            }
             
-            guard let textField = alert.textFields?.first,
-                let nameToSave = textField.text else {
-                    return
-            }
-            
-            self.save(name: nameToSave)
+            self.save(name: nameToSave ?? "")
             self.tanggalTableView.reloadData()
         }
         
-        let cancelAction = UIAlertAction(title: "Cancel",
-                                         style: .cancel)
-        
-        alert.addTextField()
-        
-        alert.addAction(saveAction)
-        alert.addAction(cancelAction)
-        
-        present(alert, animated: true)
-    }
+//        let cancelAction = UIAlertAction(title: "Cancel",
+//                                         style: .cancel)
+//        
+//        alert.addTextField()
+//        
+//        alert.addAction(saveAction)
+//        alert.addAction(cancelAction)
+//        
+//        present(alert, animated: true)
+//    }
     
     
     /*

@@ -12,6 +12,7 @@ class SudahMilihSakitViewController: UIViewController {
 
     let currentDateTime = Date()
     let formatter = DateFormatter()
+    let formatter2 = DateFormatter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,16 +22,24 @@ class SudahMilihSakitViewController: UIViewController {
     
     @IBAction func btnOkeSakit(_ sender: Any) {
         formatter.dateStyle = .medium
-        formatter.timeStyle = .medium
+        formatter.timeStyle = .none
+        formatter2.dateStyle = .none
+        formatter2.timeStyle = .short
         let tanggalSakit = formatter.string(from: currentDateTime)
+        let jamSakit = formatter2.string(from: currentDateTime)
         UserDefaults.standard.set(tanggalSakit, forKey: "tanggalSakit")
+        UserDefaults.standard.set(jamSakit, forKey: "jamSakit")
     }
     
     @IBAction func btnOkeSehat(_ sender: Any) {
         formatter.dateStyle = .medium
-        formatter.timeStyle = .medium
+        formatter.timeStyle = .none
+        formatter2.dateStyle = .none
+        formatter2.timeStyle = .short
         let tanggalSakit = formatter.string(from: currentDateTime)
+        let jamSakit = formatter2.string(from: currentDateTime)
         UserDefaults.standard.set(tanggalSakit, forKey: "tanggalSakit")
+        UserDefaults.standard.set(jamSakit, forKey: "jamSakit")
     }
     /*
     // MARK: - Navigation

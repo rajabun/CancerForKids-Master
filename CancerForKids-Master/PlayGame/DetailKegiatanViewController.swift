@@ -67,6 +67,9 @@ class DetailKegiatanViewController: UIViewController, UITableViewDelegate, UITab
         
         //Note how you grab the tanggal attribute from the NSManagedObject. It happens here:
         cell.tanggalLabel.text = agendaKegiatanHarian.value(forKeyPath: "tanggal") as? String
+        cell.jamLabel.text = agendaKegiatanHarian.value(forKeyPath: "jam") as? String
+        cell.bagianLabel.text = agendaKegiatanHarian.value(forKeyPath: "bagian") as? String
+        cell.tingkatKesakitanLabel.text = agendaKegiatanHarian.value(forKeyPath: "tingkatKesakitan") as? String
         
         return cell
     }
@@ -105,6 +108,11 @@ class DetailKegiatanViewController: UIViewController, UITableViewDelegate, UITab
         {
             print("Could not save. \(error), \(error.userInfo)")
         }
+    }
+    
+    func saveTanggal()
+    {
+        
     }
     
     @IBAction func addTanggal(_ sender: UIButton)

@@ -12,6 +12,9 @@ class TanggalTableViewCell: UITableViewCell
 {
 
     @IBOutlet weak var tanggalLabel: UILabel!
+    @IBOutlet weak var jamLabel: UILabel!
+    @IBOutlet weak var bagianLabel: UILabel!
+    @IBOutlet weak var tingkatKesakitanLabel: UILabel!
     
     override func awakeFromNib()
     {

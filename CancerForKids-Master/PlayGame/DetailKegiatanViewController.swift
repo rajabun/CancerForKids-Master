@@ -24,6 +24,8 @@ class DetailKegiatanViewController: UIViewController, UITableViewDelegate, UITab
     
     let tglSakit = UserDefaults.standard.string(forKey: "tanggalSakit")
     let jamSakit = UserDefaults.standard.string(forKey: "jamSakit")
+    let bagianSakit = UserDefaults.standard.string(forKey: "sakitnyatuhdisini")
+    let nilaiSakit = UserDefaults.standard.string(forKey: "nilaiSakit")
     
     override func viewDidLoad()
     {
@@ -113,6 +115,8 @@ class DetailKegiatanViewController: UIViewController, UITableViewDelegate, UITab
     {
         let nameToSave = self.tglSakit
         let jamToSave = self.jamSakit
+        let bagianToSave = self.bagianSakit
+        let tingkatKesakitanToSave = self.nilaiSakit
         
         guard let appDelegate =
             UIApplication.shared.delegate as? AppDelegate else
@@ -135,6 +139,8 @@ class DetailKegiatanViewController: UIViewController, UITableViewDelegate, UITab
         // 3
         agendaKegiatanHarian.setValue(nameToSave, forKeyPath: "tanggal")
         agendaKegiatanHarian.setValue(jamToSave, forKeyPath: "jam")
+        agendaKegiatanHarian.setValue(bagianToSave, forKeyPath: "bagian")
+        agendaKegiatanHarian.setValue(tingkatKesakitanToSave, forKeyPath: "tingkatKesakitan")
         // 4
         do
         {
@@ -152,6 +158,8 @@ class DetailKegiatanViewController: UIViewController, UITableViewDelegate, UITab
         saveAll()
         self.tanggalTableView.reloadData()
         self.jamTableView.reloadData()
+        self.bagianTableView.reloadData()
+        self.tingkatKesakitanTableView.reloadData()
     }
     
 //    func saveTanggal(name: String)

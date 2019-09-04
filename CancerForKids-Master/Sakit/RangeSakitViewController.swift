@@ -13,8 +13,9 @@ class RangeSakitViewController: UIViewController {
     @IBOutlet weak var sakitLabel: UILabel!
     @IBOutlet weak var emojiImageView: UIImageView!
     
-    var weight: Float = 50.0
+    var sakit: Float = 50.0
     
+    @IBOutlet weak var slideSakit: UISlider!
     override func viewDidLoad() {
         super.viewDidLoad()
         updateView()
@@ -23,19 +24,20 @@ class RangeSakitViewController: UIViewController {
     
     @IBAction func btnSimpanSakit(_ sender: Any) {
         //Masuk ke Core Data
-        
+        let nilaiSakit = self.sakit
+        UserDefaults.standard.set(nilaiSakit, forKey: "nilaiSakit")
     }
     
     
-    @IBAction func weightChanged(_ sender: UISlider) {
-        weight = sender.value
+    @IBAction func sakitChanged(_ sender: UISlider) {
+        sakit = sender.value
         updateView()
     }
     
     func updateView() {
-        let finalSakit = String(format: "%.0f", self.weight)
+        let finalSakit = String(format: "%.0f", self.sakit)
         sakitLabel.text = "\(finalSakit)"
-        switch weight {
+        switch sakit{
         case 0 ... 33.2:
             emojiImageView.image = UIImage(named: "Confuse Emoji Button-1")
         case 33.3 ... 66.6:

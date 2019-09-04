@@ -13,12 +13,19 @@ class DetailKegiatanViewController: UIViewController, UITableViewDelegate, UITab
 {
 
     @IBOutlet weak var tanggalTableView: UITableView!
+    @IBOutlet weak var jamTableView: UITableView!
+    @IBOutlet weak var bagianTableView: UITableView!
+    @IBOutlet weak var tingkatKesakitanTableView: UITableView!
+    
     
     var detailAgendaKegiatan: [NSManagedObject] = []
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     let tglSakit = UserDefaults.standard.string(forKey: "tanggalSakit")
+    let jamSakit = UserDefaults.standard.string(forKey: "jamSakit")
+    let bagianSakit = UserDefaults.standard.string(forKey: "sakitnyatuhdisini")
+    let nilaiSakit = UserDefaults.standard.string(forKey: "nilaiSakit")
     
     override func viewDidLoad()
     {
@@ -63,18 +70,53 @@ class DetailKegiatanViewController: UIViewController, UITableViewDelegate, UITab
     //untuk memasukkan data
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        let agendaKegiatanHarian = detailAgendaKegiatan[indexPath.row]
+        if tableView == tanggalTableView
+        {
+            let agendaKegiatanHarian = detailAgendaKegiatan[indexPath.row]
+            let tanggalCell = tableView.dequeueReusableCell(withIdentifier: "TanggalCell", for: indexPath) as! TanggalTableViewCell
+             //Note how you grab the tanggal attribute from the NSManagedObject. It happens here:
+            tanggalCell.tanggalLabel.text = agendaKegiatanHarian.value(forKeyPath: "tanggal") as? String
+
+            return tanggalCell
+        }
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TanggalCell", for: indexPath) as! TanggalTableViewCell
+        if tableView == jamTableView
+        {
+            let agendaKegiatanHarian = detailAgendaKegiatan[indexPath.row]
+            let jamCell = tableView.dequeueReusableCell(withIdentifier: "JamCell", for: indexPath) as! JamTableViewCell
+            
+            jamCell.jamLabel.text = agendaKegiatanHarian.value(forKeyPath: "jam") as? String
+
+            return jamCell
+        }
+        if tableView == bagianTableView
+        {
+            let agendaKegiatanHarian = detailAgendaKegiatan[indexPath.row]
+            let bagianCell = tableView.dequeueReusableCell(withIdentifier: "BagianCell", for: indexPath) as! TanggalTableViewCell
+            
+            bagianCell.bagianLabel.text = agendaKegiatanHarian.value(forKeyPath: "bagian") as? String
+            
+            return bagianCell
+        }
+        if tableView == tingkatKesakitanTableView
+        {
+            let agendaKegiatanHarian = detailAgendaKegiatan[indexPath.row]
+            let tingkatKesakitanCell = tableView.dequeueReusableCell(withIdentifier: "TingkatKesakitanCell", for: indexPath) as! TanggalTableViewCell
+            
+            tingkatKesakitanCell.tingkatKesakitanLabel.text = agendaKegiatanHarian.value(forKeyPath: "tingkatKesakitan") as? String
+            
+            return tingkatKesakitanCell
+        }
         
-        //Note how you grab the tanggal attribute from the NSManagedObject. It happens here:
-        cell.tanggalLabel.text = agendaKegiatanHarian.value(forKeyPath: "tanggal") as? String
-        
-        return cell
+        return UITableViewCell()
     }
     
-    func save(name: String)
+    func saveAll()
     {
+        let nameToSave = self.tglSakit
+        let jamToSave = self.jamSakit
+        let bagianToSave = self.bagianSakit
+        let tingkatKesakitanToSave = self.nilaiSakit
         
         guard let appDelegate =
             UIApplication.shared.delegate as? AppDelegate else
@@ -95,8 +137,10 @@ class DetailKegiatanViewController: UIViewController, UITableViewDelegate, UITab
                                                    insertInto: managedContext)
         
         // 3
-        agendaKegiatanHarian.setValue(name, forKeyPath: "tanggal")
-        
+        agendaKegiatanHarian.setValue(nameToSave, forKeyPath: "tanggal")
+        agendaKegiatanHarian.setValue(jamToSave, forKeyPath: "jam")
+        agendaKegiatanHarian.setValue(bagianToSave, forKeyPath: "bagian")
+        agendaKegiatanHarian.setValue(tingkatKesakitanToSave, forKeyPath: "tingkatKesakitan")
         // 4
         do
         {
@@ -111,34 +155,114 @@ class DetailKegiatanViewController: UIViewController, UITableViewDelegate, UITab
     
     @IBAction func addTanggal(_ sender: UIButton)
     {
-//        let alert = UIAlertController(title: "New Name",
-//                                      message: "Add a new name",
-//                                      preferredStyle: .alert)
+        saveAll()
+        self.tanggalTableView.reloadData()
+        self.jamTableView.reloadData()
+        self.bagianTableView.reloadData()
+        self.tingkatKesakitanTableView.reloadData()
+    }
+    
+//    func saveTanggal(name: String)
+//    {
+//        guard let appDelegate =
+//            UIApplication.shared.delegate as? AppDelegate else
+//        {
+//            return
+//        }
 //
-//        let saveAction = UIAlertAction(title: "Save", style: .default) {
-//            [unowned self] action in
-
-            let nameToSave = self.tglSakit
-//            guard let textField = alert.textFields?.first,
-//                let nameToSave = textField.text else {
-//                    return
-//            }
-            
-            self.save(name: nameToSave ?? "")
-            self.tanggalTableView.reloadData()
-        }
-        
-//        let cancelAction = UIAlertAction(title: "Cancel",
-//                                         style: .cancel)
-//        
-//        alert.addTextField()
-//        
-//        alert.addAction(saveAction)
-//        alert.addAction(cancelAction)
-//        
-//        present(alert, animated: true)
+//        // 1
+//        let managedContext =
+//            appDelegate.persistentContainer.viewContext
+//
+//        // 2
+//        let entity =
+//            NSEntityDescription.entity(forEntityName: "AgendaKegiatanHarian",
+//                                       in: managedContext)!
+//
+//        let agendaKegiatanHarian = NSManagedObject(entity: entity,
+//                                                   insertInto: managedContext)
+//
+//        // 3
+//        agendaKegiatanHarian.setValue(name, forKeyPath: "tanggal")
+//
+//        // 4
+//        do
+//        {
+//            try managedContext.save()
+//            detailAgendaKegiatan.append(agendaKegiatanHarian)
+//        }
+//        catch let error as NSError
+//        {
+//            print("Could not save. \(error), \(error.userInfo)")
+//        }
 //    }
     
+    func saveJam(name: String)
+    {
+        guard let appDelegate =
+            UIApplication.shared.delegate as? AppDelegate else
+        {
+            return
+        }
+
+        // 1
+        let managedContext =
+            appDelegate.persistentContainer.viewContext
+
+        // 2
+        let entity =
+            NSEntityDescription.entity(forEntityName: "AgendaKegiatanHarian",
+                                       in: managedContext)!
+
+        let agendaKegiatanHarian = NSManagedObject(entity: entity,
+                                                   insertInto: managedContext)
+
+        // 3
+        agendaKegiatanHarian.setValue(name, forKeyPath: "jam")
+
+        // 4
+        do
+        {
+            try managedContext.save()
+            detailAgendaKegiatan.append(agendaKegiatanHarian)
+        }
+        catch let error as NSError
+        {
+            print("Could not save. \(error), \(error.userInfo)")
+        }
+    }
+        
+    @IBAction func addWaktu(_ sender: UIButton)
+    {
+        let jamToSave = self.jamSakit
+        self.saveJam(name: jamToSave ?? "")
+        self.jamTableView.reloadData()
+        //        let alert = UIAlertController(title: "New Name",
+        //                                      message: "Add a new name",
+        //                                      preferredStyle: .alert)
+        //
+        //        let saveAction = UIAlertAction(title: "Save", style: .default) {
+        //            [unowned self] action in
+        
+        //            let nameToSave = self.tglSakit
+        //            guard let textField = alert.textFields?.first,
+        //                let nameToSave = textField.text else {
+        //                    return
+        //            }
+        
+        //            self.saveTanggal(name: nameToSave ?? "")
+        //            self.tanggalTableView.reloadData()
+        //        let cancelAction = UIAlertAction(title: "Cancel",
+        //                                         style: .cancel)
+        //
+        //        alert.addTextField()
+        //
+        //        alert.addAction(saveAction)
+        //        alert.addAction(cancelAction)
+        //
+        //        present(alert, animated: true)
+        //    }
+    }
     
     /*
     // MARK: - Navigation

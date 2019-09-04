@@ -36,6 +36,8 @@
 		4E5D735623177E09009D6CC6 /* Switch-Click.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4E5D735523177E09009D6CC6 /* Switch-Click.wav */; };
 		4E6F3DAA231E76F0004FC500 /* DetailKegiatanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F3DA9231E76F0004FC500 /* DetailKegiatanViewController.swift */; };
 		4E6F3DAC231E78D9004FC500 /* TanggalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F3DAB231E78D9004FC500 /* TanggalTableViewCell.swift */; };
+		4E6F3DB4231EA52C004FC500 /* JamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F3DB3231EA52C004FC500 /* JamTableViewCell.swift */; };
+		4E6F3DB6231EA55E004FC500 /* BagianTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F3DB5231EA55E004FC500 /* BagianTableViewCell.swift */; };
 		4E8A99EC230D4A6400A90EC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8A99EB230D4A6400A90EC1 /* AppDelegate.swift */; };
 		4E8A99F9230D4A6400A90EC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E8A99F8230D4A6400A90EC1 /* Assets.xcassets */; };
 		4E8A99FC230D4A6400A90EC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E8A99FA230D4A6400A90EC1 /* LaunchScreen.storyboard */; };
@@ -81,6 +83,8 @@
 		4E5D735523177E09009D6CC6 /* Switch-Click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Switch-Click.wav"; sourceTree = "<group>"; };
 		4E6F3DA9231E76F0004FC500 /* DetailKegiatanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailKegiatanViewController.swift; sourceTree = "<group>"; };
 		4E6F3DAB231E78D9004FC500 /* TanggalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanggalTableViewCell.swift; sourceTree = "<group>"; };
+		4E6F3DB3231EA52C004FC500 /* JamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JamTableViewCell.swift; sourceTree = "<group>"; };
+		4E6F3DB5231EA55E004FC500 /* BagianTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagianTableViewCell.swift; sourceTree = "<group>"; };
 		4E8A99E8230D4A6400A90EC1 /* CancerForKids-Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CancerForKids-Master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E8A99EB230D4A6400A90EC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E8A99F8230D4A6400A90EC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -191,6 +195,8 @@
 				4E526D992314EE2700ACA520 /* Game.storyboard */,
 				4E6F3DA9231E76F0004FC500 /* DetailKegiatanViewController.swift */,
 				4E6F3DAB231E78D9004FC500 /* TanggalTableViewCell.swift */,
+				4E6F3DB3231EA52C004FC500 /* JamTableViewCell.swift */,
+				4E6F3DB5231EA55E004FC500 /* BagianTableViewCell.swift */,
 			);
 			path = PlayGame;
 			sourceTree = "<group>";
@@ -232,8 +238,8 @@
 				4B07D54A230EA60900151CB3 /* Character */,
 				4E526D982314EDE000ACA520 /* PlayGame */,
 				4BCB605F2313EB5700C5005E /* font */,
-				4E8A99EB230D4A6400A90EC1 /* AppDelegate.swift */,
 				4E8A99F8230D4A6400A90EC1 /* Assets.xcassets */,
+				4E8A99EB230D4A6400A90EC1 /* AppDelegate.swift */,
 				4E8A99FA230D4A6400A90EC1 /* LaunchScreen.storyboard */,
 				4E8A99FD230D4A6400A90EC1 /* Info.plist */,
 				4B4517AF23169E6600ADD3B3 /* CancerForKids-Master.xcdatamodeld */,
@@ -354,9 +360,11 @@
 				DBBE21BA2313F3FC00C2E649 /* DaftarKegiatanViewController.swift in Sources */,
 				4B07D548230EA52400151CB3 /* CharacterViewController.swift in Sources */,
 				4E526D9E2314EE3500ACA520 /* GameViewController.swift in Sources */,
+				4E6F3DB4231EA52C004FC500 /* JamTableViewCell.swift in Sources */,
 				4BA655FA231616C500F28EB2 /* DoneChoosingViewController.swift in Sources */,
 				DBBE21BC2314354E00C2E649 /* PertanyaanRahasiaDuaViewController.swift in Sources */,
 				4E526DAC2314F03000ACA520 /* AudioModel.swift in Sources */,
+				4E6F3DB6231EA55E004FC500 /* BagianTableViewCell.swift in Sources */,
 				4B5418FE231E66ED00EC0F19 /* ReminderViewController.swift in Sources */,
 				4B07D542230E894300151CB3 /* OnboardingController.swift in Sources */,
 				4E8A99EC230D4A6400A90EC1 /* AppDelegate.swift in Sources */,
@@ -499,7 +507,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BW4269VNF7;
+				DEVELOPMENT_TEAM = 85YSJX97S8;
 				INFOPLIST_FILE = "CancerForKids-Master/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -518,7 +526,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BW4269VNF7;
+				DEVELOPMENT_TEAM = 85YSJX97S8;
 				INFOPLIST_FILE = "CancerForKids-Master/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (

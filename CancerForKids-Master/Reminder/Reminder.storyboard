@@ -152,7 +152,150 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BOB-fF-e2e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="605.859375" y="20.3125"/>
+            <point key="canvasLocation" x="541" y="20"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="KC6-ZB-9Os">
+            <objects>
+                <viewController id="PBv-G2-FIM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IAE-3s-AsQ">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundbubble" translatesAutoresizingMaskIntoConstraints="NO" id="SFt-1o-rgV">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kado" translatesAutoresizingMaskIntoConstraints="NO" id="Z94-3W-vQV">
+                                <rect key="frame" x="358" y="138" width="308" height="283"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="283" id="60p-TF-CwV"/>
+                                    <constraint firstAttribute="width" constant="308" id="sJI-93-Tcf"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yeay! Kamu dapat hadiah karena telah melakukan kewajibanmu." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jl-Eh-BEJ">
+                                <rect key="frame" x="168" y="451" width="688" height="136"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="688" id="Hcm-eq-cbf"/>
+                                    <constraint firstAttribute="height" constant="136" id="P1y-SS-rN3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="40"/>
+                                <color key="textColor" red="0.19684040546417236" green="0.46269422769546509" blue="0.42744755744934082" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OPe-QA-i6z" firstAttribute="trailing" secondItem="4jl-Eh-BEJ" secondAttribute="trailing" constant="168" id="5ZT-YF-4zU"/>
+                            <constraint firstItem="Z94-3W-vQV" firstAttribute="top" secondItem="OPe-QA-i6z" secondAttribute="top" constant="118" id="APf-5E-Qaq"/>
+                            <constraint firstItem="4jl-Eh-BEJ" firstAttribute="leading" secondItem="OPe-QA-i6z" secondAttribute="leading" constant="168" id="Aph-yz-o53"/>
+                            <constraint firstItem="Z94-3W-vQV" firstAttribute="leading" secondItem="OPe-QA-i6z" secondAttribute="leading" constant="358" id="D0f-al-oRc"/>
+                            <constraint firstItem="OPe-QA-i6z" firstAttribute="bottom" secondItem="4jl-Eh-BEJ" secondAttribute="bottom" constant="181" id="FnM-sR-yWu"/>
+                            <constraint firstItem="OPe-QA-i6z" firstAttribute="trailing" secondItem="Z94-3W-vQV" secondAttribute="trailing" constant="358" id="JF0-g5-nNt"/>
+                            <constraint firstItem="SFt-1o-rgV" firstAttribute="top" secondItem="IAE-3s-AsQ" secondAttribute="top" id="JW8-OH-qLy"/>
+                            <constraint firstItem="4jl-Eh-BEJ" firstAttribute="top" secondItem="Z94-3W-vQV" secondAttribute="bottom" constant="30" id="P1p-Rd-HX3"/>
+                            <constraint firstItem="SFt-1o-rgV" firstAttribute="trailing" secondItem="OPe-QA-i6z" secondAttribute="trailing" id="QnS-GB-vSl"/>
+                            <constraint firstItem="SFt-1o-rgV" firstAttribute="leading" secondItem="OPe-QA-i6z" secondAttribute="leading" id="XWY-5N-Kyr"/>
+                            <constraint firstItem="4jl-Eh-BEJ" firstAttribute="top" secondItem="Z94-3W-vQV" secondAttribute="bottom" constant="30" id="gvw-3v-esq"/>
+                            <constraint firstItem="SFt-1o-rgV" firstAttribute="bottom" secondItem="OPe-QA-i6z" secondAttribute="bottom" id="qUF-g8-W0n"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OPe-QA-i6z"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v6Y-N0-9UY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-32.2265625" y="810.9375"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pcM-HU-h1t">
+            <objects>
+                <viewController id="ia1-ZM-QXY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="73A-Df-qsl">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundbubble" translatesAutoresizingMaskIntoConstraints="NO" id="ONR-kf-rUt">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kado" translatesAutoresizingMaskIntoConstraints="NO" id="JYz-DH-Uac">
+                                <rect key="frame" x="358" y="296" width="308" height="283"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="308" id="3VA-RU-dwi"/>
+                                    <constraint firstAttribute="height" constant="283" id="bDE-Bg-DMb"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Favourites Star" translatesAutoresizingMaskIntoConstraints="NO" id="c3A-nG-E3h">
+                                <rect key="frame" x="441" y="160" width="142" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JYz-DH-Uac" firstAttribute="leading" secondItem="qKQ-NL-FMU" secondAttribute="leading" constant="358" id="DQP-An-t0u"/>
+                            <constraint firstItem="JYz-DH-Uac" firstAttribute="top" secondItem="c3A-nG-E3h" secondAttribute="bottom" constant="8" id="Ifb-KQ-29h"/>
+                            <constraint firstItem="JYz-DH-Uac" firstAttribute="top" secondItem="c3A-nG-E3h" secondAttribute="bottom" constant="8" id="NtS-Ma-xbB"/>
+                            <constraint firstItem="ONR-kf-rUt" firstAttribute="top" secondItem="73A-Df-qsl" secondAttribute="top" id="Rbi-rz-zsB"/>
+                            <constraint firstItem="ONR-kf-rUt" firstAttribute="bottom" secondItem="qKQ-NL-FMU" secondAttribute="bottom" id="hgG-wF-T0Z"/>
+                            <constraint firstItem="qKQ-NL-FMU" firstAttribute="trailing" secondItem="c3A-nG-E3h" secondAttribute="trailing" constant="441" id="i5H-vf-LQ6"/>
+                            <constraint firstItem="qKQ-NL-FMU" firstAttribute="trailing" secondItem="JYz-DH-Uac" secondAttribute="trailing" constant="358" id="kHv-Y8-8qa"/>
+                            <constraint firstItem="ONR-kf-rUt" firstAttribute="trailing" secondItem="qKQ-NL-FMU" secondAttribute="trailing" id="oQ0-x6-p4A"/>
+                            <constraint firstItem="ONR-kf-rUt" firstAttribute="leading" secondItem="qKQ-NL-FMU" secondAttribute="leading" id="pER-1W-ewf"/>
+                            <constraint firstItem="qKQ-NL-FMU" firstAttribute="bottom" secondItem="JYz-DH-Uac" secondAttribute="bottom" constant="189" id="pm9-Au-AMH"/>
+                            <constraint firstItem="c3A-nG-E3h" firstAttribute="leading" secondItem="qKQ-NL-FMU" secondAttribute="leading" constant="441" id="xaa-bW-cci"/>
+                            <constraint firstItem="c3A-nG-E3h" firstAttribute="top" secondItem="qKQ-NL-FMU" secondAttribute="top" constant="140" id="yTQ-RV-JDA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qKQ-NL-FMU"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9s8-Eg-qed" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="643.9453125" y="810.9375"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="s4i-kE-GnA">
+            <objects>
+                <viewController id="rkq-OW-Wlz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PTz-0z-iKA">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundbubble" translatesAutoresizingMaskIntoConstraints="NO" id="Ymo-Sj-7Nt">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="janganlupa" translatesAutoresizingMaskIntoConstraints="NO" id="yhU-vh-WIm">
+                                <rect key="frame" x="225" y="253" width="557" height="270"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3_police_Idle_007 Copy 3" translatesAutoresizingMaskIntoConstraints="NO" id="Ir5-YT-MWk">
+                                <rect key="frame" x="151" y="226" width="138" height="297"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ex6-Oj-DT4">
+                                <rect key="frame" x="409" y="422" width="188" height="78"/>
+                                <state key="normal" image="Oke Button Mini"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ymo-Sj-7Nt" firstAttribute="leading" secondItem="ggu-xJ-BEq" secondAttribute="leading" id="1ec-Ag-BE7"/>
+                            <constraint firstItem="Ymo-Sj-7Nt" firstAttribute="top" secondItem="PTz-0z-iKA" secondAttribute="top" id="8Xl-ZZ-HQq"/>
+                            <constraint firstItem="ggu-xJ-BEq" firstAttribute="trailing" secondItem="Ex6-Oj-DT4" secondAttribute="trailing" constant="427" id="9ZN-Mn-bkJ"/>
+                            <constraint firstItem="Ex6-Oj-DT4" firstAttribute="top" secondItem="ggu-xJ-BEq" secondAttribute="top" constant="402" id="DIg-QU-BxC"/>
+                            <constraint firstItem="yhU-vh-WIm" firstAttribute="top" secondItem="ggu-xJ-BEq" secondAttribute="top" constant="233" id="G8q-gx-UUr"/>
+                            <constraint firstItem="ggu-xJ-BEq" firstAttribute="trailing" secondItem="yhU-vh-WIm" secondAttribute="trailing" constant="242" id="Je2-mZ-z0G"/>
+                            <constraint firstItem="Ex6-Oj-DT4" firstAttribute="leading" secondItem="Ir5-YT-MWk" secondAttribute="trailing" constant="120" id="N4C-fp-Ggz"/>
+                            <constraint firstItem="ggu-xJ-BEq" firstAttribute="bottom" secondItem="yhU-vh-WIm" secondAttribute="bottom" constant="245" id="Ude-Iv-qnp"/>
+                            <constraint firstItem="Ir5-YT-MWk" firstAttribute="leading" secondItem="ggu-xJ-BEq" secondAttribute="leading" constant="151" id="bRW-Fl-edu"/>
+                            <constraint firstItem="Ir5-YT-MWk" firstAttribute="top" secondItem="ggu-xJ-BEq" secondAttribute="top" constant="206" id="bcb-aw-akf"/>
+                            <constraint firstItem="ggu-xJ-BEq" firstAttribute="bottom" secondItem="Ex6-Oj-DT4" secondAttribute="bottom" constant="268" id="dNN-bA-3Tb"/>
+                            <constraint firstItem="Ymo-Sj-7Nt" firstAttribute="trailing" secondItem="ggu-xJ-BEq" secondAttribute="trailing" id="hGa-EO-JnL"/>
+                            <constraint firstItem="yhU-vh-WIm" firstAttribute="leading" secondItem="ggu-xJ-BEq" secondAttribute="leading" constant="225" id="hMk-xY-rDK"/>
+                            <constraint firstItem="Ex6-Oj-DT4" firstAttribute="leading" secondItem="ggu-xJ-BEq" secondAttribute="leading" constant="409" id="sUw-Uf-drR"/>
+                            <constraint firstItem="Ymo-Sj-7Nt" firstAttribute="bottom" secondItem="ggu-xJ-BEq" secondAttribute="bottom" id="y6g-Nf-zcc"/>
+                            <constraint firstItem="ggu-xJ-BEq" firstAttribute="bottom" secondItem="Ir5-YT-MWk" secondAttribute="bottom" constant="245" id="ypY-HI-4qP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ggu-xJ-BEq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KqY-fg-Cxd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1294.921875" y="810.9375"/>
         </scene>
     </scenes>
     <resources>
@@ -161,7 +304,10 @@
         <image name="Belum Button-2" width="237" height="112"/>
         <image name="Favourites Star" width="164" height="158"/>
         <image name="GREAT" width="587" height="164"/>
+        <image name="Kado" width="311" height="284"/>
+        <image name="Oke Button Mini" width="215" height="90"/>
         <image name="Sudah Button-2" width="235" height="110"/>
         <image name="backgroundbubble" width="1024" height="768"/>
+        <image name="janganlupa" width="509" height="243"/>
     </resources>
 </document>

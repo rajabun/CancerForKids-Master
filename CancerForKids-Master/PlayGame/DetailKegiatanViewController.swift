@@ -31,6 +31,7 @@ class DetailKegiatanViewController: UIViewController, UITableViewDelegate, UITab
     {
         super.viewDidLoad()
         view.backgroundColor = UIColor(patternImage: UIImage(named: "backgroundbubble.png")!)
+        saveAll()
 
         // Do any additional setup after loading the view.
     }
@@ -155,11 +156,35 @@ class DetailKegiatanViewController: UIViewController, UITableViewDelegate, UITab
     
     @IBAction func addTanggal(_ sender: UIButton)
     {
-        saveAll()
+        //saveAll()
         self.tanggalTableView.reloadData()
         self.jamTableView.reloadData()
         self.bagianTableView.reloadData()
         self.tingkatKesakitanTableView.reloadData()
+        //        let alert = UIAlertController(title: "New Name",
+        //                                      message: "Add a new name",
+        //                                      preferredStyle: .alert)
+        //
+        //        let saveAction = UIAlertAction(title: "Save", style: .default) {
+        //            [unowned self] action in
+        
+        //            let nameToSave = self.tglSakit
+        //            guard let textField = alert.textFields?.first,
+        //                let nameToSave = textField.text else {
+        //                    return
+        //            }
+        
+        //            self.saveTanggal(name: nameToSave ?? "")
+        //            self.tanggalTableView.reloadData()
+        //        let cancelAction = UIAlertAction(title: "Cancel",
+        //                                         style: .cancel)
+        //
+        //        alert.addTextField()
+        //
+        //        alert.addAction(saveAction)
+        //        alert.addAction(cancelAction)
+        //
+        //        present(alert, animated: true)
     }
     
 //    func saveTanggal(name: String)
@@ -196,73 +221,6 @@ class DetailKegiatanViewController: UIViewController, UITableViewDelegate, UITab
 //            print("Could not save. \(error), \(error.userInfo)")
 //        }
 //    }
-    
-    func saveJam(name: String)
-    {
-        guard let appDelegate =
-            UIApplication.shared.delegate as? AppDelegate else
-        {
-            return
-        }
-
-        // 1
-        let managedContext =
-            appDelegate.persistentContainer.viewContext
-
-        // 2
-        let entity =
-            NSEntityDescription.entity(forEntityName: "AgendaKegiatanHarian",
-                                       in: managedContext)!
-
-        let agendaKegiatanHarian = NSManagedObject(entity: entity,
-                                                   insertInto: managedContext)
-
-        // 3
-        agendaKegiatanHarian.setValue(name, forKeyPath: "jam")
-
-        // 4
-        do
-        {
-            try managedContext.save()
-            detailAgendaKegiatan.append(agendaKegiatanHarian)
-        }
-        catch let error as NSError
-        {
-            print("Could not save. \(error), \(error.userInfo)")
-        }
-    }
-        
-    @IBAction func addWaktu(_ sender: UIButton)
-    {
-        let jamToSave = self.jamSakit
-        self.saveJam(name: jamToSave ?? "")
-        self.jamTableView.reloadData()
-        //        let alert = UIAlertController(title: "New Name",
-        //                                      message: "Add a new name",
-        //                                      preferredStyle: .alert)
-        //
-        //        let saveAction = UIAlertAction(title: "Save", style: .default) {
-        //            [unowned self] action in
-        
-        //            let nameToSave = self.tglSakit
-        //            guard let textField = alert.textFields?.first,
-        //                let nameToSave = textField.text else {
-        //                    return
-        //            }
-        
-        //            self.saveTanggal(name: nameToSave ?? "")
-        //            self.tanggalTableView.reloadData()
-        //        let cancelAction = UIAlertAction(title: "Cancel",
-        //                                         style: .cancel)
-        //
-        //        alert.addTextField()
-        //
-        //        alert.addAction(saveAction)
-        //        alert.addAction(cancelAction)
-        //
-        //        present(alert, animated: true)
-        //    }
-    }
     
     /*
     // MARK: - Navigation

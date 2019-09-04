@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate
         // Override point for customization after application launch.
         let storyboard = UIStoryboard(name: "Character", bundle: nil)
         let vc1 = storyboard.instantiateInitialViewController()
-        let storyboard2 = UIStoryboard(name: "Parents", bundle: nil)
+        let storyboard2 = UIStoryboard(name: "Game", bundle: nil)
         let vc2 = storyboard2.instantiateInitialViewController()
         
         if(UserDefaults.standard.bool(forKey: "FinishOnboarding") == true)

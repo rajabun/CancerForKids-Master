@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="V2k-bA-acc">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -14,6 +14,14 @@
         </array>
     </customFonts>
     <scenes>
+        <!--Home-->
+        <scene sceneID="SFl-dk-zPz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Game" referencedIdentifier="Home" id="cSo-gB-YTb" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QA3-AF-iAK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-836" y="-178"/>
+        </scene>
         <!--Waktunya View Controller-->
         <scene sceneID="ngz-av-eST">
             <objects>
@@ -23,7 +31,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunrise" translatesAutoresizingMaskIntoConstraints="NO" id="97H-8K-G9x">
-                                <rect key="frame" x="392" y="69.999999999999986" width="240" height="128.00000000000003"/>
+                                <rect key="frame" x="392" y="70" width="240" height="128"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="07:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4O-cI-saW">
                                 <rect key="frame" x="422" y="247" width="180" height="111"/>
@@ -31,7 +39,7 @@
                                 <color key="textColor" red="0.99770766496658325" green="0.5405922532081604" blue="0.11347354203462601" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 dari 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baC-9j-I3I">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="1 dari 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baC-9j-I3I">
                                 <rect key="frame" x="426" y="652" width="173" height="96"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="60"/>
                                 <color key="textColor" red="0.015413308516144753" green="0.56913238763809204" blue="0.51372730731964111" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -50,7 +58,7 @@
                                     <segue destination="3TN-No-gsM" kind="show" id="4mn-pF-MP0"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_sukses" translatesAutoresizingMaskIntoConstraints="NO" id="tl4-8v-rJI">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="icon_sukses" translatesAutoresizingMaskIntoConstraints="NO" id="tl4-8v-rJI">
                                 <rect key="frame" x="392" y="500" width="240" height="122"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ar4-kf-6hC">
@@ -58,6 +66,14 @@
                                 <state key="normal" title="Button" image="left-arrow-1"/>
                                 <connections>
                                     <segue destination="sIn-7B-InZ" kind="show" id="hO3-ce-U4h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIs-K2-vxx">
+                                <rect key="frame" x="20" y="20" width="170" height="163"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="backbutton"/>
+                                <connections>
+                                    <segue destination="cSo-gB-YTb" kind="show" id="WkZ-Vs-dX9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -271,6 +287,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backbutton" width="170" height="163"/>
         <image name="icon_sukses" width="122" height="122"/>
         <image name="left-arrow-1" width="45" height="75"/>
         <image name="night" width="193" height="204"/>

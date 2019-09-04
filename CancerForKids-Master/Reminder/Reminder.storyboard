@@ -269,6 +269,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ex6-Oj-DT4">
                                 <rect key="frame" x="409" y="422" width="188" height="78"/>
                                 <state key="normal" image="Oke Button Mini"/>
+                                <connections>
+                                    <segue destination="tfV-qL-oh6" kind="show" id="l2k-jn-l44"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -296,6 +299,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KqY-fg-Cxd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1294.921875" y="810.9375"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="tzN-OT-qHt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Game" referencedIdentifier="Home" id="tfV-qL-oh6" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gmz-6p-mLr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1310" y="1280"/>
         </scene>
     </scenes>
     <resources>

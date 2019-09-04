@@ -42,6 +42,7 @@ class sakitViewController: UIViewController {
     
     @IBAction func btnSehat(_ sender: Any) {
         UserDefaults.standard.set("sehat", forKey: "sakitnyatuhdisini")
+        UserDefaults.standard.set(0, forKey: "nilaiSakit")
     }
     
     /*

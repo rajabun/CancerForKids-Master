@@ -1,5 +1,5 @@
 //
-//  TanggalTableViewCell.swift
+//  BagianTableViewCell.swift
 //  CancerForKids-Master
 //
 //  Created by Muhammad Rajab Priharsanto on 03/09/19.
@@ -8,13 +8,9 @@
 
 import UIKit
 
-class TanggalTableViewCell: UITableViewCell
+class BagianTableViewCell: UITableViewCell
 {
 
-    @IBOutlet weak var tanggalLabel: UILabel!
-    @IBOutlet weak var bagianLabel: UILabel!
-    @IBOutlet weak var tingkatKesakitanLabel: UILabel!
-    
     override func awakeFromNib()
     {
         super.awakeFromNib()

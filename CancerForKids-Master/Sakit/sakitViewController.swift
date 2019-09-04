@@ -18,7 +18,6 @@ class sakitViewController: UIViewController {
     
     @IBAction func btnSakitKepala(_ sender: Any) {
         UserDefaults.standard.set("kepala", forKey: "sakitnyatuhdisini")
-        
     }
     
     @IBAction func btnSakitPundak(_ sender: Any) {

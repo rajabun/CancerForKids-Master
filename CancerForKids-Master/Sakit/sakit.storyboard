@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -241,7 +240,7 @@
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="2aZ-Tl-u0j">
                                 <rect key="frame" x="343" y="305" width="375" height="24.5"/>
                                 <connections>
-                                    <action selector="weightChanged:" destination="Sh5-VZ-h55" eventType="valueChanged" id="jj2-UZ-tkU"/>
+                                    <action selector="sakitChanged:" destination="Sh5-VZ-h55" eventType="valueChanged" id="jj2-UZ-tkU"/>
                                 </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F1H-QW-Hdw">
@@ -321,6 +320,7 @@
                     <connections>
                         <outlet property="emojiImageView" destination="aIP-mg-1sG" id="1po-0m-bKd"/>
                         <outlet property="sakitLabel" destination="sij-3x-lD6" id="FkR-ug-ZbH"/>
+                        <outlet property="slideSakit" destination="2aZ-Tl-u0j" id="jGN-yT-jrH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w2N-dH-ZmZ" userLabel="First Responder" sceneMemberID="firstResponder"/>

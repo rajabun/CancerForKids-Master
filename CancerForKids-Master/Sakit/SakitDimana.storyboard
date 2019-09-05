@@ -29,7 +29,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubble police" translatesAutoresizingMaskIntoConstraints="NO" id="ygY-V8-URQ">
-                                <rect key="frame" x="40" y="65" width="796" height="649"/>
+                                <rect key="frame" x="40" y="65" width="796.00000000000023" height="649"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ue3-uU-sxi">
                                 <rect key="frame" x="14" y="24" width="136" height="123"/>
@@ -39,14 +39,14 @@
                                     <segue destination="ob0-Qp-1d5" kind="custom" customClass="SegueFromLeft" customModule="CancerForKids_Master" customModuleProvider="target" id="oRr-ft-mRv"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bagian tubuh mana yang sakit hari ini? Cerita sama aku yuk " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45y-fR-8MA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bagian tubuh mana yang sakit hari ini? Yuk, cerita sama aku " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45y-fR-8MA">
                                 <rect key="frame" x="229" y="87" width="567" height="206"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ag5-2y-S4n">
-                                <rect key="frame" x="311" y="340" width="252" height="22"/>
+                                <rect key="frame" x="311" y="340" width="252" height="66"/>
                                 <state key="normal" title="Button" image="Button_Kepala"/>
                                 <connections>
                                     <action selector="btnSakitKepala:" destination="NjB-yx-HAp" eventType="touchUpInside" id="8Vx-3v-lZu"/>
@@ -54,7 +54,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4C-UD-A3r">
-                                <rect key="frame" x="312" y="370" width="252" height="22"/>
+                                <rect key="frame" x="312" y="414" width="252" height="66"/>
                                 <state key="normal" title="Button" image="Button_Pundak"/>
                                 <connections>
                                     <action selector="btnSakitPundak:" destination="NjB-yx-HAp" eventType="touchUpInside" id="WLH-Po-94b"/>
@@ -62,7 +62,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNf-Vm-UpW">
-                                <rect key="frame" x="312" y="400" width="252" height="22"/>
+                                <rect key="frame" x="312" y="488" width="252" height="66"/>
                                 <state key="normal" title="Button" image="Button_Dada"/>
                                 <connections>
                                     <action selector="btnSakitDada:" destination="NjB-yx-HAp" eventType="touchUpInside" id="q27-LT-6V8"/>
@@ -70,7 +70,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qvo-rI-z61">
-                                <rect key="frame" x="562" y="370" width="252" height="22"/>
+                                <rect key="frame" x="562" y="414" width="252" height="66"/>
                                 <state key="normal" title="Button" image="Button_Tangan"/>
                                 <connections>
                                     <action selector="btnSakitTangan:" destination="NjB-yx-HAp" eventType="touchUpInside" id="9ct-76-1h5"/>
@@ -78,7 +78,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crE-te-0lJ">
-                                <rect key="frame" x="562" y="400" width="252" height="22"/>
+                                <rect key="frame" x="562" y="488" width="252" height="66"/>
                                 <state key="normal" title="Button" image="Button_Kaki"/>
                                 <connections>
                                     <action selector="btnSakitKaki:" destination="NjB-yx-HAp" eventType="touchUpInside" id="uhN-ha-iR1"/>
@@ -86,7 +86,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUa-Ns-Bzl">
-                                <rect key="frame" x="319" y="430" width="435" height="198"/>
+                                <rect key="frame" x="319" y="562" width="435" height="66"/>
                                 <state key="normal" image="Button_SayaSehatHariIni"/>
                                 <connections>
                                     <action selector="btnSehat:" destination="NjB-yx-HAp" eventType="touchUpInside" id="beG-Ey-U9N"/>
@@ -94,7 +94,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baV-iv-1Z7">
-                                <rect key="frame" x="562" y="340" width="252" height="22"/>
+                                <rect key="frame" x="562" y="340" width="252" height="66"/>
                                 <state key="normal" title="Button" image="Button_Perut"/>
                                 <connections>
                                     <action selector="btnSakitPerut:" destination="NjB-yx-HAp" eventType="touchUpInside" id="uyB-Da-bi1"/>
@@ -447,8 +447,9 @@ Tetap jaga kesehatanmu ya. </string>
         <image name="simpan nama" width="500" height="110"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="AXF-nr-O5s"/>
         <segue reference="uUd-jN-xQJ"/>
-        <segue reference="3Xz-jf-B8Y"/>
+        <segue reference="9O4-4O-C83"/>
         <segue reference="4On-YA-ZN4"/>
     </inferredMetricsTieBreakers>
 </document>

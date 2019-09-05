@@ -21,7 +21,7 @@ class CharacterViewController: UIViewController {
         roundTF.layer.borderWidth = 3
         roundTF.delegate = self
         
-        
+        AudioModel.audioPlayerSingleton.audioBeriAkuNama()
     }
         // Do any additional setup after loading the view.
 

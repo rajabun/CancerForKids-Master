@@ -21,6 +21,7 @@ class DatePickerViewController: UIViewController {
         
         formatter.dateFormat = "dd-MM-yyyy"
         
+        AudioModel.audioPlayerSingleton.audioTanggalLahirKamu()
 
     }
     

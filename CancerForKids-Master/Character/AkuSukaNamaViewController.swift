@@ -1,29 +1,24 @@
 //
-//  DoneChoosingViewController.swift
+//  AkuSukaNamaViewController.swift
 //  CancerForKids-Master
 //
-//  Created by Mardydu on 28/08/19.
+//  Created by Muhammad Rajab Priharsanto on 05/09/19.
 //  Copyright © 2019 Muhammad Rajab Priharsanto. All rights reserved.
 //
 
 import UIKit
 
-class DoneChoosingViewController: UIViewController {
+class AkuSukaNamaViewController: UIViewController
+{
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-
-        AudioModel.audioPlayerSingleton.audioSenangSekali()
+        AudioModel.audioPlayerSingleton.audioAkuSukaTerimakasih()
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func btnDone(_ sender: Any) {
-        UserDefaults.standard.set(true, forKey: "FinishChoosingChar")
-        let storyboard = UIStoryboard(name: "Game", bundle: nil)
-        guard let vc = storyboard.instantiateInitialViewController() else {return}
-        present(vc, animated: true, completion: nil)
-    }
-    
+
     /*
     // MARK: - Navigation
 

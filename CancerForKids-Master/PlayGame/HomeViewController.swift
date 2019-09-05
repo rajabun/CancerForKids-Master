@@ -20,6 +20,8 @@ class HomeViewController: UIViewController
         characterImage.image  = UIImage(named: "HomePolice")
         balloonImage.image  = UIImage(named: "HomeFillCloud")
         // Do any additional setup after loading the view.
+        
+        AudioModel.audioPlayerSingleton.audioBackgroundHome()
     }
     
     @IBAction func periksaTubuhButtonAction(_ sender: UIButton)
@@ -47,6 +49,7 @@ class HomeViewController: UIViewController
     @IBAction func playButtonAction(_ sender: UIButton)
     {
         performSegue(withIdentifier: "HomeToPlayIdentifier", sender: self)
+        AudioModel.audioPlayerSingleton.audioStop()
     }
     
     @IBAction func polisiButtonAction(_ sender: UIButton)

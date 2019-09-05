@@ -10,9 +10,11 @@ import UIKit
 
 class sakitViewController: UIViewController {
 
+    var audioReady = AudioModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        audioReady.audioBagianTubuh()
         // Do any additional setup after loading the view.
     }
     

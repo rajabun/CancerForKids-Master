@@ -25,6 +25,8 @@ class NamaUserViewController: UIViewController {
             
             textFieldUser.delegate = self
             
+            AudioModel.audioPlayerSingleton.audioNamaKamuSiapa()
+            
         }
         // Do any additional setup after loading the view.
         

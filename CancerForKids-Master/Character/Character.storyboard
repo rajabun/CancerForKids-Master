@@ -88,10 +88,10 @@
             </objects>
             <point key="canvasLocation" x="2582" y="-978"/>
         </scene>
-        <!--View Controller-->
+        <!--Aku Suka Nama View Controller-->
         <scene sceneID="w6t-oE-Txm">
             <objects>
-                <viewController id="ubG-kQ-vjR" sceneMemberID="viewController">
+                <viewController id="ubG-kQ-vjR" customClass="AkuSukaNamaViewController" customModule="CancerForKids_Master" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aR5-dP-J7O">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -313,7 +313,7 @@ Aku melindungi seluruh rakyat tanpa rasa takut. Kamu harus menjadi kuat dan tida
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="wsj-iB-TnA">
                                 <rect key="frame" x="0.0" y="294" width="1024" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="588160239.22267199">
-                                    <!--2019-08-22 9:50:39 AM +0000-->
+                                    <!--2019-08-22 09:50:39 +0000-->
                                 </date>
                                 <connections>
                                     <action selector="dateSelectedFromPicker:" destination="O4c-90-FhK" eventType="valueChanged" id="GCn-Io-Ged"/>
@@ -424,10 +424,10 @@ Aku melindungi seluruh rakyat tanpa rasa takut. Kamu harus menjadi kuat dan tida
             </objects>
             <point key="canvasLocation" x="2227" y="468"/>
         </scene>
-        <!--View Controller-->
+        <!--Pilih Karakter View Controller-->
         <scene sceneID="K3f-ZS-Qei">
             <objects>
-                <viewController storyboardIdentifier="PilihKarakter" id="QxY-de-lkJ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PilihKarakter" id="QxY-de-lkJ" customClass="PilihKarakterViewController" customModule="CancerForKids_Master" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jrr-rJ-HsW">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -527,6 +527,6 @@ Aku melindungi seluruh rakyat tanpa rasa takut. Kamu harus menjadi kuat dan tida
         <segue reference="r3s-wf-noL"/>
         <segue reference="auF-kw-Y45"/>
         <segue reference="xQa-qO-caB"/>
-        <segue reference="Fro-Kn-0J7"/>
+        <segue reference="r7J-Q4-DFa"/>
     </inferredMetricsTieBreakers>
 </document>

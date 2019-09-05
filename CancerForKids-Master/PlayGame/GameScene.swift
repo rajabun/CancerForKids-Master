@@ -258,7 +258,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate
                 backgroundColor = .green
                 DispatchQueue.global().async
                 {
-                    self.audioReady.audioPlay()
+                    self.audioReady.audioMain()
                 }
                 removeAnimation()
                 buildDance()

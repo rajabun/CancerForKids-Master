@@ -10,6 +10,8 @@ import UIKit
 
 class RangeSakitViewController: UIViewController {
 
+    var audioReady = AudioModel()
+    
     @IBOutlet weak var sakitLabel: UILabel!
     @IBOutlet weak var emojiImageView: UIImageView!
     
@@ -21,6 +23,7 @@ class RangeSakitViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateView()
+        audioReady.audioBagianKepala()
         // Do any additional setup after loading the view.
     }
     

@@ -22,10 +22,11 @@ class GameViewController: UIViewController
             scene.scaleMode = .resizeFill
             view.ignoresSiblingOrder = true
 //            //show fps and nodes
-            view.showsFPS = true
-            view.showsNodeCount = true
+//            view.showsFPS = true
+//            view.showsNodeCount = true
             scene.gameViewController = self
             view.presentScene(scene)
+            AudioModel.audioPlayerSingleton.audioStop()
         }
     }
     

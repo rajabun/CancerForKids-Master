@@ -22,6 +22,8 @@ class SudahMilihSakitViewController: UIViewController {
     let bagianSakit = UserDefaults.standard.string(forKey: "sakitnyatuhdisini")
     let nilaiSakit = UserDefaults.standard.string(forKey: "nilaiSakit")
     
+    var audioReady = AudioModel()
+    
     func saveAll()
     {
         let nameToSave = self.tglSakit
@@ -68,6 +70,7 @@ class SudahMilihSakitViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        audioReady.audioKamuAnakKuat()
 
         // Do any additional setup after loading the view.
     }
@@ -81,7 +84,7 @@ class SudahMilihSakitViewController: UIViewController {
         let jamSakit = formatter2.string(from: currentDateTime)
         UserDefaults.standard.set(tanggalSakit, forKey: "tanggalSakit")
         UserDefaults.standard.set(jamSakit, forKey: "jamSakit")
-        //saveAll()
+        saveAll()
     }
     
     @IBAction func btnOkeSehat(_ sender: Any) {
@@ -94,7 +97,7 @@ class SudahMilihSakitViewController: UIViewController {
         
         UserDefaults.standard.set(tanggalSakit, forKey: "tanggalSakit")
         UserDefaults.standard.set(jamSakit, forKey: "jamSakit")
-        //saveAll()
+        saveAll()
     }
     /*
     // MARK: - Navigation

@@ -1,28 +1,26 @@
 //
-//  ReminderViewController.swift
+//  AchievementViewController.swift
 //  CancerForKids-Master
 //
-//  Created by Mardydu on 03/09/19.
+//  Created by Mardydu on 05/09/19.
 //  Copyright © 2019 Muhammad Rajab Priharsanto. All rights reserved.
 //
 
 import UIKit
 
-class ReminderViewController: UIViewController {
+class AchievementViewController: UIViewController {
 
+    @IBOutlet weak var bintang1: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
+        if (UserDefaults.standard.string(forKey: "SudahMakan") == "sudah"){
+            bintang1.image = UIImage(named: "Favourites Star")
+        }
     }
     
-    @IBAction func btnSudahMakan(_ sender: Any) {
-        UserDefaults.standard.set("sudah", forKey: "SudahMakan")
-        
-        
 
-    }
-    
     /*
     // MARK: - Navigation
 

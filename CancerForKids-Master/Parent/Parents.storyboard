@@ -246,7 +246,7 @@
                                 <rect key="frame" x="15" y="24" width="136" height="123"/>
                                 <state key="normal" title="Button" image="backbutton"/>
                                 <connections>
-                                    <segue destination="Uzy-Ed-GDV" kind="show" id="uun-w2-27x"/>
+                                    <segue destination="NZf-9V-OqL" kind="custom" customClass="SegueFromLeft" customModule="CancerForKids_Master" customModuleProvider="target" id="jmH-Ka-dYK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r2H-kd-rzN">
@@ -691,6 +691,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="r96-ap-5do"/>
-        <segue reference="Vjv-Qe-9po"/>
+        <segue reference="n8Q-JW-Gox"/>
+        <segue reference="Ugi-2O-mD3"/>
     </inferredMetricsTieBreakers>
 </document>

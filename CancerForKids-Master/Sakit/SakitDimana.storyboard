@@ -29,14 +29,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubble police" translatesAutoresizingMaskIntoConstraints="NO" id="ygY-V8-URQ">
-                                <rect key="frame" x="40" y="65" width="796" height="649"/>
+                                <rect key="frame" x="40" y="65" width="796.00000000000023" height="649"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ue3-uU-sxi">
                                 <rect key="frame" x="14" y="24" width="136" height="123"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="backbutton"/>
                                 <connections>
-                                    <segue destination="ob0-Qp-1d5" kind="show" id="oRr-ft-mRv"/>
+                                    <segue destination="ob0-Qp-1d5" kind="custom" customClass="SegueFromLeft" customModule="CancerForKids_Master" customModuleProvider="target" id="oRr-ft-mRv"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bagian tubuh mana yang sakit hari ini? Cerita sama aku yuk " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45y-fR-8MA">
@@ -46,47 +46,47 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ag5-2y-S4n">
-                                <rect key="frame" x="311" y="340" width="252" height="22"/>
+                                <rect key="frame" x="311" y="340" width="252" height="66"/>
                                 <state key="normal" title="Button" image="Button_Kepala"/>
                                 <connections>
                                     <action selector="btnSakitKepala:" destination="NjB-yx-HAp" eventType="touchUpInside" id="8Vx-3v-lZu"/>
-                                    <segue destination="xK3-mk-sfk" kind="presentation" id="5wt-rA-TbO"/>
+                                    <segue destination="xK3-mk-sfk" kind="custom" customClass="SegueFromRight" customModule="CancerForKids_Master" customModuleProvider="target" id="5wt-rA-TbO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4C-UD-A3r">
-                                <rect key="frame" x="312" y="370" width="252" height="22"/>
+                                <rect key="frame" x="312" y="414" width="252" height="66"/>
                                 <state key="normal" title="Button" image="Button_Pundak"/>
                                 <connections>
                                     <action selector="btnSakitPundak:" destination="NjB-yx-HAp" eventType="touchUpInside" id="WLH-Po-94b"/>
-                                    <segue destination="xK3-mk-sfk" kind="presentation" id="qC2-2C-ydW"/>
+                                    <segue destination="xK3-mk-sfk" kind="custom" customClass="SegueFromRight" customModule="CancerForKids_Master" customModuleProvider="target" id="qC2-2C-ydW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNf-Vm-UpW">
-                                <rect key="frame" x="312" y="400" width="252" height="22"/>
+                                <rect key="frame" x="312" y="488" width="252" height="66"/>
                                 <state key="normal" title="Button" image="Button_Dada"/>
                                 <connections>
                                     <action selector="btnSakitDada:" destination="NjB-yx-HAp" eventType="touchUpInside" id="q27-LT-6V8"/>
-                                    <segue destination="xK3-mk-sfk" kind="presentation" id="epG-WY-Ehk"/>
+                                    <segue destination="xK3-mk-sfk" kind="custom" customClass="SegueFromRight" customModule="CancerForKids_Master" customModuleProvider="target" id="epG-WY-Ehk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qvo-rI-z61">
-                                <rect key="frame" x="562" y="370" width="252" height="22"/>
+                                <rect key="frame" x="562" y="414" width="252" height="66"/>
                                 <state key="normal" title="Button" image="Button_Tangan"/>
                                 <connections>
                                     <action selector="btnSakitTangan:" destination="NjB-yx-HAp" eventType="touchUpInside" id="9ct-76-1h5"/>
-                                    <segue destination="xK3-mk-sfk" kind="presentation" id="hUr-qr-gpV"/>
+                                    <segue destination="xK3-mk-sfk" kind="custom" customClass="SegueFromRight" customModule="CancerForKids_Master" customModuleProvider="target" id="hUr-qr-gpV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crE-te-0lJ">
-                                <rect key="frame" x="562" y="400" width="252" height="22"/>
+                                <rect key="frame" x="562" y="488" width="252" height="66"/>
                                 <state key="normal" title="Button" image="Button_Kaki"/>
                                 <connections>
                                     <action selector="btnSakitKaki:" destination="NjB-yx-HAp" eventType="touchUpInside" id="uhN-ha-iR1"/>
-                                    <segue destination="xK3-mk-sfk" kind="presentation" id="U8y-g9-eVp"/>
+                                    <segue destination="xK3-mk-sfk" kind="custom" customClass="SegueFromRight" customModule="CancerForKids_Master" customModuleProvider="target" id="U8y-g9-eVp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUa-Ns-Bzl">
-                                <rect key="frame" x="319" y="430" width="435" height="198"/>
+                                <rect key="frame" x="319" y="562" width="435" height="66"/>
                                 <state key="normal" image="Button_SayaSehatHariIni"/>
                                 <connections>
                                     <action selector="btnSehat:" destination="NjB-yx-HAp" eventType="touchUpInside" id="beG-Ey-U9N"/>
@@ -94,11 +94,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baV-iv-1Z7">
-                                <rect key="frame" x="562" y="340" width="252" height="22"/>
+                                <rect key="frame" x="562" y="340" width="252" height="66"/>
                                 <state key="normal" title="Button" image="Button_Perut"/>
                                 <connections>
                                     <action selector="btnSakitPerut:" destination="NjB-yx-HAp" eventType="touchUpInside" id="uyB-Da-bi1"/>
-                                    <segue destination="xK3-mk-sfk" kind="presentation" id="9O4-4O-C83"/>
+                                    <segue destination="xK3-mk-sfk" kind="custom" customClass="SegueFromRight" customModule="CancerForKids_Master" customModuleProvider="target" id="9O4-4O-C83"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -170,6 +170,9 @@
                                     <constraint firstAttribute="width" constant="136" id="vyw-9X-rmG"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="backbutton"/>
+                                <connections>
+                                    <segue destination="xK3-mk-sfk" kind="custom" customClass="SegueFromLeft" customModule="CancerForKids_Master" customModuleProvider="target" id="3Xz-jf-B8Y"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="police" translatesAutoresizingMaskIntoConstraints="NO" id="IDL-O9-vJ2">
                                 <rect key="frame" x="60" y="210" width="221" height="489"/>
@@ -222,7 +225,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mvh-Mn-XzJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-347" y="505"/>
+            <point key="canvasLocation" x="-351" y="694"/>
         </scene>
         <!--Range Sakit View Controller-->
         <scene sceneID="y4X-x8-ks4">
@@ -258,6 +261,9 @@
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jwf-Vl-DnI">
                                 <rect key="frame" x="14" y="24" width="136" height="123"/>
                                 <state key="normal" title="Button" image="backbutton"/>
+                                <connections>
+                                    <segue destination="NjB-yx-HAp" kind="custom" customClass="SegueFromLeft" customModule="CancerForKids_Master" customModuleProvider="target" id="lcM-3C-6DI"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Confuse Emoji Button-1" translatesAutoresizingMaskIntoConstraints="NO" id="vpp-FX-koq">
                                 <rect key="frame" x="410" y="384.5" width="240" height="136"/>
@@ -367,6 +373,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKj-NE-f0a">
                                 <rect key="frame" x="14" y="24" width="136" height="123"/>
                                 <state key="normal" title="Button" image="backbutton"/>
+                                <connections>
+                                    <segue destination="NjB-yx-HAp" kind="custom" customClass="SegueFromLeft" customModule="CancerForKids_Master" customModuleProvider="target" id="4On-YA-ZN4"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Fr-ll-060">
                                 <rect key="frame" x="309" y="110" width="493" height="182.5"/>
@@ -409,7 +418,7 @@ Tetap jaga kesehatanmu ya. </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Dr-ew-XTn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="299" y="506"/>
+            <point key="canvasLocation" x="295" y="695"/>
         </scene>
         <!--Play-->
         <scene sceneID="T69-ew-hpA">
@@ -439,6 +448,7 @@ Tetap jaga kesehatanmu ya. </string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="uUd-jN-xQJ"/>
-        <segue reference="qC2-2C-ydW"/>
+        <segue reference="3Xz-jf-B8Y"/>
+        <segue reference="4On-YA-ZN4"/>
     </inferredMetricsTieBreakers>
 </document>

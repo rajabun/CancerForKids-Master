@@ -15,6 +15,8 @@
 		4B07D548230EA52400151CB3 /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B07D546230EA52400151CB3 /* CharacterViewController.swift */; };
 		4B07D549230EA52400151CB3 /* Character.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B07D547230EA52400151CB3 /* Character.storyboard */; };
 		4B4517B123169E6600ADD3B3 /* CancerForKids-Master.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B4517AF23169E6600ADD3B3 /* CancerForKids-Master.xcdatamodeld */; };
+		4B4B99752320EB750067BDED /* AchievementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4B99742320EB750067BDED /* AchievementViewController.swift */; };
+		4B4B99782320ED090067BDED /* SegueFromRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4B99772320ED090067BDED /* SegueFromRight.swift */; };
 		4B5418FC231E66E000EC0F19 /* Reminder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B5418FB231E66E000EC0F19 /* Reminder.storyboard */; };
 		4B5418FE231E66ED00EC0F19 /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5418FD231E66ED00EC0F19 /* ReminderViewController.swift */; };
 		4B5BC4632316C32800BC89EE /* PainLocatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5BC4622316C32800BC89EE /* PainLocatorViewController.swift */; };
@@ -62,6 +64,8 @@
 		4B07D546230EA52400151CB3 /* CharacterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
 		4B07D547230EA52400151CB3 /* Character.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Character.storyboard; sourceTree = "<group>"; };
 		4B4517B023169E6600ADD3B3 /* CancerForKids-Master.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CancerForKids-Master.xcdatamodel"; sourceTree = "<group>"; };
+		4B4B99742320EB750067BDED /* AchievementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewController.swift; sourceTree = "<group>"; };
+		4B4B99772320ED090067BDED /* SegueFromRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueFromRight.swift; sourceTree = "<group>"; };
 		4B5418FB231E66E000EC0F19 /* Reminder.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reminder.storyboard; sourceTree = "<group>"; };
 		4B5418FD231E66ED00EC0F19 /* ReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
 		4B5BC4622316C32800BC89EE /* PainLocatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PainLocatorViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +141,15 @@
 			path = Character;
 			sourceTree = "<group>";
 		};
+		4B4B99762320EB7E0067BDED /* Achievement */ = {
+			isa = PBXGroup;
+			children = (
+				4BA3814E231FC08100E6A5EA /* Achievement.storyboard */,
+				4B4B99742320EB750067BDED /* AchievementViewController.swift */,
+			);
+			path = Achievement;
+			sourceTree = "<group>";
+		};
 		4B5418FF231E66F400EC0F19 /* Reminder */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +203,7 @@
 			children = (
 				4E526DAB2314F03000ACA520 /* AudioModel.swift */,
 				4EE846FA231CCF740049BD98 /* SegueFromLeft.swift */,
+				4B4B99772320ED090067BDED /* SegueFromRight.swift */,
 				4E526DA62314EE6200ACA520 /* Sounds */,
 				4E526D9F2314EE3A00ACA520 /* GameScene.swift */,
 				4E526D9D2314EE3500ACA520 /* GameViewController.swift */,
@@ -236,6 +250,7 @@
 				4BA655FD23166AB900F28EB2 /* SakitNyaTuhDisini */,
 				4BCB605C2313E80100C5005E /* Parent */,
 				DB369A6D230FFCF30055CC0A /* Sakit */,
+				4B4B99762320EB7E0067BDED /* Achievement */,
 				4B07D533230E840000151CB3 /* OnBoarding */,
 				4B07D54A230EA60900151CB3 /* Character */,
 				4E526D982314EDE000ACA520 /* PlayGame */,
@@ -243,7 +258,6 @@
 				4E8A99F8230D4A6400A90EC1 /* Assets.xcassets */,
 				4E8A99EB230D4A6400A90EC1 /* AppDelegate.swift */,
 				4E8A99FA230D4A6400A90EC1 /* LaunchScreen.storyboard */,
-				4BA3814E231FC08100E6A5EA /* Achievement.storyboard */,
 				4E8A99FD230D4A6400A90EC1 /* Info.plist */,
 				4B4517AF23169E6600ADD3B3 /* CancerForKids-Master.xcdatamodeld */,
 			);
@@ -356,8 +370,10 @@
 				4B9DCEC2231D385700ACEC1F /* WaktunyaViewController.swift in Sources */,
 				DB369A6A230FC9FE0055CC0A /* NamaUserViewController.swift in Sources */,
 				4B9DCEBC231CDD0900ACEC1F /* RangeSakitViewController.swift in Sources */,
+				4B4B99782320ED090067BDED /* SegueFromRight.swift in Sources */,
 				4E526D9C2314EE3000ACA520 /* HomeViewController.swift in Sources */,
 				4BCB60592313E7FC00C5005E /* ParentsViewController.swift in Sources */,
+				4B4B99752320EB750067BDED /* AchievementViewController.swift in Sources */,
 				DBBE21B82313F3D600C2E649 /* DaftarViewController.swift in Sources */,
 				4B9DCEBE231D087000ACEC1F /* SudahMilihSakitViewController.swift in Sources */,
 				4B4517B123169E6600ADD3B3 /* CancerForKids-Master.xcdatamodeld in Sources */,
@@ -521,7 +537,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.marcelwira.CancerForKids-Master";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -540,7 +556,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.marcelwira.CancerForKids-Master";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

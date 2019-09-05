@@ -8,17 +8,33 @@
 
 import UIKit
 import CoreData
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate
 {
 
     var window: UIWindow?
-
+    let notificationCenter = UNUserNotificationCenter.current()
+    
+    let date = Date(timeInterval: 50400, since: Calendar.current.startOfDay(for: Date()))
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool
     {
         // Override point for customization after application launch.
+        
+        notificationCenter.delegate = self
+        
+        let options: UNAuthorizationOptions = [.alert, .sound]
+        
+        
+        notificationCenter.requestAuthorization(options: options) {
+            (didAllow, error) in
+            if !didAllow {
+                print("User has declined notifications")
+            }
+        }
+        
         let storyboard = UIStoryboard(name: "Character", bundle: nil)
         let vc1 = storyboard.instantiateInitialViewController()
         let storyboard2 = UIStoryboard(name: "Game", bundle: nil)
@@ -33,6 +49,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate
         {
             window?.rootViewController = vc2!
         }
+        
+        scheduleNotification()
         
         UIApplication.shared.setMinimumBackgroundFetchInterval(5)
         
@@ -111,5 +129,59 @@ class AppDelegate: UIResponder, UIApplicationDelegate
         }
     }
 
+}
+extension AppDelegate: UNUserNotificationCenterDelegate {
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter,
+                                willPresent notification: UNNotification,
+                                withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        
+        completionHandler([.alert, .sound])
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter,
+                                didReceive response: UNNotificationResponse,
+                                withCompletionHandler completionHandler: @escaping () -> Void) {
+        
+        let storyboard3 = UIStoryboard(name: "Reminder", bundle: nil)
+        let vc3 = storyboard3.instantiateInitialViewController()
+        
+        if response.notification.request.identifier == "ActivityReminder" {
+            window?.rootViewController = vc3
+        }
+        
+        completionHandler()
+    }
+    
+    func scheduleNotification() {
+        
+        let content = UNMutableNotificationContent()
+        let userActions = "Delete Notificationn Type"
+        
+        content.title = "Temania"
+        content.body = "Jangan lupa makan ya!"
+        content.sound = UNNotificationSound.default
+        content.categoryIdentifier = userActions
+        
+        let triggerDaily = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: date)
+        let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDaily, repeats: true)
+        let identifier = "ActivityReminder"
+        let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
+        
+        notificationCenter.add(request) { (error) in
+            if let error = error {
+                print("Error \(error.localizedDescription)")
+            }
+        }
+        
+        let snoozeAction = UNNotificationAction(identifier: "Snooze", title: "Snooze", options: [])
+        let deleteAction = UNNotificationAction(identifier: "DeleteAction", title: "Delete", options: [.destructive])
+        let category = UNNotificationCategory(identifier: userActions,
+                                              actions: [snoozeAction, deleteAction],
+                                              intentIdentifiers: [],
+                                              options: [])
+        
+        notificationCenter.setNotificationCategories([category])
+    }
 }
 

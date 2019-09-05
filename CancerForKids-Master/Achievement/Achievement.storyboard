@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9aB-HL-GNl">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Good Unicorn - TTF.ttf">
+            <string>GoodUnicorn-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Achievement View Controller-->
+        <scene sceneID="Bw5-zr-r0g">
+            <objects>
+                <viewController storyboardIdentifier="Achievement" id="9aB-HL-GNl" customClass="AchievementViewController" customModule="CancerForKids_Master" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="byt-fH-AD2">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundbubble" translatesAutoresizingMaskIntoConstraints="NO" id="Feh-DY-oT6">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="achievementbg" translatesAutoresizingMaskIntoConstraints="NO" id="0AI-J3-49U">
+                                <rect key="frame" x="0.0" y="128" width="1024" height="567"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Favourites Star" translatesAutoresizingMaskIntoConstraints="NO" id="bP2-Kr-Ka9">
+                                <rect key="frame" x="73" y="460" width="139" height="128"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star" translatesAutoresizingMaskIntoConstraints="NO" id="iwc-Cr-Jqa">
+                                <rect key="frame" x="443" y="460" width="139" height="128"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star" translatesAutoresizingMaskIntoConstraints="NO" id="8nv-nD-k6n">
+                                <rect key="frame" x="258" y="266" width="139" height="128"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star" translatesAutoresizingMaskIntoConstraints="NO" id="RCL-kv-0Be">
+                                <rect key="frame" x="628" y="266" width="139" height="128"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star" translatesAutoresizingMaskIntoConstraints="NO" id="hvV-7b-ZKs">
+                                <rect key="frame" x="813" y="460" width="139" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KUMPULKAN BINTANGMU" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4F-iB-l8K">
+                                <rect key="frame" x="371" y="77" width="282" height="117"/>
+                                <fontDescription key="fontDescription" name="GoodUnicorn-Regular" family="Good Unicorn" pointSize="55"/>
+                                <color key="textColor" red="0.14772075414657593" green="0.72547453641891479" blue="0.60390728712081909" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uey-P9-Ztp">
+                                <rect key="frame" x="20" y="20" width="170" height="163"/>
+                                <state key="normal" image="backbutton"/>
+                                <connections>
+                                    <segue destination="igE-N1-xl0" kind="custom" customClass="SegueFromLeft" customModule="CancerForKids_Master" customModuleProvider="target" id="cUh-Db-2bp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ujq-0T-UA2" firstAttribute="bottom" secondItem="RCL-kv-0Be" secondAttribute="bottom" constant="374" id="0t7-Uy-c43"/>
+                            <constraint firstItem="0AI-J3-49U" firstAttribute="top" secondItem="Ujq-0T-UA2" secondAttribute="top" constant="108" id="0uf-Ce-iIY"/>
+                            <constraint firstItem="Ujq-0T-UA2" firstAttribute="bottom" secondItem="0AI-J3-49U" secondAttribute="bottom" constant="73" id="2SK-Y8-DsZ"/>
+                            <constraint firstItem="hvV-7b-ZKs" firstAttribute="top" secondItem="Ujq-0T-UA2" secondAttribute="top" constant="440" id="6nS-fg-g2P"/>
+                            <constraint firstItem="X4F-iB-l8K" firstAttribute="centerX" secondItem="byt-fH-AD2" secondAttribute="centerX" id="Aw2-1E-WcG"/>
+                            <constraint firstItem="uey-P9-Ztp" firstAttribute="top" secondItem="Ujq-0T-UA2" secondAttribute="top" id="Azz-Es-TuG"/>
+                            <constraint firstItem="iwc-Cr-Jqa" firstAttribute="leading" secondItem="Ujq-0T-UA2" secondAttribute="leading" constant="443" id="CDl-Gz-Dsh"/>
+                            <constraint firstItem="Feh-DY-oT6" firstAttribute="bottom" secondItem="Ujq-0T-UA2" secondAttribute="bottom" id="GOh-qr-vzr"/>
+                            <constraint firstItem="Ujq-0T-UA2" firstAttribute="trailing" secondItem="hvV-7b-ZKs" secondAttribute="trailing" constant="72" id="HlO-2j-2Np"/>
+                            <constraint firstItem="bP2-Kr-Ka9" firstAttribute="top" secondItem="Ujq-0T-UA2" secondAttribute="top" constant="440" id="K1x-RB-aj1"/>
+                            <constraint firstItem="Ujq-0T-UA2" firstAttribute="trailing" secondItem="iwc-Cr-Jqa" secondAttribute="trailing" constant="442" id="KIU-pQ-m4K"/>
+                            <constraint firstItem="Ujq-0T-UA2" firstAttribute="trailing" secondItem="bP2-Kr-Ka9" secondAttribute="trailing" constant="812" id="M0W-Ag-LXY"/>
+                            <constraint firstItem="0AI-J3-49U" firstAttribute="trailing" secondItem="Ujq-0T-UA2" secondAttribute="trailing" id="Mex-Wa-L84"/>
+                            <constraint firstItem="Ujq-0T-UA2" firstAttribute="bottom" secondItem="uey-P9-Ztp" secondAttribute="bottom" constant="585" id="Ohn-Lq-1bC"/>
+                            <constraint firstItem="Feh-DY-oT6" firstAttribute="leading" secondItem="Ujq-0T-UA2" secondAttribute="leading" id="SEN-ey-OvO"/>
+                            <constraint firstItem="X4F-iB-l8K" firstAttribute="top" secondItem="Ujq-0T-UA2" secondAttribute="top" constant="57" id="SLY-4J-qqT"/>
+                            <constraint firstItem="Ujq-0T-UA2" firstAttribute="bottom" secondItem="bP2-Kr-Ka9" secondAttribute="bottom" constant="180" id="Wos-jZ-StX"/>
+                            <constraint firstItem="uey-P9-Ztp" firstAttribute="leading" secondItem="Ujq-0T-UA2" secondAttribute="leading" constant="20" id="WuM-2p-hH3"/>
+                            <constraint firstItem="Ujq-0T-UA2" firstAttribute="trailing" secondItem="RCL-kv-0Be" secondAttribute="trailing" constant="257" id="XVL-VH-lwd"/>
+                            <constraint firstItem="Ujq-0T-UA2" firstAttribute="bottom" secondItem="X4F-iB-l8K" secondAttribute="bottom" constant="574" id="ZqW-45-ozu"/>
+                            <constraint firstItem="Feh-DY-oT6" firstAttribute="top" secondItem="byt-fH-AD2" secondAttribute="top" id="b6l-8Y-UN0"/>
+                            <constraint firstItem="Ujq-0T-UA2" firstAttribute="bottom" secondItem="8nv-nD-k6n" secondAttribute="bottom" constant="374" id="bq8-AB-8lO"/>
+                            <constraint firstItem="hvV-7b-ZKs" firstAttribute="leading" secondItem="Ujq-0T-UA2" secondAttribute="leading" constant="813" id="dVk-Gk-mgo"/>
+                            <constraint firstItem="0AI-J3-49U" firstAttribute="leading" secondItem="Ujq-0T-UA2" secondAttribute="leading" id="dgc-zC-z59"/>
+                            <constraint firstItem="Ujq-0T-UA2" firstAttribute="trailing" secondItem="8nv-nD-k6n" secondAttribute="trailing" constant="627" id="fQc-xV-KAZ"/>
+                            <constraint firstItem="Ujq-0T-UA2" firstAttribute="trailing" secondItem="X4F-iB-l8K" secondAttribute="trailing" constant="371" id="hAe-84-uWW"/>
+                            <constraint firstItem="bP2-Kr-Ka9" firstAttribute="leading" secondItem="Ujq-0T-UA2" secondAttribute="leading" constant="73" id="jAh-fM-cxu"/>
+                            <constraint firstItem="iwc-Cr-Jqa" firstAttribute="top" secondItem="Ujq-0T-UA2" secondAttribute="top" constant="440" id="jeB-2H-fsw"/>
+                            <constraint firstItem="Ujq-0T-UA2" firstAttribute="bottom" secondItem="iwc-Cr-Jqa" secondAttribute="bottom" constant="180" id="oGv-rG-MfO"/>
+                            <constraint firstItem="X4F-iB-l8K" firstAttribute="leading" secondItem="Ujq-0T-UA2" secondAttribute="leading" constant="371" id="od3-2F-2jC"/>
+                            <constraint firstItem="8nv-nD-k6n" firstAttribute="top" secondItem="byt-fH-AD2" secondAttribute="topMargin" constant="246" id="os1-sJ-vGa"/>
+                            <constraint firstItem="RCL-kv-0Be" firstAttribute="leading" secondItem="Ujq-0T-UA2" secondAttribute="leading" constant="628" id="quU-Ov-U7K"/>
+                            <constraint firstItem="Ujq-0T-UA2" firstAttribute="trailing" secondItem="uey-P9-Ztp" secondAttribute="trailing" constant="834" id="rfJ-2Y-2lW"/>
+                            <constraint firstItem="RCL-kv-0Be" firstAttribute="top" secondItem="Ujq-0T-UA2" secondAttribute="top" constant="246" id="rrs-Az-AQ7"/>
+                            <constraint firstItem="Ujq-0T-UA2" firstAttribute="bottom" secondItem="hvV-7b-ZKs" secondAttribute="bottom" constant="180" id="vaG-K7-lgY"/>
+                            <constraint firstItem="Feh-DY-oT6" firstAttribute="trailing" secondItem="Ujq-0T-UA2" secondAttribute="trailing" id="x6A-76-nsr"/>
+                            <constraint firstItem="8nv-nD-k6n" firstAttribute="leading" secondItem="Ujq-0T-UA2" secondAttribute="leading" constant="258" id="xTx-SI-hi1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ujq-0T-UA2"/>
+                    </view>
+                    <connections>
+                        <outlet property="bintang1" destination="8nv-nD-k6n" id="J6u-2O-HZB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zBG-s7-Ob7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-22.265625" y="-17.1875"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="0SP-3K-hab">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Game" referencedIdentifier="Home" id="igE-N1-xl0" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cXV-xI-JDo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-520" y="-177"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Favourites Star" width="164" height="158"/>
+        <image name="Star" width="158" height="149"/>
+        <image name="achievementbg" width="1024" height="572"/>
+        <image name="backbutton" width="170" height="163"/>
+        <image name="backgroundbubble" width="1024" height="768"/>
+    </resources>
+</document>

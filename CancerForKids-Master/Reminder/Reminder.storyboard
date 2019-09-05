@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GIq-AJ-VWh">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -14,10 +14,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Reminder View Controller-->
         <scene sceneID="uGg-Ag-0ld">
             <objects>
-                <viewController id="GIq-AJ-VWh" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Reminder" id="GIq-AJ-VWh" customClass="ReminderViewController" customModule="CancerForKids_Master" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nnQ-yR-uax">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,6 +32,10 @@
                                     <constraint firstAttribute="width" constant="220" id="N8k-7d-cdc"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="Sudah Button-2"/>
+                                <connections>
+                                    <action selector="btnSudahMakan:" destination="GIq-AJ-VWh" eventType="touchUpInside" id="EPp-uR-Lbh"/>
+                                    <segue destination="TC2-N2-VFi" kind="show" id="enX-87-Pg0"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Alarm Notifications " translatesAutoresizingMaskIntoConstraints="NO" id="W5N-ih-iju">
                                 <rect key="frame" x="101" y="184" width="402" height="400"/>
@@ -55,6 +59,9 @@
                                     <constraint firstAttribute="height" constant="90" id="cPb-BA-r0a"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="Belum Button-2"/>
+                                <connections>
+                                    <segue destination="rkq-OW-Wlz" kind="show" id="g4f-3x-a3I"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -101,6 +108,7 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundbubble" translatesAutoresizingMaskIntoConstraints="NO" id="YHA-zv-dWh">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <gestureRecognizers/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3_police_Idle_007 Copy 3" translatesAutoresizingMaskIntoConstraints="NO" id="IRY-DB-ZaG">
                                 <rect key="frame" x="393" y="82" width="238" height="516"/>
@@ -119,6 +127,7 @@
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="zSk-88-s8s" firstAttribute="trailing" secondItem="7xZ-di-Rwd" secondAttribute="trailing" constant="616" id="1c9-Dl-5pZ"/>
                             <constraint firstItem="zSk-88-s8s" firstAttribute="bottom" secondItem="7xZ-di-Rwd" secondAttribute="bottom" constant="116" id="1dI-If-CdF"/>
@@ -148,9 +157,17 @@
                             <constraint firstItem="zSk-88-s8s" firstAttribute="trailing" secondItem="JIH-d6-q5g" secondAttribute="trailing" constant="243" id="yog-8F-Ifo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zSk-88-s8s"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="o47-Ey-VBr" appends="YES" id="91M-tc-aH6"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BOB-fF-e2e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="o47-Ey-VBr">
+                    <connections>
+                        <segue destination="PBv-G2-FIM" kind="custom" identifier="from right" customClass="SegueFromRight" customModule="CancerForKids_Master" customModuleProvider="target" id="9Es-oW-3we"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="541" y="20"/>
         </scene>
@@ -184,6 +201,7 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="OPe-QA-i6z" firstAttribute="trailing" secondItem="4jl-Eh-BEJ" secondAttribute="trailing" constant="168" id="5ZT-YF-4zU"/>
                             <constraint firstItem="Z94-3W-vQV" firstAttribute="top" secondItem="OPe-QA-i6z" secondAttribute="top" constant="118" id="APf-5E-Qaq"/>
@@ -199,9 +217,17 @@
                             <constraint firstItem="SFt-1o-rgV" firstAttribute="bottom" secondItem="OPe-QA-i6z" secondAttribute="bottom" id="qUF-g8-W0n"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OPe-QA-i6z"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="DuR-wA-PqV" appends="YES" id="8HM-me-NxI"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v6Y-N0-9UY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="DuR-wA-PqV">
+                    <connections>
+                        <segue destination="ia1-ZM-QXY" kind="custom" identifier="from right" customClass="SegueFromRight" customModule="CancerForKids_Master" customModuleProvider="target" id="Aj8-Sb-JZk"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-32.2265625" y="810.9375"/>
         </scene>
@@ -226,9 +252,18 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Favourites Star" translatesAutoresizingMaskIntoConstraints="NO" id="c3A-nG-E3h">
                                 <rect key="frame" x="441" y="160" width="142" height="128"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CgR-1b-vZN">
+                                <rect key="frame" x="401" y="604" width="222" height="62"/>
+                                <state key="normal" image="GREAT"/>
+                                <connections>
+                                    <segue destination="hDT-Oq-iAY" kind="show" id="LY4-fk-TIN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="CgR-1b-vZN" firstAttribute="top" secondItem="JYz-DH-Uac" secondAttribute="bottom" constant="25" id="09X-nb-w2X"/>
                             <constraint firstItem="JYz-DH-Uac" firstAttribute="leading" secondItem="qKQ-NL-FMU" secondAttribute="leading" constant="358" id="DQP-An-t0u"/>
                             <constraint firstItem="JYz-DH-Uac" firstAttribute="top" secondItem="c3A-nG-E3h" secondAttribute="bottom" constant="8" id="Ifb-KQ-29h"/>
                             <constraint firstItem="JYz-DH-Uac" firstAttribute="top" secondItem="c3A-nG-E3h" secondAttribute="bottom" constant="8" id="NtS-Ma-xbB"/>
@@ -236,11 +271,14 @@
                             <constraint firstItem="ONR-kf-rUt" firstAttribute="bottom" secondItem="qKQ-NL-FMU" secondAttribute="bottom" id="hgG-wF-T0Z"/>
                             <constraint firstItem="qKQ-NL-FMU" firstAttribute="trailing" secondItem="c3A-nG-E3h" secondAttribute="trailing" constant="441" id="i5H-vf-LQ6"/>
                             <constraint firstItem="qKQ-NL-FMU" firstAttribute="trailing" secondItem="JYz-DH-Uac" secondAttribute="trailing" constant="358" id="kHv-Y8-8qa"/>
+                            <constraint firstItem="CgR-1b-vZN" firstAttribute="leading" secondItem="qKQ-NL-FMU" secondAttribute="leading" constant="401" id="lA8-4w-O17"/>
+                            <constraint firstItem="qKQ-NL-FMU" firstAttribute="trailing" secondItem="CgR-1b-vZN" secondAttribute="trailing" constant="401" id="m4c-2c-JIl"/>
                             <constraint firstItem="ONR-kf-rUt" firstAttribute="trailing" secondItem="qKQ-NL-FMU" secondAttribute="trailing" id="oQ0-x6-p4A"/>
                             <constraint firstItem="ONR-kf-rUt" firstAttribute="leading" secondItem="qKQ-NL-FMU" secondAttribute="leading" id="pER-1W-ewf"/>
                             <constraint firstItem="qKQ-NL-FMU" firstAttribute="bottom" secondItem="JYz-DH-Uac" secondAttribute="bottom" constant="189" id="pm9-Au-AMH"/>
                             <constraint firstItem="c3A-nG-E3h" firstAttribute="leading" secondItem="qKQ-NL-FMU" secondAttribute="leading" constant="441" id="xaa-bW-cci"/>
                             <constraint firstItem="c3A-nG-E3h" firstAttribute="top" secondItem="qKQ-NL-FMU" secondAttribute="top" constant="140" id="yTQ-RV-JDA"/>
+                            <constraint firstItem="qKQ-NL-FMU" firstAttribute="bottom" secondItem="CgR-1b-vZN" secondAttribute="bottom" constant="102" id="z1e-Wx-Rm0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qKQ-NL-FMU"/>
                     </view>
@@ -248,6 +286,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9s8-Eg-qed" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="643.9453125" y="810.9375"/>
+        </scene>
+        <!--Achievement-->
+        <scene sceneID="c4D-Eg-tpl">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Achievement" referencedIdentifier="Achievement" id="hDT-Oq-iAY" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FBC-3C-VkZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="630" y="1256"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="s4i-kE-GnA">
@@ -298,7 +344,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KqY-fg-Cxd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1294.921875" y="810.9375"/>
+            <point key="canvasLocation" x="-159" y="-977"/>
         </scene>
         <!--Home-->
         <scene sceneID="tzN-OT-qHt">
@@ -306,7 +352,7 @@
                 <viewControllerPlaceholder storyboardName="Game" referencedIdentifier="Home" id="tfV-qL-oh6" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gmz-6p-mLr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1310" y="1280"/>
+            <point key="canvasLocation" x="407" y="-575"/>
         </scene>
     </scenes>
     <resources>

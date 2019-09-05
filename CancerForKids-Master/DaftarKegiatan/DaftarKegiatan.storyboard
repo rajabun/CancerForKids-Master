@@ -55,7 +55,7 @@
                                 <rect key="frame" x="952" y="384" width="52" height="75"/>
                                 <state key="normal" title="Button" image="right-arrow-2"/>
                                 <connections>
-                                    <segue destination="3TN-No-gsM" kind="show" id="4mn-pF-MP0"/>
+                                    <segue destination="3TN-No-gsM" kind="custom" customClass="SegueFromRight" customModule="CancerForKids_Master" customModuleProvider="target" id="4mn-pF-MP0"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="icon_sukses" translatesAutoresizingMaskIntoConstraints="NO" id="tl4-8v-rJI">
@@ -65,7 +65,7 @@
                                 <rect key="frame" x="20" y="384" width="52" height="75"/>
                                 <state key="normal" title="Button" image="left-arrow-1"/>
                                 <connections>
-                                    <segue destination="sIn-7B-InZ" kind="show" id="hO3-ce-U4h"/>
+                                    <segue destination="sIn-7B-InZ" kind="custom" customClass="SegueFromLeft" customModule="CancerForKids_Master" customModuleProvider="target" id="hO3-ce-U4h"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIs-K2-vxx">
@@ -143,12 +143,15 @@
                                 <rect key="frame" x="952" y="384" width="52" height="75"/>
                                 <state key="normal" title="Button" image="right-arrow-2"/>
                                 <connections>
-                                    <segue destination="sIn-7B-InZ" kind="show" id="k0I-5L-kPW"/>
+                                    <segue destination="sIn-7B-InZ" kind="custom" customClass="SegueFromRight" customModule="CancerForKids_Master" customModuleProvider="target" id="k0I-5L-kPW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WfA-pU-8gN">
                                 <rect key="frame" x="20" y="384" width="52" height="75"/>
                                 <state key="normal" title="Button" image="left-arrow-1"/>
+                                <connections>
+                                    <segue destination="V2k-bA-acc" kind="custom" customClass="SegueFromRight" customModule="CancerForKids_Master" customModuleProvider="target" id="ToU-na-yHH"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_sukses" translatesAutoresizingMaskIntoConstraints="NO" id="SJK-aV-1GL">
                                 <rect key="frame" x="392" y="500" width="240" height="122"/>
@@ -197,7 +200,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FYd-Hi-45N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="428.90625" y="46.875"/>
+            <point key="canvasLocation" x="647" y="-392"/>
         </scene>
         <!--Waktunya View Controller-->
         <scene sceneID="Jvu-nc-sro">
@@ -226,14 +229,14 @@
                                 <rect key="frame" x="952" y="384" width="52" height="75"/>
                                 <state key="normal" title="Button" image="right-arrow-2"/>
                                 <connections>
-                                    <segue destination="V2k-bA-acc" kind="show" id="beG-Pk-KHh"/>
+                                    <segue destination="V2k-bA-acc" kind="custom" customClass="SegueFromRight" customModule="CancerForKids_Master" customModuleProvider="target" id="beG-Pk-KHh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRe-fa-49I">
                                 <rect key="frame" x="20" y="384" width="52" height="75"/>
                                 <state key="normal" title="Button" image="left-arrow-1"/>
                                 <connections>
-                                    <segue destination="3TN-No-gsM" kind="show" id="EdR-zd-A2a"/>
+                                    <segue destination="3TN-No-gsM" kind="custom" customClass="SegueFromLeft" customModule="CancerForKids_Master" customModuleProvider="target" id="EdR-zd-A2a"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_sukses" translatesAutoresizingMaskIntoConstraints="NO" id="P5c-Jt-ZfM">
@@ -297,6 +300,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="hO3-ce-U4h"/>
-        <segue reference="4mn-pF-MP0"/>
+        <segue reference="EdR-zd-A2a"/>
+        <segue reference="ToU-na-yHH"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -15,6 +15,8 @@ class RangeSakitViewController: UIViewController {
     
     var sakit: Float = 50.0
     
+    var emojiStatus:String = ""
+    
     @IBOutlet weak var slideSakit: UISlider!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +28,8 @@ class RangeSakitViewController: UIViewController {
         //Masuk ke Core Data
         let nilaiSakit = self.sakit
         UserDefaults.standard.set(nilaiSakit, forKey: "nilaiSakit")
+        UserDefaults.standard.set(emojiStatus, forKey: "emoji")
+        print(UserDefaults.standard.string(forKey: "emoji") ?? "")
     }
     
     
@@ -40,10 +44,13 @@ class RangeSakitViewController: UIViewController {
         switch sakit{
         case 0 ... 33.2:
             emojiImageView.image = UIImage(named: "Confuse Emoji Button-1")
+            emojiStatus = "Confuse Emoji Button-1"
         case 33.3 ... 66.6:
             emojiImageView.image = UIImage(named: "Sad Emoji Button-2")
+            emojiStatus = "Sad Emoji Button-2"
         default:
             emojiImageView.image = UIImage(named: "Scare Emoji Button")
+            emojiStatus = "Scare Emoji Button"
         }
     }    /*
     // MARK: - Navigation

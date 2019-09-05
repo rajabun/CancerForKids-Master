@@ -73,7 +73,7 @@
                                 <rect key="frame" x="417" y="499" width="192" height="51"/>
                                 <state key="normal" title="Button" image="okee"/>
                                 <connections>
-                                    <action selector="enterSandiButton:" destination="Uzy-Ed-GDV" eventType="touchUpInside" id="kMi-m2-hzt"/>
+                                    <action selector="enterSandiButtonWithSender:" destination="Uzy-Ed-GDV" eventType="touchUpInside" id="5rx-Oc-gCU"/>
                                     <segue destination="jEJ-Hb-bbk" kind="show" id="63P-G0-sqS"/>
                                 </connections>
                             </button>
@@ -169,7 +169,7 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="okee"/>
                                 <connections>
-                                    <action selector="pertanyaanRahasiaButton:" destination="chY-B5-oTe" eventType="touchUpInside" id="Qsg-Ue-xxq"/>
+                                    <action selector="pertanyaanRahasiaButtonWithSender:" destination="chY-B5-oTe" eventType="touchUpInside" id="asW-jq-QQz"/>
                                     <segue destination="F5w-fT-Gxt" kind="show" id="alV-Wq-dQK"/>
                                 </connections>
                             </button>
@@ -275,7 +275,7 @@
                                 <rect key="frame" x="417" y="497" width="192" height="51"/>
                                 <state key="normal" title="Button" image="simpan nama"/>
                                 <connections>
-                                    <action selector="daftarButton:" destination="F5w-fT-Gxt" eventType="touchUpInside" id="wKz-AU-LGp"/>
+                                    <action selector="daftarButtonWithSender:" destination="F5w-fT-Gxt" eventType="touchUpInside" id="OFd-Ce-BRe"/>
                                     <segue destination="Uzy-Ed-GDV" kind="show" id="RG7-Cq-9QU"/>
                                 </connections>
                             </button>
@@ -614,8 +614,7 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="okee"/>
                                 <connections>
-                                    <action selector="pertanyaanRahasiaButton:" destination="flG-A8-1PI" eventType="touchUpInside" id="kcM-F0-OLG"/>
-                                    <action selector="pertanyaanRahasiaDuaButtonWithSender:" destination="flG-A8-1PI" eventType="touchUpInside" id="6EE-H3-d3F"/>
+                                    <action selector="pertanyaanRahasiaDuaButtonWithSender:" destination="flG-A8-1PI" eventType="touchUpInside" id="7pB-sK-X8U"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pertanyaanrahasia-1" translatesAutoresizingMaskIntoConstraints="NO" id="onb-Dx-NAO">
@@ -690,8 +689,8 @@
         <image name="simpan nama" width="500" height="110"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="r96-ap-5do"/>
-        <segue reference="n8Q-JW-Gox"/>
-        <segue reference="Ugi-2O-mD3"/>
+        <segue reference="yUd-gj-5ZC"/>
+        <segue reference="Vjv-Qe-9po"/>
+        <segue reference="jmH-Ka-dYK"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -55,18 +55,18 @@ class OnboardingController: UIViewController, UIScrollViewDelegate {
         
         let slide1:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide1.imageView.image = UIImage(named: "ic_onboarding_1")
-        slide1.labelTitle.text = "Hike Ready!"
-        slide1.labelDesc.text = "Be ready by improving your stamina and strength with us, and become a Mount Conqueror!"
+        slide1.labelTitle.text = "Teman Motivasi"
+        slide1.labelDesc.text = "Aplikasi yang bertujuan untuk memotivasi anak penderita kanker yang sedang menjalani pengobatan kanker."
         
         let slide2:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide2.imageView.image = UIImage(named: "ic_onboarding_2")
-        slide2.labelTitle.text = "Scheduled Training"
-        slide2.labelDesc.text = "We provide you with scheduled training that designed to improve your core muscles strength and endurability"
+        slide2.labelTitle.text = "Catatan Kesehatan"
+        slide2.labelDesc.text = "Anak dapat dengan mudah menginformasikan kesehatan mereka dari hari ke hari."
         
         let slide3:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide3.imageView.image = UIImage(named: "ic_onboarding_3")
-        slide3.labelTitle.text = "Progress tracking"
-        slide3.labelDesc.text = "Your physical preparation progress will be tracked, you will know whether you are ready to hike or not"
+        slide3.labelTitle.text = "Jadwal dan Pengingat"
+        slide3.labelDesc.text = "Fitur yang membantu orang tua dan anak untuk mengingatkan jadwal-jadwal penting yang harus dilakukan anak."
         
         
         return [slide1, slide2, slide3]

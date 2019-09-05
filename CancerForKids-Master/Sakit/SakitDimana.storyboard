@@ -29,7 +29,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubble police" translatesAutoresizingMaskIntoConstraints="NO" id="ygY-V8-URQ">
-                                <rect key="frame" x="40" y="65" width="796.00000000000023" height="649"/>
+                                <rect key="frame" x="40" y="65" width="796" height="649"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ue3-uU-sxi">
                                 <rect key="frame" x="14" y="24" width="136" height="123"/>
@@ -46,7 +46,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ag5-2y-S4n">
-                                <rect key="frame" x="311" y="340" width="252" height="66"/>
+                                <rect key="frame" x="311" y="340" width="252" height="22"/>
                                 <state key="normal" title="Button" image="Button_Kepala"/>
                                 <connections>
                                     <action selector="btnSakitKepala:" destination="NjB-yx-HAp" eventType="touchUpInside" id="8Vx-3v-lZu"/>
@@ -54,7 +54,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4C-UD-A3r">
-                                <rect key="frame" x="312" y="414" width="252" height="66"/>
+                                <rect key="frame" x="312" y="370" width="252" height="22"/>
                                 <state key="normal" title="Button" image="Button_Pundak"/>
                                 <connections>
                                     <action selector="btnSakitPundak:" destination="NjB-yx-HAp" eventType="touchUpInside" id="WLH-Po-94b"/>
@@ -62,7 +62,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNf-Vm-UpW">
-                                <rect key="frame" x="312" y="488" width="252" height="66"/>
+                                <rect key="frame" x="312" y="400" width="252" height="22"/>
                                 <state key="normal" title="Button" image="Button_Dada"/>
                                 <connections>
                                     <action selector="btnSakitDada:" destination="NjB-yx-HAp" eventType="touchUpInside" id="q27-LT-6V8"/>
@@ -70,7 +70,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qvo-rI-z61">
-                                <rect key="frame" x="562" y="414" width="252" height="66"/>
+                                <rect key="frame" x="562" y="370" width="252" height="22"/>
                                 <state key="normal" title="Button" image="Button_Tangan"/>
                                 <connections>
                                     <action selector="btnSakitTangan:" destination="NjB-yx-HAp" eventType="touchUpInside" id="9ct-76-1h5"/>
@@ -78,7 +78,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crE-te-0lJ">
-                                <rect key="frame" x="562" y="488" width="252" height="66"/>
+                                <rect key="frame" x="562" y="400" width="252" height="22"/>
                                 <state key="normal" title="Button" image="Button_Kaki"/>
                                 <connections>
                                     <action selector="btnSakitKaki:" destination="NjB-yx-HAp" eventType="touchUpInside" id="uhN-ha-iR1"/>
@@ -86,15 +86,15 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUa-Ns-Bzl">
-                                <rect key="frame" x="319" y="562" width="435" height="66"/>
+                                <rect key="frame" x="319" y="430" width="435" height="198"/>
                                 <state key="normal" image="Button_SayaSehatHariIni"/>
                                 <connections>
                                     <action selector="btnSehat:" destination="NjB-yx-HAp" eventType="touchUpInside" id="beG-Ey-U9N"/>
-                                    <segue destination="t8e-yX-D2f" kind="presentation" id="AXF-nr-O5s"/>
+                                    <segue destination="t8e-yX-D2f" kind="custom" customClass="SegueFromRight" customModule="CancerForKids_Master" customModuleProvider="target" id="AXF-nr-O5s"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baV-iv-1Z7">
-                                <rect key="frame" x="562" y="340" width="252" height="66"/>
+                                <rect key="frame" x="562" y="340" width="252" height="22"/>
                                 <state key="normal" title="Button" image="Button_Perut"/>
                                 <connections>
                                     <action selector="btnSakitPerut:" destination="NjB-yx-HAp" eventType="touchUpInside" id="uyB-Da-bi1"/>
@@ -418,7 +418,7 @@ Tetap jaga kesehatanmu ya. </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Dr-ew-XTn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="295" y="695"/>
+            <point key="canvasLocation" x="1138" y="1183"/>
         </scene>
         <!--Play-->
         <scene sceneID="T69-ew-hpA">

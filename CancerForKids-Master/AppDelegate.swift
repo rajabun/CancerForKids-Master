@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate
     var window: UIWindow?
     let notificationCenter = UNUserNotificationCenter.current()
     
-    let date = Date(timeInterval: 50400, since: Calendar.current.startOfDay(for: Date()))
+    let date = Date(timeInterval: 59400, since: Calendar.current.startOfDay(for: Date()))
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool
     {

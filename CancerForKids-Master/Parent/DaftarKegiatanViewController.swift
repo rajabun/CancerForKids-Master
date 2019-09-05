@@ -31,6 +31,9 @@ class DaftarKegiatanViewController: UIViewController {
     private var datePickerJamMendatangSatu: UIDatePicker?
     private var datePickerJamMendatangDua: UIDatePicker?
     
+    //Buat Core Data
+    var detailAktifitasKegiatan: [NSManagedObject] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -95,6 +98,34 @@ class DaftarKegiatanViewController: UIViewController {
     
     }
     
+    override func viewWillAppear(_ animated: Bool)
+    {
+        super.viewWillAppear(animated)
+        
+        //1
+        guard let appDelegate =
+            UIApplication.shared.delegate as? AppDelegate else
+        {
+            return
+        }
+        
+        let managedContext =
+            appDelegate.persistentContainer.viewContext
+        
+        //2
+        let fetchRequest =
+            NSFetchRequest<NSManagedObject>(entityName: "ActivityList")
+        
+        //3
+        do {
+            detailAktifitasKegiatan = try managedContext.fetch(fetchRequest)
+            print("Core Data ActivityList Berhasil Fetch")
+        } catch let error as NSError {
+            print("Could not fetch. \(error), \(error.userInfo)")
+        }
+        updateUIDariCoreData()
+    }
+    
     @objc func viewTapped(gestureRecognizer: UITapGestureRecognizer) {
         view.endEditing(true)
     }
@@ -128,19 +159,101 @@ class DaftarKegiatanViewController: UIViewController {
     }
     
     @IBAction func simpanKegiatanButton(_ sender: Any) {
-        let kegiatanHarianSatuu = "\(kegiatanHarianSatu.text!)"
-        print(kegiatanHarianSatuu)
-        let kegiatanHarianDuaa = "\(kegiatanHarianDua.text!)"
-        print(kegiatanHarianDuaa)
-        let kegiatanHarianTigaa = "\(kegiatanHarianTiga.text!)"
-        print(kegiatanHarianTigaa)
-        let kegiatanMendatangSatuu = "\(kegiatanMendatangSatu.text!)"
-        print(kegiatanMendatangSatuu)
-        let kegiatanMendatangDuaa = "\(kegiatanMendatangDua.text!)"
-        print(kegiatanMendatangDuaa)
+//        let kegiatanHarianSatuu = "\(kegiatanHarianSatu.text!)"
+//        print(kegiatanHarianSatuu)
+//        let kegiatanHarianDuaa = "\(kegiatanHarianDua.text!)"
+//        print(kegiatanHarianDuaa)
+//        let kegiatanHarianTigaa = "\(kegiatanHarianTiga.text!)"
+//        print(kegiatanHarianTigaa)
+//        let kegiatanMendatangSatuu = "\(kegiatanMendatangSatu.text!)"
+//        print(kegiatanMendatangSatuu)
+//        let kegiatanMendatangDuaa = "\(kegiatanMendatangDua.text!)"
+//        print(kegiatanMendatangDuaa)
         
         //user default charname
+        saveAllAktifitas()
     }
+    
+    func updateUIDariCoreData()
+    {
+        print("UI Dari Core Data Terupdate")
+        kegiatanHarianSatu.text = "Hahaha"
+        kegiatanHarianDua.text = "Hahaha"
+        kegiatanHarianTiga.text = "Hahaha"
+        
+        jamHarianSatu.text = ""
+        jamHarianDua.text = ""
+        jamHarianTiga.text = ""
+        
+        kegiatanMendatangSatu.text = "Hahaha"
+        kegiatanMendatangDua.text = "Hahaha"
+        
+        jamMendatangSatu.text = ""
+        jamMendatangDua.text = ""
+        
+    }
+    
+    func saveAllAktifitas()
+    {
+        let kegiatanHarianSatuu = "\(kegiatanHarianSatu.text!)"
+//        print(kegiatanHarianSatuu)
+        let kegiatanHarianDuaa = "\(kegiatanHarianDua.text!)"
+        let kegiatanHarianTigaa = "\(kegiatanHarianTiga.text!)"
+
+        let jamHarianSatuu = "\(jamHarianSatu.text!)"
+        let jamHarianDuaa = "\(jamHarianDua.text!)"
+        let jamHarianTigaa = "\(jamHarianTiga.text!)"
+        
+        let kegiatanMendatangSatuu = "\(kegiatanMendatangSatu.text!)"
+        let kegiatanMendatangDuaa = "\(kegiatanMendatangDua.text!)"
+
+        let jamMendatangSatuu = "\(jamMendatangSatu.text!)"
+        let jamMendatangDuaa = "\(jamMendatangDua.text!)"
+        
+        guard let appDelegate =
+            UIApplication.shared.delegate as? AppDelegate else
+        {
+            return
+        }
+        
+        // 1
+        let managedContext =
+            appDelegate.persistentContainer.viewContext
+        
+        // 2
+        let entity =
+            NSEntityDescription.entity(forEntityName: "ActivityList",
+                                       in: managedContext)!
+        
+        let aktifitasKegiatanHarian = NSManagedObject(entity: entity,
+                                                   insertInto: managedContext)
+        
+        // 3
+        aktifitasKegiatanHarian.setValue(kegiatanHarianSatuu, forKeyPath: "kegiatanHarianPertama")
+        aktifitasKegiatanHarian.setValue(kegiatanHarianDuaa, forKeyPath: "kegiatanHarianKedua")
+        aktifitasKegiatanHarian.setValue(kegiatanHarianTigaa, forKeyPath: "kegiatanHarianKetiga")
+        aktifitasKegiatanHarian.setValue(jamHarianSatuu, forKeyPath: "jamKegiatanHarianPertama")
+        aktifitasKegiatanHarian.setValue(jamHarianDuaa, forKeyPath: "jamKegiatanHarianKedua")
+        aktifitasKegiatanHarian.setValue(jamHarianTigaa, forKeyPath: "jamKegiatanHarianKetiga")
+        
+        aktifitasKegiatanHarian.setValue(kegiatanMendatangSatuu, forKeyPath: "kegiatanMendatangPertama")
+        aktifitasKegiatanHarian.setValue(kegiatanMendatangDuaa, forKeyPath: "kegiatanMendatangKedua")
+        aktifitasKegiatanHarian.setValue(jamMendatangSatuu, forKeyPath: "jamKegiatanMendatangPertama")
+        aktifitasKegiatanHarian.setValue(jamMendatangDuaa, forKeyPath: "jamKegiatanMendatangKedua")
+        
+        // 4
+        do
+        {
+            try managedContext.save()
+            detailAktifitasKegiatan.append(aktifitasKegiatanHarian)
+            print("Core Data ActivityList Masuk")
+        }
+        catch let error as NSError
+        {
+            print("Could not save. \(error), \(error.userInfo)")
+        }
+    }
+    
 }
 
 extension DaftarKegiatanViewController : UITextFieldDelegate{

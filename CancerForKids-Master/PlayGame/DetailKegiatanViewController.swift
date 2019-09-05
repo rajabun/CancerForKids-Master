@@ -31,7 +31,7 @@ class DetailKegiatanViewController: UIViewController, UITableViewDelegate, UITab
     {
         super.viewDidLoad()
         view.backgroundColor = UIColor(patternImage: UIImage(named: "backgroundbubble.png")!)
-        saveAll()
+        //saveAll()
 
         // Do any additional setup after loading the view.
     }

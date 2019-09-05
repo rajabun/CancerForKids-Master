@@ -84,7 +84,7 @@ class SudahMilihSakitViewController: UIViewController {
         let jamSakit = formatter2.string(from: currentDateTime)
         UserDefaults.standard.set(tanggalSakit, forKey: "tanggalSakit")
         UserDefaults.standard.set(jamSakit, forKey: "jamSakit")
-        //saveAll()
+        saveAll()
     }
     
     @IBAction func btnOkeSehat(_ sender: Any) {
@@ -97,7 +97,7 @@ class SudahMilihSakitViewController: UIViewController {
         
         UserDefaults.standard.set(tanggalSakit, forKey: "tanggalSakit")
         UserDefaults.standard.set(jamSakit, forKey: "jamSakit")
-        //saveAll()
+        saveAll()
     }
     /*
     // MARK: - Navigation
